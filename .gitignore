@@ -1,0 +1,34 @@
+# Ignore everything in "wp-content" except these directories. #
+/*
+!.gitignore
+!plugins/
+!themes/
+!uploads/
+!screenshots/
+!README.md
+# Ignore everything in "plugins" except certain plugins. #
+plugins/*
+!plugins/intrafitness-functionality/
+# Ignore everything in "themes" except the active theme. #
+themes/*
+!themes/intrafitness/
+# Ignore npm packages #
+themes/intrafitness/node_modules/
+# Ignore build files
+themes/intrafitness/build/*
+themes/intrafitness/gulpfile.js
+# Ignore OS files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+*[Tt]humbs.db
+*.Trashes
+# Ignore logs and databases #
+*.log
+*.sql
+*.sqlite
+error_log
+access_log
