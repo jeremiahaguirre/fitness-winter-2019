@@ -2,9 +2,9 @@
 /**
  *
  * @package   IntraFitness Functionality
- * @author    Your Name <your_email@email.com>
+ * @author    JABS Team (Jeremiah, Andre, Bryan, Saveen)
  * @license   GPL-2.0+
- * @copyright 2015 Your Name or Company
+ * @copyright 2019 JABS Team
  *
  * @wordpress-plugin
  * Plugin Name: IntraFitness Functionality
