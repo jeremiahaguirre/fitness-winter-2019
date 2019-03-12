@@ -225,6 +225,48 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Open Sans Normal-bold';
+  src: url("../../fonts/OpenSans-Bold.eot");
+  src: url("../../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/OpenSans-Bold.woff2") format("woff2"), url("../../fonts/OpenSans-Bold.woff") format("woff"), url("../../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans Normal';
+  src: url("../../fonts/OpenSans-Regular.eot");
+  src: url("../../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/OpenSans-Regular.woff2") format("woff2"), url("../../fonts/OpenSans-Regular.woff") format("woff"), url("../../fonts/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans Italic';
+  src: url("../../fonts/OpenSans-Italic.eot");
+  src: url("../../fonts/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/OpenSans-Italic.woff2") format("woff2"), url("../../fonts/OpenSans-Italic.woff") format("woff"), url("../../fonts/OpenSans-Italic.svg#OpenSans-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Trade Gothic LT Std Normal-bold';
+  src: url("../../fonts/TradeGothicLTStd-Bd2.eot");
+  src: url("../../fonts/TradeGothicLTStd-Bd2.eot?#iefix") format("embedded-opentype"), url("../../fonts/TradeGothicLTStd-Bd2.woff2") format("woff2"), url("../../fonts/TradeGothicLTStd-Bd2.woff") format("woff"), url("../../fonts/TradeGothicLTStd-Bd2.svg#TradeGothicLTStd-Bd2") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Trade Gothic LT Std Normal';
+  src: url("../../fonts/TradeGothicLTStd-Extended.eot");
+  src: url("../../fonts/TradeGothicLTStd-Extended.eot?#iefix") format("embedded-opentype"), url("../../fonts/TradeGothicLTStd-Extended.woff2") format("woff2"), url("../../fonts/TradeGothicLTStd-Extended.woff") format("woff"), url("../../fonts/TradeGothicLTStd-Extended.svg#TradeGothicLTStd-Extended") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Trade Gothic LT Std Italic-bold';
+  src: url("../../fonts/TradeGothicLTStd-Bd2Obl.eot");
+  src: url("../../fonts/TradeGothicLTStd-Bd2Obl.eot?#iefix") format("embedded-opentype"), url("../../fonts/TradeGothicLTStd-Bd2Obl.woff2") format("woff2"), url("../../fonts/TradeGothicLTStd-Bd2Obl.woff") format("woff"), url("../../fonts/TradeGothicLTStd-Bd2Obl.svg#TradeGothicLTStd-Bd2Obl") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -233,8 +275,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #002150;
+  font-family: "Open Sans Normal", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -245,16 +287,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1rem; }
 
 dfn, cite, em, i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1.5rem; }
+  margin: 0 1rem; }
 
 address {
-  margin: 0 0 1.5rem; }
+  margin: 0 0 1rem; }
 
 pre {
   background: #eee;
@@ -284,6 +326,64 @@ big {
   font-size: 125%; }
 
 /*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  .screen-reader-text:focus {
+    background-color: #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #002150;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1rem; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1rem; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clearfix {
+  clear: both;
+  content: "";
+  display: table; }
+
+/*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 html {
@@ -300,7 +400,8 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: red; }
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */ }
 
 blockquote,
 q {
@@ -314,11 +415,11 @@ hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1rem; }
 
 ul,
 ol {
-  margin: 0 0 1.5rem 3rem; }
+  margin: 0 0 1rem 2rem; }
 
 ul {
   list-style: disc; }
@@ -329,13 +430,13 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5rem; }
+  margin-left: 1rem; }
 
 dt {
   font-weight: bold; }
 
 dd {
-  margin: 0 1.5rem 1.5rem; }
+  margin: 0 1rem 1rem; }
 
 img {
   height: auto;
@@ -344,7 +445,7 @@ img {
   /* Adhere to container width. */ }
 
 table {
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
   width: 100%; }
 
 /*--------------------------------------------------------------
@@ -419,11 +520,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #fff; }
   a:visited {
-    color: purple; }
+    color: #fff; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #fff; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -445,7 +546,7 @@ a {
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5rem;
+      top: 1rem;
       left: -999rem;
       z-index: 99999; }
       .main-navigation ul ul ul {
@@ -480,7 +581,7 @@ a {
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
   overflow: hidden; }
 
 .comment-navigation .nav-previous,
@@ -495,115 +596,6 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-/* Text meant only for screen readers. */
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden; }
-  .screen-reader-text:focus {
-    background-color: #f1f1f1;
-    border-radius: 3px;
-    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
-    color: #21759b;
-    display: block;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    height: auto;
-    left: 5px;
-    line-height: normal;
-    padding: 15px 23px 14px;
-    text-decoration: none;
-    top: 5px;
-    width: auto;
-    z-index: 100000;
-    /* Above WP toolbar. */ }
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5rem; }
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 1.5rem; }
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-.clearfix {
-  clear: both;
-  content: "";
-  display: table; }
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5rem;
-  /* Make sure select elements fit in widgets. */ }
-  .widget select {
-    max-width: 100%; }
-
-/* Search widget. */
-.widget_search .search-submit {
-  display: none; }
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/* Posts and pages */
-.sticky {
-  display: block; }
-
-.hentry {
-  margin: 0 0 1.5rem; }
-
-.updated:not(.published) {
-  display: none; }
-
-.single .byline,
-.group-blog .byline {
-  display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5rem 0 0; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5rem; }
-
-/* Asides */
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none; }
-
-/* Comments */
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
 
 /*--------------------------------------------------------------
 # Media
@@ -624,7 +616,7 @@ object {
 
 /* Captions */
 .wp-caption {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   max-width: 100%; }
   .wp-caption img[class*="wp-image-"] {
     display: block;
@@ -638,7 +630,7 @@ object {
 
 /* Galleries*/
 .gallery {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1rem; }
 
 .gallery-item {
   display: inline-block;
@@ -666,6 +658,56 @@ object {
   display: block; }
 
 /*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/* Posts and pages */
+.sticky {
+  display: block; }
+
+.hentry {
+  margin: 0 0 1rem; }
+
+.updated:not(.published) {
+  display: none; }
+
+.single .byline,
+.group-blog .byline {
+  display: inline; }
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1rem 0 0; }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1rem; }
+
+/* Asides */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none; }
+
+/* Comments */
+.comment-content a {
+  word-wrap: break-word; }
+
+.bypostauthor {
+  display: block; }
+
+/*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+  margin: 0 0 1rem;
+  /* Make sure select elements fit in widgets. */ }
+  .widget select {
+    max-width: 100%; }
+
+/* Search widget. */
+.widget_search .search-submit {
+  display: none; }
