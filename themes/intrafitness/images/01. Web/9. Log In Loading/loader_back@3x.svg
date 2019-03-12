@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="242px" height="243px" viewBox="0 0 242 243" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>loader_back@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="09.-Log-In-loading" transform="translate(-599.000000, -193.000000)" stroke="#002150" stroke-width="15">
+            <path d="M606.542659,314.444425 C606.542659,251.928925 657.326584,201.249925 719.971516,201.249925 C782.616448,201.249925 833.400373,251.928925 833.400373,314.444425 C833.400373,376.959925 782.616448,427.638925 719.971516,427.638925 C657.326584,427.638925 606.542659,376.959925 606.542659,314.444425 Z" id="loader_back"></path>
+        </g>
+    </g>
+</svg>
