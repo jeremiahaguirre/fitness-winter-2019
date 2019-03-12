@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="216px" height="36px" viewBox="0 0 216 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>logo_header_small</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header" transform="translate(-135.000000, -21.000000)" fill="#FFFFFF">
+            <g id="logo_header_small" transform="translate(135.000000, 21.000000)">
+                <path d="M11.2004699,0 L0.799530149,0 C0.268598277,0 0,0.263623978 0,0.782442098 L0,4.58429837 C0,5.10388283 0.268598277,5.36750681 0.799530149,5.36750681 L6.28425998,5.36750681 L6.28425998,30.6324932 L0.799530149,30.6324932 C0.268598277,30.6324932 0,30.8953508 0,31.4141689 L0,35.2175579 C0,35.7440395 0.268598277,36 0.799530149,36 L11.2004699,36 C11.7314017,36 12,35.7440395 12,35.2175579 L12,0.782442098 C12,0.263623978 11.7314017,0 11.2004699,0" id="Fill-17"></path>
+                <path d="M25.1926917,5.36750681 C25.7306362,5.36750681 26,5.10388283 26,4.58506471 L26,0.783208447 C26,0.263623978 25.7306362,0 25.1926917,0 L14.799478,0 C14.2693638,0 14,0.263623978 14,0.783208447 L14,35.2175579 C14,35.7440395 14.2693638,36 14.799478,36 L25.1926917,36 C25.7306362,36 26,35.7440395 26,35.2175579 L26,31.4141689 C26,30.8961172 25.7306362,30.6324932 25.1926917,30.6324932 L19.7161501,30.6324932 L19.7161501,5.36750681 L25.1926917,5.36750681 Z" id="Fill-18"></path>
+                <text id="INTRA-FITNESS" font-family="TradeGothicLTStd-BoldExt, Trade Gothic LT Std" font-size="15" font-style="expanded" font-weight="bold" letter-spacing="2.5">
+                    <tspan x="43" y="25">INTRA FITNES</tspan>
+                    <tspan x="204.16" y="25" letter-spacing="2.34375">S</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
