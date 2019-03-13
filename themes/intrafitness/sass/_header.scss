@@ -1,1 +1,11 @@
 //Header
+.site-header {
+  background-color: $color__db;
+  background-image: url(../../images/web/header-symbols/logo_header_small_white.svg);
+  background-repeat: no-repeat;
+  width:100%;
+  height: 24vh;
+  nav{
+    margin: 10px auto;
+  }
+}
