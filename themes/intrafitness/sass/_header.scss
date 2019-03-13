@@ -3,13 +3,33 @@
   display: flex;
   background-color: $color__db;
   width: 100%;
-  height: 24vh;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
   .logo {
     background-image: url(../../images/web/header-symbols/logo_header_small_white.svg);
     background-repeat: no-repeat;
     width: 100%;
   }
   nav {
-    margin: 10px auto;
+    margin: 10px 25px;
+    display: flex;
+    justify-content: flex-end;
+    li{
+        padding-right:15px;
+    }
+  }
+}
+@include desktop {
+  .home .logo {
+    background-image: url(../../images/web/header-symbols/logo_header_large_white.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 118px 33px $color__db;
+    position: relative;
+    left: 50px;
+    top: 26px;
+    width: 331px;
+    height: 234px;
   }
 }
