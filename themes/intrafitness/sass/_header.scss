@@ -13,10 +13,11 @@
   }
   nav {
     margin: 10px 25px;
+    width: 434px;
     display: flex;
     justify-content: flex-end;
-    li{
-        padding-right:15px;
+    li {
+      padding-right: 15px;
     }
   }
 }
@@ -28,7 +29,7 @@
     box-shadow: inset 0 0 118px 33px $color__db;
     position: relative;
     left: 50px;
-    top: 26px;
+    top: 13px;
     width: 331px;
     height: 234px;
   }
