@@ -1,8 +1,18 @@
 //Footer
-footer{
-    background-color: $color__db;
-    max-height:50vh;
-    height:50vh;
-    width:100%;
-
+.site-footer {
+  background-color: $color__db;
+  max-height: 50vh;
+  height: 50vh;
+  width: 100%;
+  .site-info {
+    display: flex;
+    p {
+      color: $color__w;
+    }
+    nav {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
 }
