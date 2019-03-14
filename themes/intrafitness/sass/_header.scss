@@ -20,12 +20,33 @@
     }
   }
   nav {
-    margin: 10px 25px;
     display: flex;
-    justify-content: flex-end;
     flex: 0 1 25%;
-    li {
-      padding-right: 15px;
+
+    ul {
+      overflow: hidden;
+      background-color: $color__w;
+      position: absolute;
+      margin: 0;
+      padding: 10px;
+      top: 100px;
+      right: 0px;
+      width: 521px;
+      height: 200vh;
+      flex-direction: column;
+
+      li {
+        padding: 10px 12px;
+        text-align: left;
+        border-bottom: 4px solid $color__bg;
+        border-radius: 10px;
+        a {
+          margin: 0px;
+          color: $color__db;
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+      }
     }
   }
 }

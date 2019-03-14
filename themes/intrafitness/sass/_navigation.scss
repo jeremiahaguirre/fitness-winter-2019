@@ -6,7 +6,7 @@
 
 a {
   color: $color__link;
-  
+
   &:visited {
     color: $color__link-visited;
   }
@@ -60,7 +60,6 @@ a {
 
       a {
         width: 200px;
-       
       }
 
       :hover > a,
@@ -88,7 +87,6 @@ a {
   a {
     display: block;
     text-decoration: none;
-   
   }
 
   .current_page_item > a,
@@ -99,17 +97,20 @@ a {
 
 /* Small menu. */
 .menu-toggle,
-.main-navigation.toggled ul {
-  display: block;
-  float: right;
+.main-navigation.toggled {
   background: transparent;
   border: none;
-  &:focus {
-    outline: none;
+
+  ul {
+    float: right;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 641px) {
   .menu-toggle {
     display: none;
   }
