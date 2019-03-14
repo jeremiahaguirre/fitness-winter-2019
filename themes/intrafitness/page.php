@@ -10,12 +10,20 @@ get_header(); ?>
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-        <?php while (have_posts()) : the_post(); ?>
+        
 
-        <?php get_template_part('template-parts/content', 'page'); ?>
+        <?php
+$args = array('post_type' => 'post_intra-post', 'posts_per_page' => 3, 'order'=>'DESC');
+$intra = get_posts($args);
+?>
 
-        <?php endwhile; ?>
-
+<?php foreach ($intra as $post) : setup_postdata($post); ?>
+<article>
+<?php the_title(); ?>
+<?php the_content(); ?>
+</article>
+<?php endforeach;
+        wp_reset_postdata(); ?>
     </main><!-- #main -->
 </div><!-- #primary -->
 
