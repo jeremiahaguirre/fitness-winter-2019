@@ -5,25 +5,28 @@
 /* Buttons */
 
 button,
+.wp-block-button__link,
+.has-pale-cyan-blue-background-color.has-pale-cyan-blue-background-color,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
+  border-color: none;
+  border-radius: 10px;
+  background: $color__lb;
+  color: $color__w;
   @include font-size(0.75);
   line-height: 1;
-  padding: 0.6rem 1rem 0.4rem;
+  padding: $base__space-unit ($base__space-unit * 2);
 
   &:hover {
-    border-color: #ccc #bbb #aaa;
+    border-color: none;
   }
 
   &:active,
   &:focus {
-    border-color: #aaa #bbb #bbb;
+    border-color: none;
+    outline: none;
   }
 }
 
