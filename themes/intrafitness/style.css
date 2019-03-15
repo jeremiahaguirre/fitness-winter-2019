@@ -829,14 +829,30 @@ object {
 
 .site-footer {
   background-color: #002150;
+  font-family: "Trade Gothic LT Std Normal-bold", sans-serif;
+  width: 100%;
   max-height: 50vh;
-  height: 50vh;
-  width: 100%; }
+  height: 50vh; }
   .site-footer .site-info {
+    display: none;
+    font-size: 1.2rem; }
+    @media (min-width: 641px) {
+      .site-footer .site-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .site-footer .site-info .footer-logo {
+          max-width: 15%; }
+        .site-footer .site-info nav a {
+          text-decoration: none;
+          color: #c2d7e9; } }
+  .site-footer .disclaimers {
+    margin: 1rem 20rem;
+    font-size: 0.75rem;
+    color: #c2d7e9;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-    .site-footer .site-info p {
-      color: #fff; }
-    .site-footer .site-info nav a {
-      text-decoration: none; }
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
