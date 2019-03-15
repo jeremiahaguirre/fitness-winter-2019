@@ -15,7 +15,7 @@ get_header(); ?>
         <?php get_template_part('template-parts/content', 'page'); ?>
 
         <?php endwhile; ?>
-
+        
     </main><!-- #main -->
 </div><!-- #primary -->
 
