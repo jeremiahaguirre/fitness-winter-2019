@@ -7,31 +7,44 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+        <?php while (have_posts()) : the_post(); ?>
+
+        <?php get_template_part('template-parts/content', 'page'); ?>
+
+        <?php endwhile; ?>
+
+        <?php
+$args = array('post_type' => 'post_intra-post', 'posts_per_page' => 3, 'order'=>'DESC');
+$intra = get_posts($args);
+?>
+
+<?php foreach ($intra as $post) : setup_postdata($post); ?>
+<article>
+<?php the_title(); ?>
+<?php the_content(); ?>
+</article>
+<?php endforeach;
+        wp_reset_postdata(); ?>
 
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+        <?php
+    $args = array('post_type' => 'post_faq', 'posts_per_page' => 3, 'order'=>'DESC');
+    $faq = get_posts($args);
+    ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+    <?php foreach ($faq as $post) : setup_postdata($post); ?>
+    <article>
+    <?php the_title(); ?>
+    <?php the_content(); ?>
+    </article>
+    <?php endforeach;
+    wp_reset_postdata(); ?>
+        
+    </main><!-- #main -->
+</div><!-- #primary -->
 
-			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php get_footer(); ?> 
