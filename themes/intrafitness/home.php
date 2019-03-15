@@ -17,11 +17,11 @@ get_header(); ?>
         <?php endwhile; ?>
 
         <?php
-$args = array('post_type' => 'post_intra-post', 'posts_per_page' => 3, 'order'=>'DESC');
-$intra = get_posts($args);
+$args = array('post_type' => 'post_testimonial', 'posts_per_page' => 3, 'order'=>'DESC');
+$testimonials = get_posts($args);
 ?>
 
-<?php foreach ($intra as $post) : setup_postdata($post); ?>
+<?php foreach ($testimonials as $post) : setup_postdata($post); ?>
 <article>
 <?php the_title(); ?>
 <?php the_content(); ?>
