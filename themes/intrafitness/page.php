@@ -24,6 +24,21 @@ $intra = get_posts($args);
 </article>
 <?php endforeach;
         wp_reset_postdata(); ?>
+
+<?php
+$args = array('post_type' => 'post_faq', 'posts_per_page' => 3, 'order'=>'DESC');
+$faq = get_posts($args);
+?>
+
+<?php foreach ($faq as $post) : setup_postdata($post); ?>
+<article>
+<?php the_title(); ?>
+<?php the_content(); ?>
+</article>
+<?php endforeach;
+ wp_reset_postdata(); ?>
+
+        
     </main><!-- #main -->
 </div><!-- #primary -->
 
