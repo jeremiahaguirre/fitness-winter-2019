@@ -1,5 +1,7 @@
 //Header
-
+.menu-show {
+  position: fixed;
+}
 .site-header {
   display: flex;
   background-color: $color__db;
@@ -22,29 +24,30 @@
   nav {
     display: flex;
     flex: 0 1 25%;
+    @include mobile {
+      ul {
+        overflow-y: scroll;
+        background-color: $color__w;
+        position: absolute;
+        margin: 0;
+        padding: 10px;
+        top: 70px;
+        right: 0px;
+        width: 100vw;
+        height: calc(100vh - 70px);
+        flex-direction: column;
 
-    ul {
-      overflow: hidden;
-      background-color: $color__w;
-      position: absolute;
-      margin: 0;
-      padding: 10px;
-      top: 100px;
-      right: 0px;
-      width: 521px;
-      height: 200vh;
-      flex-direction: column;
-
-      li {
-        padding: 10px 12px;
-        text-align: left;
-        border-bottom: 4px solid $color__bg;
-        border-radius: 10px;
-        a {
-          margin: 0px;
-          color: $color__db;
-          font-size: 1.4rem;
-          font-weight: bold;
+        li {
+          padding: 10px 12px;
+          text-align: left;
+          border-bottom: 4px solid $color__bg;
+          border-radius: 10px;
+          a {
+            margin: 0px;
+            color: $color__db;
+            font-size: 1.4rem;
+            font-weight: bold;
+          }
         }
       }
     }
@@ -57,6 +60,17 @@
     }
     nav {
       flex: 0 1 50%;
+      justify-content: flex-end;
+      ul {
+        li {
+          display: block;
+          padding-right: 12px;
+          a {
+            margin: 0px;
+            color: $color__w;
+          }
+        }
+      }
     }
   }
   .home .site-branding {

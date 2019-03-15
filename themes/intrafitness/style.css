@@ -676,6 +676,9 @@ object {
 .gallery-caption {
   display: block; }
 
+.menu-show {
+  position: fixed; }
+
 .site-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,30 +711,31 @@ object {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 25%;
             flex: 0 1 25%; }
-    .site-header nav ul {
-      overflow: hidden;
-      background-color: #fff;
-      position: absolute;
-      margin: 0;
-      padding: 10px;
-      top: 100px;
-      right: 0px;
-      width: 521px;
-      height: 200vh;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .site-header nav ul li {
-        padding: 10px 12px;
-        text-align: left;
-        border-bottom: 4px solid #c2d7e9;
-        border-radius: 10px; }
-        .site-header nav ul li a {
-          margin: 0px;
-          color: #002150;
-          font-size: 1.4rem;
-          font-weight: bold; }
+    @media (max-width: 641px) {
+      .site-header nav ul {
+        overflow-y: scroll;
+        background-color: #fff;
+        position: absolute;
+        margin: 0;
+        padding: 10px;
+        top: 70px;
+        right: 0px;
+        width: 100vw;
+        height: calc(100vh - 70px);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .site-header nav ul li {
+          padding: 10px 12px;
+          text-align: left;
+          border-bottom: 4px solid #c2d7e9;
+          border-radius: 10px; }
+          .site-header nav ul li a {
+            margin: 0px;
+            color: #002150;
+            font-size: 1.4rem;
+            font-weight: bold; } }
 
 @media (min-width: 641px) {
   .site-header .site-branding {
@@ -741,7 +745,16 @@ object {
   .site-header nav {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
-            flex: 0 1 50%; }
+            flex: 0 1 50%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .site-header nav ul li {
+      display: block;
+      padding-right: 12px; }
+      .site-header nav ul li a {
+        margin: 0px;
+        color: #fff; }
   .home .site-branding .logo {
     background-image: url(../../images/web/header-symbols/logo_header_large_no_glow.svg);
     background-repeat: no-repeat;
