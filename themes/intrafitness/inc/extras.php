@@ -38,7 +38,7 @@ add_filter('shortcode_atts_wpcf7', 'intrafitness_shortcode_atts_wpcf7_filter', 1
 function add_to_nav($items, $args)
 {
 	if ($args->theme_location == 'primary') {
-		$testing = '<a class="trial" href="#" >Try 7-Day Free Trial</a>';
+		$testing = '<a class="trial" href="#" >Try 7-Day <span>Free Trial</span></a>';
 		$items = $testing . $items;
 		$items .= '<div class="social-media">'
 			.  '<a href="#"><i class="fab fa-facebook"></i></a>'
