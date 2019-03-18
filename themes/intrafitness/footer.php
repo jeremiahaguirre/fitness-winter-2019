@@ -11,15 +11,18 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
     <div class="site-info">
-        <nav id="site-navigation" class="footer-navigation" role="navigation">
-            <?php wp_nav_menu(array('menu'=> "footer-menu", 'menu_id' => 'footer-menu')); ?>
-        </nav><!-- footer-navigation -->
-        <div class="mobile disclaimers">
-            <p>Privacy Policies</p>
-            <p>Terms and Conditions</p>
-            <p>Disclaimer</p>
+        <div class="footer-logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/web/footer-symbols/logo_footer_large_dark.svg" alt="Intrafitness logo">
         </div>
+        <nav id="site-navigation" class="footer-navigation" role="navigation">
+            <?php wp_nav_menu(array('menu' => "footer-menu", 'menu_id' => 'footer-menu')); ?>
+        </nav><!-- footer-navigation -->
     </div><!-- .site-info -->
+    <div class="disclaimers">
+        <p>Privacy Policies</p>
+        <p>Terms and Conditions</p>
+        <p>Disclaimer</p>
+    </div>
 </footer><!-- #colophon -->
 </div><!-- #page -->
 
@@ -27,5 +30,4 @@
 
 </body>
 
-</html>
-
+</html> 
