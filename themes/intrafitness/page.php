@@ -15,8 +15,13 @@ get_header(); ?>
         <?php get_template_part('template-parts/content', 'page'); ?>
 
         <?php endwhile; ?>
-        
-        <?php foreach ($intra as $post) : setup_postdata($post); ?>
+       
+        <?php
+        $args = array('post_type' => 'post_testimonial', 'posts_per_page' => 3, 'order' => 'DESC');
+        $testimonial = get_posts($args);
+        ?>
+
+        <?php foreach ($testimonial as $post) : setup_postdata($post); ?>
         <article>
             <?php the_title(); ?>
             <?php the_content(); ?>

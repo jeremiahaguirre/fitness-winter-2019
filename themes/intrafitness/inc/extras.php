@@ -34,3 +34,19 @@ function intrafitness_shortcode_atts_wpcf7_filter($out, $pairs, $atts)
 }
 
 add_filter('shortcode_atts_wpcf7', 'intrafitness_shortcode_atts_wpcf7_filter', 10, 3);
+
+function add_to_nav($items, $args)
+{
+	if ($args->theme_location == 'primary') {
+		$testing = '<a class="trial" href="#" >Try 7-Day Free Trial</a>';
+		$items = $testing . $items;
+		$items .= '<div class="social-media">'
+			.  '<a href="#"><i class="fab fa-facebook"></i></a>'
+			. '<a href="#"><i class="fab fa-instagram"></i></a>'
+			. '<a href="#"><i class="fab fa-twitter"></i></a>'
+			. '</div>';
+	}
+
+	return $items;
+}
+add_filter('wp_nav_menu_items', 'add_to_nav', 10, 2);
