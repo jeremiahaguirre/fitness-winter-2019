@@ -25,20 +25,6 @@
     display: flex;
     flex: 0 1 25%;
     @include mobile {
-      // .main-navigation-inner {
-      //   display: none;
-
-      //   .social-media {
-      //     display: flex;
-      //     justify-content: space-around;
-      //     max-width: 300px;
-      //     margin: 0 110px;
-      //     a {
-      //       color: $color__db;
-      //       font-size: 2.75rem;
-      //     }
-      //   }
-      // }
       ul {
         overflow-y: scroll;
         background-color: $color__w;
@@ -86,12 +72,34 @@
 @include desktop {
   .site-header {
     .site-branding {
-      flex: 0 1 50%;
+      flex: 0 1 40%;
     }
     nav {
-      flex: 0 1 50%;
-      justify-content: flex-end;
+      flex: 0 1 60%;
+      // justify-content: flex-end;
       ul {
+        display: flex;
+        font-size: 1.25rem;
+        align-items: center;
+        width: 100%;
+        .trial {
+          background-color: $color__lb;
+          order: 3;
+          width: 135px;
+          height: 70px;
+          text-align: center;
+          span{
+            display: block;
+          }
+        }
+        .social-media {
+          font-size: 1.75rem;
+          flex-direction: row;
+          a {
+            padding: 0 10px;
+            display: inline-block;
+          }
+        }
         li {
           display: block;
           padding-right: 12px;
