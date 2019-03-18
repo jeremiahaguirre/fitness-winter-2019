@@ -2,6 +2,7 @@
   $(function() {
     // $('.primary-menu').hide();
     $('.menu-toggle').click(function() {
+      console.log('click');
       $('#primary-menu').slideToggle({
         duration: 'fast',
         start: function() {
