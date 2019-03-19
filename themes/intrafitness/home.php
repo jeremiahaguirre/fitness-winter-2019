@@ -14,7 +14,7 @@ get_header(); ?>
     
 <?php
     $post_carousel_args = array(
-    'numberposts' => 3,
+    'numberposts' => 10,
     'post_type'   => 'post'
     );
     
@@ -38,19 +38,14 @@ get_header(); ?>
 </div>
 
 
+
         <?php while (have_posts()) : the_post(); ?>
 
         <?php get_template_part('template-parts/content', 'recent-post'); ?>
 
         <?php endwhile; ?>
-        <?php endif; ?>
 
     </main><!-- #main -->
 </div><!-- #primary -->
 
 <?php get_footer(); ?> 
-
-
-
-
-
