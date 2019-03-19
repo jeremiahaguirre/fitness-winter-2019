@@ -15,7 +15,7 @@ get_header(); ?>
         <?php get_template_part('template-parts/content', 'page'); ?>
 
         <?php endwhile; ?>
-       
+
         <?php
         $args = array('post_type' => 'post_testimonial', 'posts_per_page' => 3, 'order' => 'DESC');
         $testimonial = get_posts($args);
@@ -25,6 +25,10 @@ get_header(); ?>
         <article>
             <?php the_title(); ?>
             <?php the_content(); ?>
+            <?php $url = CFS()->get('video');
+            if (!empty($url)) : ?>
+            <a class="video-testimonial" href="<?php echo CFS()->get('video'); ?>" target="_blank">Watch Full Testimonial</a>
+            <?php endif; ?>
         </article>
         <?php endforeach;
     wp_reset_postdata(); ?>
@@ -41,7 +45,7 @@ get_header(); ?>
         </article>
         <?php endforeach;
     wp_reset_postdata(); ?>
-    
+
     </main><!-- #main -->
 </div><!-- #primary -->
 
