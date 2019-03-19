@@ -24,6 +24,7 @@
   nav {
     display: flex;
     flex: 0 1 25%;
+    z-index: 10000;
     @include mobile {
       ul {
         overflow-y: scroll;
