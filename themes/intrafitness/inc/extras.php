@@ -41,9 +41,9 @@ function add_to_nav($items, $args)
 		$testing = '<a class="trial" href="' . get_site_url() . '/?page_id=112" >Try 7-Day <span>Free Trial</span></a>';
 		$items = $testing . $items;
 		$items .= '<div class="social-media">'
-			. '<a href="https://www.facebook.com/intrafitness/"><i class="fab fa-facebook"></i></a>'
-			. '<a href="https://www.instagram.com/intrafitness/"><i class="fab fa-instagram"></i></a>'
-			. '<a href="https://twitter.com/search?q=Paul%20Wadsworth&src=typd"><i class="fab fa-twitter"></i></a>'
+			. '<a href="https://www.facebook.com/intrafitness/" target="_blank"><i class="fab fa-facebook"></i></a>'
+			. '<a href="https://www.instagram.com/intrafitness/" target="_blank"><i class="fab fa-instagram"></i></a>'
+			. '<a href="https://twitter.com/search?q=Paul%20Wadsworth&src=typd" target="_blank"><i class="fab fa-twitter"></i></a>'
 			. '</div>';
 	}
 
