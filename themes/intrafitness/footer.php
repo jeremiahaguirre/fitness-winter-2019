@@ -22,8 +22,10 @@
         <p>Privacy Policies</p>
         <p>Terms & Conditions</p>
         <p>Disclaimer</p>
-        <p>&copy; Copy Right 2019 Intra Fitness</p>
     </div>
+    <div class ="copyright-footer">
+    <p>&copy; Copy Right 2019 Intra Fitness</p>
+</div>
 </footer><!-- #colophon -->
 </div><!-- #page -->
 

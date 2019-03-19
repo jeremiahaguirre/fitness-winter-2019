@@ -873,6 +873,24 @@ object {
 .widget_search .search-submit {
   display: none; }
 
+.disclaimers {
+  margin-right: 1rem;
+  padding-top: 3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 18%; }
+  .disclaimers p {
+    border-right: 1px solid #fff;
+    line-height: 1;
+    padding: 0 1rem; }
+  .disclaimers p:last-child {
+    border: none; }
+
+.copyright-footer {
+  color: #c2d7e9;
+  margin-left: 30%; }
+
 .site-footer {
   background-color: #002150;
   font-family: "Trade Gothic LT Std Normal-bold", sans-serif;
@@ -893,12 +911,8 @@ object {
           text-decoration: none;
           color: #c2d7e9; } }
   .site-footer .disclaimers {
-    margin: 1rem 20rem;
     font-size: 0.75rem;
     color: #c2d7e9;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly; }
+    display: flex; }
