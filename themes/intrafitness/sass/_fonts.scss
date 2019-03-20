@@ -2,74 +2,74 @@
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-    font-family: 'Open Sans Normal-bold';
-    src: url('../../fonts/OpenSans-Bold.eot');
-    src: url('../../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/OpenSans-Bold.woff2') format('woff2'),
-        url('../../fonts/OpenSans-Bold.woff') format('woff'),
-        url('../../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
-
-@font-face {
-    font-family: 'Open Sans Normal';
-    src: url('../../fonts/OpenSans-Regular.eot');
-    src: url('../../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/OpenSans-Regular.woff2') format('woff2'),
-        url('../../fonts/OpenSans-Regular.woff') format('woff'),
-        url('../../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-@font-face {
-    font-family: 'Open Sans Italic';
-    src: url('../../fonts/OpenSans-Italic.eot');
-    src: url('../../fonts/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/OpenSans-Italic.woff2') format('woff2'),
-        url('../../fonts/OpenSans-Italic.woff') format('woff'),
-        url('../../fonts/OpenSans-Italic.svg#OpenSans-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
+  font-family: 'Open Sans Normal';
+  src: url('../../fonts/OpenSans-Bold.eot');
+  src: url('../../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('../../fonts/OpenSans-Bold.woff') format('woff'),
+    url('../../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Trade Gothic LT Std Normal-bold';
-    src: url('../../fonts/TradeGothicLTStd-Bd2.eot');
-    src: url('../../fonts/TradeGothicLTStd-Bd2.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/TradeGothicLTStd-Bd2.woff2') format('woff2'),
-        url('../../fonts/TradeGothicLTStd-Bd2.woff') format('woff'),
-        url('../../fonts/TradeGothicLTStd-Bd2.svg#TradeGothicLTStd-Bd2') format('svg');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Open Sans Normal';
+  src: url('../../fonts/OpenSans-Regular.eot');
+  src: url('../../fonts/OpenSans-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Trade Gothic LT Std Normal';
-    src: url('../../fonts/TradeGothicLTStd-Extended.eot');
-    src: url('../../fonts/TradeGothicLTStd-Extended.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/TradeGothicLTStd-Extended.woff2') format('woff2'),
-        url('../../fonts/TradeGothicLTStd-Extended.woff') format('woff'),
-        url('../../fonts/TradeGothicLTStd-Extended.svg#TradeGothicLTStd-Extended') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Open Sans Italic';
+  src: url('../../fonts/OpenSans-Italic.eot');
+  src: url('../../fonts/OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../../fonts/OpenSans-Italic.woff2') format('woff2'),
+    url('../../fonts/OpenSans-Italic.woff') format('woff'),
+    url('../../fonts/OpenSans-Italic.svg#OpenSans-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Trade Gothic LT Std Italic-bold';
-    src: url('../../fonts/TradeGothicLTStd-Bd2Obl.eot');
-    src: url('../../fonts/TradeGothicLTStd-Bd2Obl.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/TradeGothicLTStd-Bd2Obl.woff2') format('woff2'),
-        url('../../fonts/TradeGothicLTStd-Bd2Obl.woff') format('woff'),
-        url('../../fonts/TradeGothicLTStd-Bd2Obl.svg#TradeGothicLTStd-Bd2Obl') format('svg');
-    font-weight: bold;
-    font-style: italic;
+  font-family: 'Trade Gothic LT Std Normal-bold';
+  src: url('../../fonts/TradeGothicLTStd-Bd2.eot');
+  src: url('../../fonts/TradeGothicLTStd-Bd2.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/TradeGothicLTStd-Bd2.woff2') format('woff2'),
+    url('../../fonts/TradeGothicLTStd-Bd2.woff') format('woff'),
+    url('../../fonts/TradeGothicLTStd-Bd2.svg#TradeGothicLTStd-Bd2')
+      format('svg');
+  font-weight: bold;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'Trade Gothic LT Std Normal';
+  src: url('../../fonts/TradeGothicLTStd-Extended.eot');
+  src: url('../../fonts/TradeGothicLTStd-Extended.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/TradeGothicLTStd-Extended.woff2') format('woff2'),
+    url('../../fonts/TradeGothicLTStd-Extended.woff') format('woff'),
+    url('../../fonts/TradeGothicLTStd-Extended.svg#TradeGothicLTStd-Extended')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
-
+@font-face {
+  font-family: 'Trade Gothic LT Std Italic-bold';
+  src: url('../../fonts/TradeGothicLTStd-Bd2Obl.eot');
+  src: url('../../fonts/TradeGothicLTStd-Bd2Obl.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/TradeGothicLTStd-Bd2Obl.woff2') format('woff2'),
+    url('../../fonts/TradeGothicLTStd-Bd2Obl.woff') format('woff'),
+    url('../../fonts/TradeGothicLTStd-Bd2Obl.svg#TradeGothicLTStd-Bd2Obl')
+      format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
