@@ -26,12 +26,13 @@ get_header(); ?>
         <article>
             <?php the_title(); ?>
             <?php the_content(); ?>
-            <?php $url = CFS()->get('video');
-            if (!empty($url)) : ?>
-            <div class="video-testimonial">
-                <a href="<?php echo CFS()->get('video'); ?>" target="_blank">Watch Full Testimonial</a>
-            </div>
-            <?php endif; ?>
+            <?php  /*$url = CFS()->get('video');
+            *echo $url;
+            *if (!empty($url)) : ?>
+            // <div class="video-testimonial">
+                // <a href="<?php echo CFS()->get('video'); ?>" target="_blank">Watch Full Testimonial</a>
+                // </div>
+            <?php endif;*/ ?>
         </article>
         <?php endforeach;
     wp_reset_postdata(); ?>
