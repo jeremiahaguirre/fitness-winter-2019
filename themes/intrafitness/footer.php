@@ -17,15 +17,30 @@
         <nav id="site-navigation" class="footer-navigation" role="navigation">
             <?php wp_nav_menu(array('menu' => "footer-menu", 'menu_id' => 'footer-menu')); ?>
         </nav><!-- footer-navigation -->
+  
+
+        <div class="sign-up-wrapper">
+            <div class="social-media">
+                    <a href="https://www.facebook.com/intrafitness/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/intrafitness/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/search?q=Paul%20Wadsworth&src=typd" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <form class="sign-up-form">
+            <p>Sign up for the Newsletter </p>
+            <input type="email" name="your_email" id="your-email" value placeholder="Your Email">
+            <input type="submit" name="sign up" value="Sign Up" id="sign up">
+            </form> 
+        </div>
     </div><!-- .site-info -->
+
+
     <div class="disclaimers">
-        <p>Privacy Policies</p>
-        <p>Terms & Conditions</p>
-        <p>Disclaimer</p>
+        <a href="#">Privacy Policies</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Disclaimer</a>
+        <p>&copy; Copy Right 2019 Intra Fitness</p>
     </div>
-    <div class ="copyright-footer">
-    <p>&copy; Copy Right 2019 Intra Fitness</p>
-</div>
+
 </footer><!-- #colophon -->
 </div><!-- #page -->
 

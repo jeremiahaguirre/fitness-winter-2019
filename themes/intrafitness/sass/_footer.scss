@@ -1,52 +1,67 @@
 //Footer
 .disclaimers {
-  margin-right: 1rem;
-  padding-top: 3%;
   align-items: center;
-  margin-left: 18%;
-  p{
+  
+  a {
     border-right: 1px solid #fff;
     line-height: 1;
-    padding: 0 1rem;
   }
-  p:last-child {
+  a:last-child {
     border: none;
   }
 }
 .copyright-footer {
   color: $color__bg;
-  margin-left: 30%;
 }
-
-
 .site-footer {
   background-color: $color__db;
   font-family: $font__header;
   width: 100%;
-  max-height: 50vh;
-  height: 50vh;
+
   .site-info {
     display: none;
     font-size: 1.2rem;
-
-    @include desktop {
+  }
+  @include desktop {
+    .site-info {
       display: flex;
-      .footer-logo {
-        max-width: 15%;
+      text-align: center;
+      justify-content: space-between;
+      padding: 4rem;
+    }
+    ul{
+      text-align: left;
+    }
+p{
+  color: $color__bg;
+}
+.social-media {
+  margin-right: 77%;
+}
+.sign-up-wrapper {
+    p {
+      margin-right: 24%;
       }
-      nav {
-        a {
-          text-decoration: none;
-          color: $color__bg;
-        }
+}
+    nav {
+      a {
+        text-decoration: none;
+        color: $color__bg;
       }
     }
   }
-  .disclaimers {
-    // margin: $base__space-unit ($base__space-unit * 20);
-    font-size: 0.75rem;
-    color: $color__bg;
-    display: flex;
-    // justify-content: space-evenly;
+}
+.disclaimers {
+  margin: $base__space-unit ($base__space-unit * 20);
+  font-size: 0.75rem;
+  color: $color__bg;
+  text-align: center;
+  padding: 0.5rem;
+}
+#footer-menu{
+  display: flex;
+  flex-flow: row wrap;
+  li{
+    width: 50%;
   }
 }
