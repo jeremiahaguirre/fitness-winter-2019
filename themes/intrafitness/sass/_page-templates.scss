@@ -11,7 +11,6 @@
   background-repeat: no-repeat;
 }
 
-<<<<<<< HEAD
 .mindset-coaching {
   @include mobile {
     .top-quote {
@@ -193,10 +192,14 @@
         }
       }
     }
-=======
+  }
+}
 /* Form pages */
 
-.page-id-112 {
+.page-id-112,
+.page-id-115,
+.page-id-15,
+.page-id-22 {
   h1 {
     display: none;
   }
@@ -212,6 +215,5 @@
     margin: 5% 7%;
     box-shadow: 0 0 50px 0px $color__bg;
     padding: 1% 5%;
->>>>>>> 17884284a762c09e74ca9dfded2faeb6e90d98e8
   }
 }
