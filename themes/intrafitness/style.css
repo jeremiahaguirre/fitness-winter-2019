@@ -226,7 +226,7 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'Open Sans Normal-bold';
+  font-family: 'Open Sans Normal';
   src: url("../../fonts/OpenSans-Bold.eot");
   src: url("../../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/OpenSans-Bold.woff2") format("woff2"), url("../../fonts/OpenSans-Bold.woff") format("woff"), url("../../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
   font-weight: bold;
@@ -282,16 +282,30 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both;
   color: #002150;
   font-family: "Trade Gothic LT Std Normal-bold", sans-serif; }
+
+h2 {
+  font-size: 1.4rem; }
+  @media (min-width: 641px) {
+    h2 {
+      font-size: 2rem; } }
 
 /* Copy */
 p {
   margin-bottom: 1rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -311,16 +325,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -409,6 +428,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   width: 100%; }
+
+.container {
+  width: 80%; }
 
 blockquote,
 q {
@@ -503,8 +525,11 @@ input[type='password'],
 input[type='search'],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  border: 2px solid #c2d7e9;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  line-height: 2;
+  width: 100%; }
   input[type='text']:focus,
   input[type='email']:focus,
   input[type='url']:focus,
@@ -522,7 +547,31 @@ input[type='search'] {
 
 textarea {
   padding-left: 3px;
-  width: 100%; }
+  width: 100%;
+  height: 200px;
+  resize: none; }
+
+.your-first-name,
+.your-last-name {
+  display: grid; }
+  .your-first-name input,
+  .your-last-name input {
+    display: inline; }
+
+form label {
+  font-family: "Trade Gothic LT Std Normal-bold", sans-serif; }
+  form label .required {
+    color: #ed3800; }
+
+form .form-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  form .form-submit input {
+    font-size: 1rem; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -929,172 +978,6 @@ figure {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.ready-to-start {
-  background-image: url(../../images/web/home-page/ready_to_start.jpg);
-  width: 100%;
-  height: 50vh;
-  background-repeat: no-repeat; }
-
-@media (max-width: 641px) {
-  .mindset-coaching .top-quote {
-    background: url(../../images/web/life-coaching/paul_thinking.jpg) no-repeat;
-    height: 300px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 180px; }
-    .mindset-coaching .top-quote::before {
-      content: '';
-      position: absolute;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
-      background-image: linear-gradient(#ebf7fd, #ebf7fd);
-      -webkit-transform: skewY(-6deg);
-              transform: skewY(-6deg);
-      -webkit-transform-origin: top left;
-              transform-origin: top left;
-      width: 100%;
-      height: 390px;
-      z-index: -100; }
-    .mindset-coaching .top-quote p {
-      display: none;
-      margin: 0; }
-  .mindset-coaching .purpose {
-    width: 85%;
-    margin: 0 auto; }
-    .mindset-coaching .purpose h2 {
-      text-align: center;
-      font-size: 2.25rem; }
-      .mindset-coaching .purpose h2::after {
-        content: '';
-        width: 50%;
-        height: 5px;
-        background-color: #00a7ed;
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%); }
-    .mindset-coaching .purpose .has-3-columns {
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; }
-      .mindset-coaching .purpose .has-3-columns figure {
-        width: 150px;
-        height: 150px; }
-  .mindset-coaching .maybe-you .maybe-img {
-    background: url(../../images/web/life-coaching/maybe_you_image.jpg);
-    height: 370px;
-    background-position-x: right;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: auto; } }
-
-@media (min-width: 641px) {
-  .mindset-coaching .top-quote {
-    background: url(../../images/web/life-coaching/paul_thinking.jpg) no-repeat;
-    height: 940px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: auto;
-    margin-bottom: 180px; }
-    .mindset-coaching .top-quote::before {
-      content: '';
-      position: absolute;
-      top: 274px;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
-      background-image: linear-gradient(#ebf7fd, #ebf7fd);
-      -webkit-transform: skewY(-6deg);
-              transform: skewY(-6deg);
-      -webkit-transform-origin: top left;
-              transform-origin: top left;
-      width: 100%;
-      height: 890px;
-      z-index: -100; }
-    .mindset-coaching .top-quote p {
-      display: block;
-      text-align: center;
-      position: relative;
-      top: 170px;
-      left: 630px;
-      color: #fff;
-      background-color: #002150;
-      width: 46%;
-      height: 100%;
-      padding: 169px 70px;
-      font-size: 2.75rem;
-      margin: 0; }
-  .mindset-coaching .purpose {
-    width: 70%;
-    margin: 0 auto; }
-    .mindset-coaching .purpose h2 {
-      position: relative;
-      text-align: center;
-      font-size: 2.75rem; }
-      .mindset-coaching .purpose h2::after {
-        content: '';
-        width: 50%;
-        height: 5px;
-        background-color: #00a7ed;
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%); }
-    .mindset-coaching .purpose p {
-      font-size: 1.25rem; }
-  .mindset-coaching .maybe-you {
-    margin-top: 38px;
-    background: url(../../images/web/life-coaching/maybe_you_image.jpg);
-    height: 800px;
-    background-position-x: right;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: auto; }
-    .mindset-coaching .maybe-you::before {
-      content: '';
-      position: absolute;
-      top: 121.2em;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
-      background-image: linear-gradient(#ebf7fd, #ebf7fd);
-      -webkit-transform: skewY(4deg);
-              transform: skewY(4deg);
-      -webkit-transform-origin: top right;
-              transform-origin: top right;
-      width: 95%;
-      height: 900px;
-      z-index: -100; }
-    .mindset-coaching .maybe-you .inner-block {
-      position: relative;
-      background-color: #fff;
-      left: 0;
-      top: 10%;
-      width: 57%;
-      padding: 30px; }
-      .mindset-coaching .maybe-you .inner-block h2 {
-        position: relative;
-        text-align: left;
-        font-size: 2.75rem; }
-        .mindset-coaching .maybe-you .inner-block h2::after {
-          content: '';
-          width: 40%;
-          height: 5px;
-          bottom: 0;
-          background-color: #00a7ed;
-          position: absolute;
-          left: 20%;
-          -webkit-transform: translateX(-50%);
-                  transform: translateX(-50%); }
-      .mindset-coaching .maybe-you .inner-block ul li {
-        font-size: 1.25rem;
-        text-align: left;
-        line-height: 2.9rem;
-        list-style: none; }
-      .mindset-coaching .maybe-you .inner-block ul li::before {
-        content: '\2022';
-        color: #00a7ed;
-        font-weight: bold;
-        font-size: 1.75rem;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em; } }
-
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
