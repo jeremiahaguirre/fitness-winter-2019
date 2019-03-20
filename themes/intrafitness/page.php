@@ -28,7 +28,9 @@ get_header(); ?>
             <?php the_content(); ?>
             <?php $url = CFS()->get('video');
             if (!empty($url)) : ?>
-            <a class="video-testimonial" href="<?php echo CFS()->get('video'); ?>" target="_blank">Watch Full Testimonial</a>
+            <div class="video-testimonial">
+                <a href="<?php echo CFS()->get('video'); ?>" target="_blank">Watch Full Testimonial</a>
+            </div>
             <?php endif; ?>
         </article>
         <?php endforeach;
