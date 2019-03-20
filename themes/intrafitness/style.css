@@ -1002,6 +1002,36 @@ figure {
           box-shadow: 0 0 50px 0px #c2d7e9;
   padding: 1% 5%; }
 
+/* Form pages */
+.page-id-112 h1,
+.page-id-115 h1,
+.page-id-15 h1,
+.page-id-22 h1 {
+  display: none; }
+
+.page-id-112 h2,
+.page-id-115 h2,
+.page-id-15 h2,
+.page-id-22 h2 {
+  margin-bottom: 0; }
+
+.page-id-112 hr,
+.page-id-115 hr,
+.page-id-15 hr,
+.page-id-22 hr {
+  margin: 0 25%;
+  background-color: #00a7ed;
+  height: 3px; }
+
+.page-id-112 .entry-content,
+.page-id-115 .entry-content,
+.page-id-15 .entry-content,
+.page-id-22 .entry-content {
+  margin: 5% 7%;
+  -webkit-box-shadow: 0 0 50px 0px #c2d7e9;
+          box-shadow: 0 0 50px 0px #c2d7e9;
+  padding: 1% 5%; }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
