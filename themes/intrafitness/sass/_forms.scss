@@ -39,9 +39,11 @@ input[type='password'],
 input[type='search'],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-
+  border: 2px solid $color__bg;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  line-height: 2;
+  width: 100%;
   &:focus {
     color: #111;
   }
@@ -58,4 +60,30 @@ input[type='search'] {
 textarea {
   padding-left: 3px;
   width: 100%;
+  height: 200px;
+  resize: none;
+}
+
+.your-first-name,
+.your-last-name {
+  display: grid;
+  input {
+    display: inline;
+  }
+}
+
+form {
+  label {
+    font-family: $font__header;
+    .required {
+      color: $color__esr;
+    }
+  }
+  .form-submit {
+    display: flex;
+    justify-content: center;
+    input {
+      font-size: 1rem;
+    }
+  }
 }
