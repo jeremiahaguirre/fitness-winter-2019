@@ -12,32 +12,34 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
     <div class="blog-carousel"> 
     
-<?php
-    $post_carousel_args = array(
-    'numberposts' => 10,
-    'post_type'   => 'post'
-    );
+        <?php
+            $post_carousel_args = array(
+            'numberposts' => 6,
+            'post_type'   => 'post'
+            );
     
     $post_carousel = get_posts( $post_carousel_args );
 
-    foreach($post_carousel as $carousel_item): ?>
-<div class="blog-carousel-cell">
-
-<?php
+    foreach($post_carousel as $carousel_item): 
+    ?>
+        <div class="blog-carousel-cell">
+        <h2 class="recent-blog-title">
+            <?php
+            echo $carousel_item->post_title
+            ?>
+        </h2>
+    <?php
         // var_dump($carousel_item);
         $image = wp_get_attachment_image_src(get_post_thumbnail_id($carousel_item->ID),'full');
-    
-
+        
     ?>
     <img src="<?php echo $image[0]; ?>">
-    </div>
-    <?php endforeach;
+</div>
 
+<?php endforeach;
 ?>
 
 </div>
-
-
 
         <?php while (have_posts()) : the_post(); ?>
 
@@ -48,4 +50,6 @@ get_header(); ?>
     </main><!-- #main -->
 </div><!-- #primary -->
 
+
+<?php get_sidebar(); ?>
 <?php get_footer(); ?> 
