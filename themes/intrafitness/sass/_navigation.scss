@@ -24,6 +24,18 @@ a {
   }
 }
 
+.video-testimonial a {
+  color: $color__lb;
+  text-decoration: none;
+  border-color: $color__lb;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: $base__space-unit * 0.4;
+  font-family: $font__header;
+  font-size: 0.75rem;
+  padding: $base__space-unit * 0.6;
+}
+
 /* Menus */
 
 .main-navigation {
