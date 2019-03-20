@@ -20,7 +20,7 @@
   width: 100%;
 
   .site-info {
-    // display: none;
+    display: none;
     font-size: 1.2rem;
   }
   @include desktop {
@@ -87,13 +87,13 @@ p{
     padding: 9px;
     border-top-left-radius: 5px;
     border-bottom-left-radius:5px;
+    color:red;
   }
   #sign-up-footer{
     background-color: $color__bg;
     color: $color__db;
     margin: 0px;
     margin-left: -15px;
-  
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
     border-top-right-radius: 5px;
