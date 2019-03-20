@@ -5,6 +5,7 @@
   a {
     border-right: 1px solid #fff;
     line-height: 1;
+    padding-right: 1rem;
   }
   a:last-child {
     border: none;
@@ -19,7 +20,7 @@
   width: 100%;
 
   .site-info {
-    display: none;
+    // display: none;
     font-size: 1.2rem;
   }
   @include desktop {
@@ -28,6 +29,8 @@
       text-align: center;
       justify-content: space-between;
       padding: 4rem;
+      padding-bottom: 1rem;
+      opacity: 0.5;
     }
     ul{
       text-align: left;
@@ -36,17 +39,21 @@ p{
   color: $color__bg;
 }
 .social-media {
-  margin-right: 77%;
+  margin-right: 66%;
+  display: flex;
+  justify-content: space-between;
+  margin-inline-end: 45%
 }
 .sign-up-wrapper {
     p {
-      margin-right: 24%;
+    text-align: left;
       }
 }
     nav {
       a {
         text-decoration: none;
         color: $color__bg;
+        
       }
     }
   }
@@ -57,11 +64,40 @@ p{
   color: $color__bg;
   text-align: center;
   padding: 0.5rem;
+  opacity: 0.5;
+  a {
+    margin: 0 1rem 0 0;
+  }
+ 
 }
 #footer-menu{
   display: flex;
   flex-flow: row wrap;
   li{
     width: 50%;
+  }
+}
+.search-set{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  #your-email-footer{
+    border: 1px solid $color__bg; 
+    background: $color__db;
+    padding: 9px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+  }
+  #sign-up-footer{
+    background-color: $color__bg;
+    color: $color__db;
+    margin: 0px;
+    margin-left: -15px;
+  
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
   }
 }
