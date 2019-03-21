@@ -86,4 +86,17 @@ form {
       font-size: 1rem;
     }
   }
+  @include desktop {
+    .name-surname {
+      display: grid;
+      grid-template-columns: 48% 48%;
+      grid-gap: 4%;
+      .name {
+        grid-column: 1 / span 1;
+      }
+    }
+    label {
+      font-size: 1.4rem;
+    }
+  }
 }
