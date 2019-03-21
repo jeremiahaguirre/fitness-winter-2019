@@ -1,0 +1,102 @@
+@include mobile {
+  .paul-sitting {
+    background-image: url(../../images/web/about/paul_sitting@3x.jpg);
+    height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 180px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 320px;
+      background-image: linear-gradient($color__llb, $color__llb);
+      transform: skewY(-6deg);
+      transform-origin: top left;
+      width: 100%;
+      height: 150px;
+      z-index: -100;
+    }
+}
+
+    h2 {
+      text-align: center;
+      font-size: 2.25rem;
+    }
+  }
+  .personal-trainer-life-coach{
+    .wp-block-quote {
+        display: block;
+        background-color: $color__db;
+        text-align: center;
+        position: relative;
+        // top: 170px;
+        // left: 630px;
+        color: $color__w;
+        // width: 46%;
+        // height: 100%;
+        //padding: 169px 70px;
+        //font-size: 2.75rem;
+        // margin: 0;
+      }
+  }
+  
+  .young-picture {
+    background-image: url(../../images/web/about/paul_young@3x.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 180px;
+  }
+
+
+
+  .my-story{
+      h2{
+            position: relative;
+            text-align: center;
+            font-size: 2.75rem;
+            &::after {
+              content: '';
+              width: 50%;
+              height: 5px;
+              background-color: $color__lb;
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+      }
+
+      .wp-block-quote {
+        display: block;
+        background-color: $color__db;
+        text-align: center;
+        position: relative;
+        // top: 170px;
+        // left: 630px;
+        color: $color__w;
+        // width: 46%;
+        // height: 100%;
+        //padding: 169px 70px;
+        //font-size: 2.75rem;
+        // margin: 0;
+      }
+      .p-standing-beside-punching-bag{
+        background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
+        height: 300px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // margin-bottom: 180px;
+    
+    }
+  
+
+  }
+
+
+
+@include desktop {
+}
