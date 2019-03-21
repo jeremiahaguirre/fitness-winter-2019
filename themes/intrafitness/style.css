@@ -1299,3 +1299,15 @@ figure {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border: none; }
+
+.blog-carousel {
+  width: 1050px; }
+
+.blog-carousel-cell {
+  width: 350px;
+  padding: 12.5px;
+  border: 1px solid blue;
+  max-height: 400px; }
+  .blog-carousel-cell img {
+    height: 200px;
+    width: 350px; }

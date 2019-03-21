@@ -118,3 +118,9 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+function new_excerpt_more($more) {
+	global $post;
+	return '… <a href="'. get_permalink($post->ID) . '">' . 'Read More ...' . '</a>';
+	}
+	add_filter('excerpt_more', 'new_excerpt_more');
