@@ -984,23 +984,165 @@ figure {
   height: 50vh;
   background-repeat: no-repeat; }
 
-/* Form pages */
-.page-id-112 h1 {
-  display: none; }
+@media (max-width: 641px) {
+  .mindset-coaching .top-quote {
+    background: url(../../images/web/life-coaching/paul_thinking.jpg) no-repeat;
+    height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 180px; }
+    .mindset-coaching .top-quote::before {
+      content: '';
+      position: absolute;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
+      background-image: linear-gradient(#ebf7fd, #ebf7fd);
+      -webkit-transform: skewY(-6deg);
+              transform: skewY(-6deg);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+      width: 100%;
+      height: 390px;
+      z-index: -100; }
+    .mindset-coaching .top-quote p {
+      display: none;
+      margin: 0; }
+  .mindset-coaching .purpose {
+    width: 85%;
+    margin: 0 auto; }
+    .mindset-coaching .purpose h2 {
+      text-align: center;
+      font-size: 2.25rem; }
+      .mindset-coaching .purpose h2::after {
+        content: '';
+        width: 50%;
+        height: 5px;
+        background-color: #00a7ed;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+    .mindset-coaching .purpose .has-3-columns {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+      .mindset-coaching .purpose .has-3-columns figure {
+        width: 150px;
+        height: 150px; }
+  .mindset-coaching .maybe-you .maybe-img {
+    background: url(../../images/web/life-coaching/maybe_you_image.jpg);
+    height: 370px;
+    background-position-x: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto; } }
 
-.page-id-112 h2 {
-  margin-bottom: 0; }
-
-.page-id-112 hr {
-  margin: 0 25%;
-  background-color: #00a7ed;
-  height: 3px; }
-
-.page-id-112 .entry-content {
-  margin: 5% 7%;
-  -webkit-box-shadow: 0 0 50px 0px #c2d7e9;
-          box-shadow: 0 0 50px 0px #c2d7e9;
-  padding: 1% 5%; }
+@media (min-width: 641px) {
+  .mindset-coaching .top-quote {
+    background: url(../../images/web/life-coaching/paul_thinking.jpg) no-repeat;
+    height: 940px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 180px; }
+    .mindset-coaching .top-quote::before {
+      content: '';
+      position: absolute;
+      top: 274px;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
+      background-image: linear-gradient(#ebf7fd, #ebf7fd);
+      -webkit-transform: skewY(-6deg);
+              transform: skewY(-6deg);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+      width: 100%;
+      height: 890px;
+      z-index: -100; }
+    .mindset-coaching .top-quote p {
+      display: block;
+      text-align: center;
+      position: relative;
+      top: 170px;
+      left: 630px;
+      color: #fff;
+      background-color: #002150;
+      width: 46%;
+      height: 100%;
+      padding: 169px 70px;
+      font-size: 2.75rem;
+      margin: 0; }
+  .mindset-coaching .purpose {
+    width: 70%;
+    margin: 0 auto; }
+    .mindset-coaching .purpose h2 {
+      position: relative;
+      text-align: center;
+      font-size: 2.75rem; }
+      .mindset-coaching .purpose h2::after {
+        content: '';
+        width: 50%;
+        height: 5px;
+        background-color: #00a7ed;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+    .mindset-coaching .purpose p {
+      font-size: 1.25rem; }
+  .mindset-coaching .maybe-you {
+    margin-top: 38px;
+    background: url(../../images/web/life-coaching/maybe_you_image.jpg);
+    height: 800px;
+    background-position-x: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto; }
+    .mindset-coaching .maybe-you::before {
+      content: '';
+      position: absolute;
+      top: 121.2em;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
+      background-image: linear-gradient(#ebf7fd, #ebf7fd);
+      -webkit-transform: skewY(4deg);
+              transform: skewY(4deg);
+      -webkit-transform-origin: top right;
+              transform-origin: top right;
+      width: 95%;
+      height: 900px;
+      z-index: -100; }
+    .mindset-coaching .maybe-you .inner-block {
+      position: relative;
+      background-color: #fff;
+      left: 0;
+      top: 10%;
+      width: 57%;
+      padding: 30px; }
+      .mindset-coaching .maybe-you .inner-block h2 {
+        position: relative;
+        text-align: left;
+        font-size: 2.75rem; }
+        .mindset-coaching .maybe-you .inner-block h2::after {
+          content: '';
+          width: 40%;
+          height: 5px;
+          bottom: 0;
+          background-color: #00a7ed;
+          position: absolute;
+          left: 20%;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); }
+      .mindset-coaching .maybe-you .inner-block ul li {
+        font-size: 1.25rem;
+        text-align: left;
+        line-height: 2.9rem;
+        list-style: none; }
+      .mindset-coaching .maybe-you .inner-block ul li::before {
+        content: '\2022';
+        color: #00a7ed;
+        font-weight: bold;
+        font-size: 1.75rem;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em; } }
 
 /* Form pages */
 .page-id-112 h1,
@@ -1045,17 +1187,6 @@ figure {
 .widget_search .search-submit {
   display: none; }
 
-.disclaimers {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .disclaimers a {
-    border-right: 1px solid #fff;
-    line-height: 1;
-    padding-right: 1rem; }
-  .disclaimers a:last-child {
-    border: none; }
-
 .copyright-footer {
   color: #c2d7e9; }
 
@@ -1099,14 +1230,35 @@ figure {
       color: #c2d7e9; } }
 
 .disclaimers {
-  margin: 1rem 20rem;
+  margin: 1rem auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 0.75rem;
   color: #c2d7e9;
   text-align: center;
   padding: 0.5rem;
-  opacity: 0.5; }
+  opacity: 0.5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .disclaimers a {
-    margin: 0 1rem 0 0; }
+    width: 33%;
+    border-right: 1px solid #fff;
+    line-height: 1;
+    padding-right: 1rem;
+    text-decoration: none; }
+  .disclaimers a:nth-of-type(3) {
+    border: none; }
+  .disclaimers p {
+    width: 100%; }
+
+@media (min-width: 641px) {
+  .disclaimers {
+    width: 50%; } }
 
 #footer-menu {
   display: -webkit-box;
@@ -1133,9 +1285,9 @@ figure {
   .search-set #your-email-footer {
     border: 1px solid #c2d7e9;
     background: #002150;
-    padding: 9px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    padding: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     color: red; }
   .search-set #sign-up-footer {
     background-color: #c2d7e9;
@@ -1144,6 +1296,6 @@ figure {
     margin-left: -15px;
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     border: none; }
