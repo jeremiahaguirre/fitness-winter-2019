@@ -284,6 +284,7 @@ textarea {
 /* Headings */
 h1,
 h2,
+h3,
 h4,
 h5,
 h6 {
@@ -292,10 +293,10 @@ h6 {
   font-family: "Trade Gothic LT Std Normal-bold", sans-serif; }
 
 h2 {
-  font-size: 1.4rem; }
+  font-size: 1.6rem; }
   @media (min-width: 641px) {
     h2 {
-      font-size: 2rem; } }
+      font-size: 2.4rem; } }
 
 /* Copy */
 p {
@@ -571,6 +572,16 @@ form .form-submit {
           justify-content: center; }
   form .form-submit input {
     font-size: 1rem; }
+
+@media (min-width: 641px) {
+  form .name-surname {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 4%; }
+    form .name-surname .name {
+      grid-column: 1 / span 1; }
+  form label {
+    font-size: 1.4rem; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -1146,32 +1157,146 @@ figure {
 /* Form pages */
 .page-id-112 h1,
 .page-id-115 h1,
-.page-id-15 h1,
-.page-id-22 h1 {
+.page-id-15 h1 {
   display: none; }
 
 .page-id-112 h2,
 .page-id-115 h2,
-.page-id-15 h2,
-.page-id-22 h2 {
+.page-id-15 h2 {
   margin-bottom: 0; }
+  @media (min-width: 641px) {
+    .page-id-112 h2,
+    .page-id-115 h2,
+    .page-id-15 h2 {
+      font-size: 2.4rem; } }
 
 .page-id-112 hr,
 .page-id-115 hr,
-.page-id-15 hr,
+.page-id-15 hr {
+  margin: 0 25%;
+  background-color: #00a7ed;
+  height: 3px; }
+  @media (min-width: 641px) {
+    .page-id-112 hr,
+    .page-id-115 hr,
+    .page-id-15 hr {
+      margin: 0 70% 0 0; } }
+
+.page-id-112 .entry-content,
+.page-id-115 .entry-content,
+.page-id-15 .entry-content {
+  margin: 5% 7%;
+  -webkit-box-shadow: 0 0 50px 0px #c2d7e9;
+          box-shadow: 0 0 50px 0px #c2d7e9;
+  padding: 1% 5%; }
+
+@media (min-width: 641px) {
+  .page-id-112 .wpcf7,
+  .page-id-115 .wpcf7,
+  .page-id-15 .wpcf7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 10%; }
+  .page-id-112 form,
+  .page-id-115 form,
+  .page-id-15 form {
+    max-width: 800px; } }
+
+@media (max-width: 641px) {
+  .page-id-22 .top-quote {
+    background: url(../../images/web/life-coaching/paul_thinking.jpg) no-repeat;
+    height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 180px; }
+    .page-id-22 .top-quote::before {
+      content: '';
+      position: absolute;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
+      background-image: linear-gradient(#ebf7fd, #ebf7fd);
+      -webkit-transform: skewY(-6deg);
+              transform: skewY(-6deg);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+      width: 100%;
+      height: 390px;
+      z-index: -100; }
+    .page-id-22 .top-quote p {
+      display: none;
+      margin: 0; }
+  .page-id-22 .purpose {
+    width: 85%;
+    margin: 0 auto; }
+    .page-id-22 .purpose h2 {
+      text-align: center;
+      font-size: 2.25rem; }
+      .page-id-22 .purpose h2::after {
+        content: '';
+        width: 50%;
+        height: 5px;
+        background-color: #00a7ed;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+    .page-id-22 .purpose .has-3-columns {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+      .page-id-22 .purpose .has-3-columns figure {
+        width: 150px;
+        height: 150px; }
+  .page-id-22 .maybe-you .maybe-img {
+    background: url(../../images/web/life-coaching/maybe_you_image.jpg);
+    height: 370px;
+    background-position-x: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto; } }
+
+.page-id-22 h1 {
+  display: none; }
+
+.page-id-22 h2 {
+  margin-bottom: 0;
+  text-align: center; }
+  @media (min-width: 641px) {
+    .page-id-22 h2 {
+      font-size: 2.4rem; } }
+
 .page-id-22 hr {
   margin: 0 25%;
   background-color: #00a7ed;
   height: 3px; }
+  @media (min-width: 641px) {
+    .page-id-22 hr {
+      margin: 0 30%; } }
 
-.page-id-112 .entry-content,
-.page-id-115 .entry-content,
-.page-id-15 .entry-content,
 .page-id-22 .entry-content {
   margin: 5% 7%;
   -webkit-box-shadow: 0 0 50px 0px #c2d7e9;
           box-shadow: 0 0 50px 0px #c2d7e9;
   padding: 1% 5%; }
+  @media (min-width: 641px) {
+    .page-id-22 .entry-content {
+      margin: 5% 16%; } }
+
+@media (min-width: 641px) {
+  .page-id-22 .wpcf7 {
+    margin: 0 5%; } }
+
+.page-id-22 .address {
+  text-align: center;
+  margin: 1rem 0; }
+  .page-id-22 .address p {
+    margin: 0.3rem; }
+
+.page-id-22 iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0; }
 
 @media (max-width: 641px) {
   .paul-sitting {
@@ -1179,8 +1304,7 @@ figure {
     height: 300px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 180px; }
+    background-size: cover; }
     .paul-sitting::before {
       content: '';
       position: absolute;
@@ -1203,6 +1327,8 @@ figure {
   background-color: #002150;
   text-align: center;
   position: relative;
+  margin: 0;
+  padding: 1rem;
   color: #fff; }
 
 .young-picture {
@@ -1210,8 +1336,7 @@ figure {
   height: 500px;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 180px; }
+  background-size: cover; }
 
 .my-story h2 {
   position: relative;
@@ -1225,21 +1350,27 @@ figure {
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
+            transform: translateX(-50%);
+    bottom: 0; }
 
 .my-story .wp-block-quote {
   display: block;
   background-color: #002150;
   text-align: center;
   position: relative;
+  margin: 0;
+  padding: 1rem;
   color: #fff; }
 
-.my-story .p-standing-beside-punching-bag {
+.my-story .story-img {
   background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
   height: 300px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
+
+h3 {
+  color: #00a7ed; }
 
 /*--------------------------------------------------------------
 # Widgets
