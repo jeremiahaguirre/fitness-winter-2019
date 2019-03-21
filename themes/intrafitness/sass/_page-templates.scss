@@ -257,44 +257,12 @@
         margin: 0;
       }
     }
-    .purpose {
-      width: 85%;
-      margin: 0 auto;
-
-      h2 {
-        text-align: center;
-        font-size: 2.25rem;
-        &::after {
-          content: '';
-          width: 50%;
-          height: 5px;
-          background-color: $color__lb;
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-      }
-      .has-3-columns {
-        flex-wrap: nowrap;
-        figure {
-          width: 150px;
-          height: 150px;
-        }
-      }
-    }
-    .maybe-you {
-      .maybe-img {
-        background: url(../../images/web/life-coaching/maybe_you_image.jpg);
-        height: 370px;
-        background-position-x: right;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: auto;
-      }
-      .inner-block {
-        // position: relative;
-        // top: 370px;
-      }
+    .featured-image {
+      height: 400px;
+      background-position-x: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
   h1 {
@@ -326,6 +294,13 @@
   @include desktop {
     .wpcf7 {
       margin: 0 5%;
+    }
+    .featured-image {
+      height: 400px;
+      background-position-x: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
   .address {
