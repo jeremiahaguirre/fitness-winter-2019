@@ -1,16 +1,4 @@
 //Footer
-.disclaimers {
-  align-items: center;
-  
-  a {
-    border-right: 1px solid #fff;
-    line-height: 1;
-    padding-right: 1rem;
-  }
-  a:last-child {
-    border: none;
-  }
-}
 .copyright-footer {
   color: $color__bg;
 }
@@ -20,7 +8,7 @@
   width: 100%;
 
   .site-info {
-    // display: none;
+    display: none;
     font-size: 1.2rem;
   }
   @include desktop {
@@ -59,16 +47,35 @@ p{
   }
 }
 .disclaimers {
-  margin: $base__space-unit ($base__space-unit * 20);
+  margin: $base__space-unit auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 0.75rem;
   color: $color__bg;
   text-align: center;
   padding: 0.5rem;
   opacity: 0.5;
+  align-items: center;
   a {
-    margin: 0 1rem 0 0;
+    width:33%;
+    border-right: 1px solid #fff;
+    line-height: 1;
+    padding-right: 1rem;
+    text-decoration: none;
   }
- 
+  a:nth-of-type(3) {
+    border: none;
+  }
+
+  p{
+    width: 100%;
+  }
+}
+@include desktop{
+  .disclaimers{
+    width: 50%;
+  }
 }
 #footer-menu{
   display: flex;
@@ -84,20 +91,20 @@ p{
   #your-email-footer{
     border: 1px solid $color__bg; 
     background: $color__db;
-    padding: 9px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius:5px;
+    padding: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    color:red;
   }
   #sign-up-footer{
     background-color: $color__bg;
     color: $color__db;
     margin: 0px;
     margin-left: -15px;
-  
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     border: none;
   }
 }
