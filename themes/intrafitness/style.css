@@ -1372,6 +1372,41 @@ figure {
 h3 {
   color: #00a7ed; }
 
+@media (min-width: 641px) {
+  .paul-sitting {
+    background-image: url(../../images/web/about/paul_sitting@3x.jpg);
+    height: 940px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 180px; }
+    .paul-sitting::before {
+      content: '';
+      position: absolute;
+      top: 274px;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
+      background-image: linear-gradient(#ebf7fd, #ebf7fd);
+      -webkit-transform: skewY(-6deg);
+              transform: skewY(-6deg);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+      width: 100%;
+      height: 890px;
+      z-index: -100; }
+    .paul-sitting p {
+      display: block;
+      text-align: center;
+      position: relative;
+      top: 170px;
+      left: 630px;
+      color: #fff;
+      background-color: #002150;
+      width: 46%;
+      height: 100%;
+      padding: 169px 70px;
+      font-size: 2.75rem;
+      margin: 0; } }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/

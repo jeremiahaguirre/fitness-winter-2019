@@ -5,7 +5,6 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    // margin-bottom: 180px;
 
     &::before {
       content: '';
@@ -17,7 +16,7 @@
       width: 100%;
       height: 150px;
       z-index: -100;
-    }
+   }
 }
 
     h2 {
@@ -33,15 +32,8 @@
         position: relative;
         margin: 0;
         padding: 1rem;
-        // top: 170px;
-        // left: 630px;
         color: $color__w;
-        // width: 46%;
-        // height: 100%;
-        //padding: 169px 70px;
-        //font-size: 2.75rem;
-        // margin: 0;
-      }
+    }
   }
   
   .young-picture {
@@ -50,10 +42,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    // margin-bottom: 180px;
   }
-
-
 
   .my-story{
       h2{
@@ -69,9 +58,8 @@
               left: 50%;
               transform: translateX(-50%);
               bottom: 0;
-            }
+        }
       }
-
       .wp-block-quote {
         display: block;
         background-color: $color__db;
@@ -79,14 +67,7 @@
         position: relative;
         margin: 0;
         padding: 1rem;
-        // top: 170px;
-        // left: 630px;
         color: $color__w;
-        // width: 46%;
-        // height: 100%;
-        //padding: 169px 70px;
-        //font-size: 2.75rem;
-        // margin: 0;
       }
       .story-img{
         background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
@@ -94,16 +75,47 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
-        // margin-bottom: 180px;
-    
     }
-
   }
   h3{
     color: $color__lb;
 }
 
-
-
 @include desktop {
+
+  .paul-sitting {
+    background-image: url(../../images/web/about/paul_sitting@3x.jpg) ;
+    height: 940px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 180px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 274px;
+        background-image: linear-gradient($color__llb, $color__llb);
+        transform: skewY(-6deg);
+        transform-origin: top left;
+        width: 100%;
+        height: 890px;
+        z-index: -100;
+      }
+      p {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 170px;
+        left: 630px;
+        color: $color__w;
+        background-color: $color__db;
+        width: 46%;
+        height: 100%;
+        padding: 169px 70px;
+        font-size: 2.75rem;
+        margin: 0;
+      }
+    }
+    
+
 }
