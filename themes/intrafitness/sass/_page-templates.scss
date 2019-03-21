@@ -71,9 +71,47 @@
         background-size: auto;
       }
       .inner-block {
-        // position: relative;
-        // top: 370px;
+        h2 {
+          position: relative;
+          text-align: center;
+
+          &::after {
+            content: '';
+            width: 30%;
+            height: 5px;
+            bottom: 0;
+            background-color: #00a7ed;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+        ul li {
+          width: 90%;
+          margin: auto;
+          text-align: left;
+          line-height: 2.9rem;
+          list-style: none;
+
+          &::before {
+            content: '\2022';
+            color: $color__lb;
+            font-weight: bold;
+            font-size: 1.25rem;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+        }
       }
+    }
+    .call-me {
+      border-top: 4px solid $color__lb;
+      border-bottom: 4px solid $color__lb;
+      margin: 30px auto;
+      text-align: center;
+      padding: 0 30px;
     }
   }
   @include desktop {
@@ -143,7 +181,7 @@
       &::before {
         content: '';
         position: absolute;
-        top: 121.2em;
+        top: 121.4em;
         background-image: linear-gradient($color__llb, $color__llb);
         transform: skewY(4deg);
         transform-origin: top right;
@@ -152,6 +190,7 @@
         z-index: -100;
       }
       .inner-block {
+        box-shadow: 0px 0px 89px 13px rgba(92, 88, 88, 0.2);
         position: relative;
         background-color: $color__w;
         left: 0;
@@ -190,6 +229,67 @@
           width: 1em;
           margin-left: -1em;
         }
+      }
+    }
+    .call-me {
+      width: 80%;
+      border-top: 4px solid $color__lb;
+      border-bottom: 4px solid $color__lb;
+      margin: 30px auto;
+      margin-top: 170px;
+      text-align: center;
+      padding: 80px 20px;
+      h2 {
+        font-size: 2.75rem;
+      }
+      p {
+        padding: 0px 270px;
+        font-size: 1.25rem;
+      }
+      a {
+        font-size: 1.55rem;
+        padding: 18px 42px;
+      }
+    }
+  }
+}
+@include mobile {
+  .testimonials {
+    height: 300px;
+    width: 90%;
+    margin: 10px auto;
+    position: relative;
+    h1 {
+      text-align: center;
+      &::after {
+        content: '';
+        width: 70%;
+        height: 5px;
+        top: 50px;
+        background-color: #00a7ed;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    article {
+      position: relative;
+      width: 70%;
+      margin: 0 auto;
+
+      h2 {
+        &::after {
+          content: '';
+          width: 40%;
+          height: 5px;
+          top: 50px;
+          background-color: #00a7ed;
+          position: absolute;
+          left: 20%;
+          transform: translateX(-50%);
+        }
+      }
+      p {
       }
     }
   }

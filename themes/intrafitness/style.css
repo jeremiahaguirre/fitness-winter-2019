@@ -1044,7 +1044,40 @@ figure {
     background-position-x: right;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: auto; } }
+    background-size: auto; }
+  .mindset-coaching .maybe-you .inner-block h2 {
+    position: relative;
+    text-align: center; }
+    .mindset-coaching .maybe-you .inner-block h2::after {
+      content: '';
+      width: 30%;
+      height: 5px;
+      bottom: 0;
+      background-color: #00a7ed;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .mindset-coaching .maybe-you .inner-block ul li {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    line-height: 2.9rem;
+    list-style: none; }
+    .mindset-coaching .maybe-you .inner-block ul li::before {
+      content: '\2022';
+      color: #00a7ed;
+      font-weight: bold;
+      font-size: 1.25rem;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em; }
+  .mindset-coaching .call-me {
+    border-top: 4px solid #00a7ed;
+    border-bottom: 4px solid #00a7ed;
+    margin: 30px auto;
+    text-align: center;
+    padding: 0 30px; } }
 
 @media (min-width: 641px) {
   .mindset-coaching .top-quote {
@@ -1109,7 +1142,7 @@ figure {
     .mindset-coaching .maybe-you::before {
       content: '';
       position: absolute;
-      top: 121.2em;
+      top: 121.4em;
       background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
       background-image: linear-gradient(#ebf7fd, #ebf7fd);
       -webkit-transform: skewY(4deg);
@@ -1120,6 +1153,8 @@ figure {
       height: 900px;
       z-index: -100; }
     .mindset-coaching .maybe-you .inner-block {
+      -webkit-box-shadow: 0px 0px 89px 13px rgba(92, 88, 88, 0.2);
+              box-shadow: 0px 0px 89px 13px rgba(92, 88, 88, 0.2);
       position: relative;
       background-color: #fff;
       left: 0;
@@ -1152,7 +1187,56 @@ figure {
         font-size: 1.75rem;
         display: inline-block;
         width: 1em;
-        margin-left: -1em; } }
+        margin-left: -1em; }
+  .mindset-coaching .call-me {
+    width: 80%;
+    border-top: 4px solid #00a7ed;
+    border-bottom: 4px solid #00a7ed;
+    margin: 30px auto;
+    margin-top: 170px;
+    text-align: center;
+    padding: 80px 20px; }
+    .mindset-coaching .call-me h2 {
+      font-size: 2.75rem; }
+    .mindset-coaching .call-me p {
+      padding: 0px 270px;
+      font-size: 1.25rem; }
+    .mindset-coaching .call-me a {
+      font-size: 1.55rem;
+      padding: 18px 42px; } }
+
+@media (max-width: 641px) {
+  .testimonials {
+    height: 300px;
+    width: 90%;
+    margin: 10px auto;
+    position: relative; }
+    .testimonials h1 {
+      text-align: center; }
+      .testimonials h1::after {
+        content: '';
+        width: 70%;
+        height: 5px;
+        top: 50px;
+        background-color: #00a7ed;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+    .testimonials article {
+      position: relative;
+      width: 70%;
+      margin: 0 auto; }
+      .testimonials article h2::after {
+        content: '';
+        width: 40%;
+        height: 5px;
+        top: 50px;
+        background-color: #00a7ed;
+        position: absolute;
+        left: 20%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); } }
 
 /* Form pages */
 .page-id-112 h1,
