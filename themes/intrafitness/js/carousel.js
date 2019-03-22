@@ -1,26 +1,15 @@
 (function($) {
   $(function() {
     $('.blog-carousel').flickity({
-<<<<<<< HEAD
-        // options
-        cellAlign: 'left',
-        contain: true,
-        percentPosition: false,
-      });
-      // setGallerySize: false,
-});
-
-})(jQuery);
-=======
       // options
       cellAlign: 'left',
       contain: true
     });
-    //testimonial carosel
+    //testimonial carousel
     let flickityEnabled = false;
-    function testimonyCarosel() {
+    function testimonialsCarousel() {
       if ($(window).width() < 640) {
-        $('#tesitmonial-carosel').flickity({
+        $('#testimonial-carousel').flickity({
           freeScroll: true,
           cellAlign: 'left',
           prevNextButtons: false,
@@ -29,15 +18,14 @@
         flickityEnabled = true;
       } else {
         if (flickityEnabled) {
-          $('#tesitmonial-carosel').flickity('destroy');
+          $('#testimonial-carousel').flickity('destroy');
           flickityEnabled = false;
         }
       }
     }
-    testimonyCarosel();
+    testimonialsCarousel();
     $(window).on('resize', () => {
-      testimonyCarosel();
+      testimonialsCarousel();
     });
   });
 })(jQuery);
->>>>>>> b0baa8c96e0e7702e21f2ddf346bc93cc5cd3332
