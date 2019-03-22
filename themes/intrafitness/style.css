@@ -1229,14 +1229,52 @@ figure {
       margin: 0 auto; }
       .testimonials article h2::after {
         content: '';
-        width: 40%;
+        width: 60%;
         height: 5px;
-        top: 50px;
+        top: 84px;
         background-color: #00a7ed;
         position: absolute;
-        left: 20%;
+        left: 53%;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%); } }
+
+@media (min-width: 641px) {
+  .testimonials h1 {
+    position: relative;
+    text-align: center;
+    font-size: 2.75rem; }
+    .testimonials h1::after {
+      content: '';
+      width: 25%;
+      height: 5px;
+      top: 60px;
+      background-color: #00a7ed;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+  .testimonials #testimonial-carosel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: 0 auto; }
+    .testimonials #testimonial-carosel article {
+      margin: 0 65px;
+      line-height: 1.85rem; }
+      .testimonials #testimonial-carosel article h2 {
+        position: relative;
+        font-size: 1.75rem; }
+        .testimonials #testimonial-carosel article h2::after {
+          content: '';
+          width: 90%;
+          height: 5px;
+          top: 40px;
+          background-color: #00a7ed;
+          position: absolute;
+          left: 45%;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); } }
 
 /* Form pages */
 .page-id-112 h1,
