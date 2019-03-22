@@ -6,13 +6,9 @@
       contain: true,
       percentPosition: false
     });
-<<<<<<< HEAD
     // setGallerySize: false,
 
-    //testimonial carosel
-=======
     //testimonial carousel
->>>>>>> 6e6e44c1dc8dc5d85cc5d724699e725d9fa858cc
     let flickityEnabled = false;
     function testimonialsCarousel() {
       if ($(window).width() < 640) {

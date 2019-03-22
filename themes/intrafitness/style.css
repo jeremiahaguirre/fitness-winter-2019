@@ -1356,7 +1356,10 @@ figure {
 
 .page-id-22 .address {
   text-align: center;
-  margin: 1rem 0; }
+  margin: 5% 7%; }
+  @media (min-width: 641px) {
+    .page-id-22 .address {
+      margin: 5% 16%; } }
   .page-id-22 .address p {
     margin: 0.3rem; }
 
