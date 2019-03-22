@@ -405,7 +405,10 @@
   }
   .address {
     text-align: center;
-    margin: $base__space-unit 0;
+    margin: 5% 7%;
+    @include desktop {
+      margin: 5% 16%;
+    }
     p {
       margin: 0.3rem;
     }
