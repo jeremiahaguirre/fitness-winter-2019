@@ -423,11 +423,11 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-  max-width: 1440px;
   font-family: "Open Sans Normal", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
 
 .container {
   width: 80%; }
@@ -771,13 +771,15 @@ figure {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 75%;
             flex: 0 1 75%;
-    height: 100px; }
+    height: 100px;
+    -ms-flex-item-align: center;
+        align-self: center; }
     .site-header .site-branding .logo {
       display: inline-block;
-      background-image: url(../../images/web/header-symbols/logo_header_small_white.svg);
+      background-image: url(../../images/web/header-symbols/logo_full_horizontal_web.svg);
       background-repeat: no-repeat;
-      background-position: 3% 40%;
-      width: 100%;
+      background-position: 3% 50%;
+      width: 50%;
       height: 100px; }
   .site-header nav {
     display: -webkit-box;
@@ -1100,7 +1102,7 @@ figure {
       width: 100%;
       height: 890px;
       z-index: -100; }
-    .mindset-coaching .top-quote p {
+    .mindset-coaching .top-quote blockquote {
       display: block;
       text-align: center;
       position: relative;
@@ -1109,8 +1111,8 @@ figure {
       color: #fff;
       background-color: #002150;
       width: 46%;
-      height: 100%;
-      padding: 169px 70px;
+      height: 60%;
+      padding: 50px 70px;
       font-size: 2.75rem;
       margin: 0; }
   .mindset-coaching .purpose {
@@ -1207,9 +1209,10 @@ figure {
 
 @media (max-width: 641px) {
   .testimonials {
-    height: 300px;
+    display: block;
+    height: 100%;
     width: 90%;
-    margin: 10px auto;
+    margin: 50px auto;
     position: relative; }
     .testimonials h1 {
       text-align: center; }
@@ -1225,56 +1228,64 @@ figure {
                 transform: translateX(-50%); }
     .testimonials article {
       position: relative;
-      width: 70%;
-      margin: 0 auto; }
-      .testimonials article h2::after {
-        content: '';
-        width: 60%;
-        height: 5px;
-        top: 84px;
-        background-color: #00a7ed;
-        position: absolute;
-        left: 53%;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%); } }
-
-@media (min-width: 641px) {
-  .testimonials h1 {
-    position: relative;
-    text-align: center;
-    font-size: 2.75rem; }
-    .testimonials h1::after {
-      content: '';
-      width: 25%;
-      height: 5px;
-      top: 60px;
-      background-color: #00a7ed;
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
-  .testimonials #testimonial-carosel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 90%;
-    margin: 0 auto; }
-    .testimonials #testimonial-carosel article {
-      margin: 0 65px;
-      line-height: 1.85rem; }
-      .testimonials #testimonial-carosel article h2 {
-        position: relative;
-        font-size: 1.75rem; }
-        .testimonials #testimonial-carosel article h2::after {
+      width: 45%;
+      margin: 0 auto;
+      padding-bottom: 30px; }
+      .testimonials article h2 {
+        text-align: left;
+        font-size: 1.25rem; }
+        .testimonials article h2::after {
           content: '';
-          width: 90%;
+          width: 60%;
           height: 5px;
-          top: 40px;
+          top: 42px;
           background-color: #00a7ed;
           position: absolute;
-          left: 45%;
+          left: 30%;
           -webkit-transform: translateX(-50%);
-                  transform: translateX(-50%); } }
+                  transform: translateX(-50%); }
+      .testimonials article p {
+        font-size: 0.95rem; } }
+
+@media (min-width: 641px) {
+  .testimonials {
+    margin: 50px 0; }
+    .testimonials h1 {
+      position: relative;
+      text-align: center;
+      font-size: 2.75rem; }
+      .testimonials h1::after {
+        content: '';
+        width: 25%;
+        height: 5px;
+        top: 60px;
+        background-color: #00a7ed;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+    .testimonials #testimonial-carousel {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 90%;
+      margin: 10px auto; }
+      .testimonials #testimonial-carousel article {
+        margin: 0 65px;
+        line-height: 1.85rem; }
+        .testimonials #testimonial-carousel article h2 {
+          position: relative;
+          font-size: 1.75rem; }
+          .testimonials #testimonial-carousel article h2::after {
+            content: '';
+            width: 90%;
+            height: 5px;
+            top: 40px;
+            background-color: #00a7ed;
+            position: absolute;
+            left: 45%;
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%); } }
 
 /* Form pages */
 .page-id-112 h1,
@@ -1427,69 +1438,96 @@ figure {
       width: 100%;
       height: 150px;
       z-index: -100; }
-  .bio h3 {
-    color: #00a7ed;
-    text-align: center; }
-  h2 {
+    .paul-sitting .bio h3 {
+      color: #00a7ed;
+      text-align: center; }
+  .young-picture {
+    background-image: url(../../images/web/about/paul_young@3x.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .story-img {
+    background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
+    height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .wp-block-quote {
+    display: block;
+    background-color: #002150;
     text-align: center;
-    font-size: 2.25rem; } }
-
-.young-picture {
-  background-image: url(../../images/web/about/paul_young@3x.jpg);
-  height: 500px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.story-img {
-  background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
-  height: 300px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.wp-block-quote {
-  display: block;
-  background-color: #002150;
-  text-align: center;
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  color: #fff; }
-
-.about-my-story h2 {
-  position: relative;
-  text-align: center;
-  font-size: 2.75rem; }
-  .about-my-story h2::after {
-    content: '';
-    width: 50%;
-    height: 5px;
-    background-color: #00a7ed;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    bottom: 0; }
-
-.about-my-story .wp-block-quote {
-  display: block;
-  background-color: #002150;
-  text-align: center;
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  color: #fff; }
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    color: #fff; }
+  .about-my-story h2 {
+    position: relative;
+    text-align: center;
+    font-size: 2.75rem; }
+    .about-my-story h2::after {
+      content: '';
+      width: 50%;
+      height: 5px;
+      background-color: #00a7ed;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      bottom: 0; }
+  .about-my-story .wp-block-quote {
+    display: block;
+    background-color: #002150;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    color: #fff; } }
 
 @media (min-width: 641px) {
-  .paul-sitting {
-    background-image: url(../../images/web/about/paul_sitting@3x.jpg);
+  .about-paul {
+    position: relative;
+    margin: 10%; }
+    .about-paul .bio {
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      top: 100px;
+      width: 45%;
+      height: 450px; }
+      .about-paul .bio p {
+        margin: 0; }
+    .about-paul .paul-sitting {
+      background: url("../../images/web/about/paul_sitting@3x.jpg");
+      height: 940px;
+      background-position-x: right;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: auto;
+      margin-bottom: 180px; }
+      .about-paul .paul-sitting::before {
+        content: '';
+        position: absolute;
+        top: 274px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
+        background-image: linear-gradient(#ebf7fd, #ebf7fd);
+        -webkit-transform: skewY(-6deg);
+                transform: skewY(-6deg);
+        -webkit-transform-origin: top left;
+                transform-origin: top left;
+        width: 100%;
+        height: 890px;
+        z-index: -100; }
+  .young-picture {
+    background-image: url("../../images/web/about/paul_young@3x.jpg");
     height: 940px;
+    background-position-x: left;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: auto;
-    margin-bottom: 180px; }
-    .paul-sitting::before {
+    margin-bottom: 180px;
+    width: 700px; }
+    .young-picture::before {
       content: '';
       position: absolute;
       top: 274px;
@@ -1497,24 +1535,61 @@ figure {
       background-image: linear-gradient(#ebf7fd, #ebf7fd);
       -webkit-transform: skewY(-6deg);
               transform: skewY(-6deg);
-      -webkit-transform-origin: top left;
-              transform-origin: top left;
+      -webkit-transform-origin: top right;
+              transform-origin: top right;
       width: 100%;
       height: 890px;
       z-index: -100; }
-    .paul-sitting p {
-      display: block;
-      text-align: center;
-      position: relative;
-      top: 170px;
-      left: 630px;
-      color: #fff;
-      background-color: #002150;
-      width: 46%;
-      height: 100%;
-      padding: 169px 70px;
-      font-size: 2.75rem;
-      margin: 0; } }
+    .young-picture .remember-the-days {
+      background-color: #fff;
+      right: 0;
+      top: 100px;
+      width: 45%;
+      height: 450px; }
+  .wp-block-quote {
+    display: block;
+    background-color: #002150;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    color: #fff; }
+  .personal-trainer-life-coach {
+    display: block;
+    background-color: #002150;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    color: #fff; }
+  .story-img {
+    background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
+    height: 940px;
+    background-position-x: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 50px;
+    width: 700px; }
+    .story-img::before {
+      content: '';
+      position: absolute;
+      top: 274px;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
+      background-image: linear-gradient(#ebf7fd, #ebf7fd);
+      -webkit-transform: skewY(-6deg);
+              transform: skewY(-6deg);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+      width: 100%;
+      height: 890px;
+      z-index: -100; }
+  .rest-of-my-life {
+    background-color: #fff;
+    right: 0;
+    top: 100px;
+    width: 45%;
+    height: 450px; } }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -1662,6 +1737,7 @@ figure {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
 
+<<<<<<< HEAD
 .carousel-area h2 {
   position: relative;
   font-size: 1.75rem;
@@ -1676,6 +1752,24 @@ figure {
     position: absolute;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+=======
+.carousel-area {
+  margin: auto; }
+  .carousel-area h2 {
+    position: relative;
+    font-size: 1.75rem;
+    font-weight: bold; }
+    .carousel-area h2::after {
+      content: '';
+      width: 40%;
+      height: 4px;
+      top: 50px;
+      right: 50%;
+      background-color: #00a7ed;
+      position: absolute;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+>>>>>>> bb425c09445bd6db8d0dd7b5a0bb27c9d2aff355
 
 .blog-carousel {
   width: 1075px;
@@ -1722,6 +1816,21 @@ figure {
 .recent-entry-content {
   border: 3.5px solid #c2d7e9;
   border-radius: 10px; }
+
+.recent-blog-post h2 {
+  position: relative;
+  font-size: 1.75rem;
+  font-weight: bold; }
+  .recent-blog-post h2::after {
+    content: '';
+    width: 40%;
+    height: 4px;
+    top: 50px;
+    right: 50%;
+    background-color: #00a7ed;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
 
 .widget_search {
   max-width: 250px; }
