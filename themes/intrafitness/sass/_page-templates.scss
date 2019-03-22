@@ -280,16 +280,56 @@
       h2 {
         &::after {
           content: '';
-          width: 40%;
+          width: 60%;
           height: 5px;
-          top: 50px;
+          top: 84px;
           background-color: #00a7ed;
           position: absolute;
-          left: 20%;
+          left: 53%;
           transform: translateX(-50%);
         }
       }
-      p {
+    }
+  }
+}
+@include desktop {
+  .testimonials {
+    h1 {
+      position: relative;
+      text-align: center;
+      font-size: 2.75rem;
+      &::after {
+        content: '';
+        width: 25%;
+        height: 5px;
+        top: 60px;
+        background-color: #00a7ed;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    #testimonial-carosel {
+      display: flex;
+      width: 90%;
+      margin: 0 auto;
+      article {
+        margin: 0 65px;
+        line-height: 1.85rem;
+        h2 {
+          position: relative;
+          font-size: 1.75rem;
+          &::after {
+            content: '';
+            width: 90%;
+            height: 5px;
+            top: 40px;
+            background-color: #00a7ed;
+            position: absolute;
+            left: 45%;
+            transform: translateX(-50%);
+          }
+        }
       }
     }
   }

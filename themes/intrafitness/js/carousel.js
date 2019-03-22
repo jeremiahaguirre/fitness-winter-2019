@@ -9,7 +9,7 @@
     let flickityEnabled = false;
     function testimonyCarosel() {
       if ($(window).width() < 640) {
-        $('#tesitmonial-carosel').flickity({
+        $('#testimonial-carosel').flickity({
           freeScroll: true,
           cellAlign: 'left',
           prevNextButtons: false,
@@ -18,7 +18,7 @@
         flickityEnabled = true;
       } else {
         if (flickityEnabled) {
-          $('#tesitmonial-carosel').flickity('destroy');
+          $('#testimonial-carosel').flickity('destroy');
           flickityEnabled = false;
         }
       }

@@ -23,7 +23,7 @@ get_header(); ?>
         ?>
         <section class="testimonials">
             <h1>What People are Saying</h1>
-            <div id="tesitmonial-carosel">
+            <div id="testimonial-carosel">
                 <?php foreach ($testimonial as $post) : setup_postdata($post); ?>
                 <article>
                     <h2><?php the_title(); ?></h2>
