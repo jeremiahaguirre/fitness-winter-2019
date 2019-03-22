@@ -1394,7 +1394,10 @@ figure {
 
 .page-id-22 .address {
   text-align: center;
-  margin: 1rem 0; }
+  margin: 5% 7%; }
+  @media (min-width: 641px) {
+    .page-id-22 .address {
+      margin: 5% 16%; } }
   .page-id-22 .address p {
     margin: 0.3rem; }
 
@@ -1424,94 +1427,96 @@ figure {
       width: 100%;
       height: 150px;
       z-index: -100; }
-  .bio h3 {
-    color: #00a7ed;
-    text-align: center; }
-  h2 {
-    text-align: center;
-    font-size: 2.25rem; } }
-
-.young-picture {
-  background-image: url(../../images/web/about/paul_young@3x.jpg);
-  height: 500px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.story-img {
-  background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
-  height: 300px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.wp-block-quote {
-  display: block;
-  background-color: #002150;
-  text-align: center;
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  color: #fff; }
-
-.about-my-story h2 {
-  position: relative;
-  text-align: center;
-  font-size: 2.75rem; }
-  .about-my-story h2::after {
-    content: '';
-    width: 50%;
-    height: 5px;
-    background-color: #00a7ed;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    bottom: 0; }
-
-.about-my-story .wp-block-quote {
-  display: block;
-  background-color: #002150;
-  text-align: center;
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  color: #fff; }
-
-@media (min-width: 641px) {
-  .paul-sitting {
-    background-image: url(../../images/web/about/paul_sitting@3x.jpg);
-    height: 940px;
+    .paul-sitting .bio h3 {
+      color: #00a7ed;
+      text-align: center; }
+  .young-picture {
+    background-image: url(../../images/web/about/paul_young@3x.jpg);
+    height: 500px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: auto;
-    margin-bottom: 180px; }
-    .paul-sitting::before {
+    background-size: cover; }
+  .story-img {
+    background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
+    height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .wp-block-quote {
+    display: block;
+    background-color: #002150;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    color: #fff; }
+  .about-my-story h2 {
+    position: relative;
+    text-align: center;
+    font-size: 2.75rem; }
+    .about-my-story h2::after {
       content: '';
+      width: 50%;
+      height: 5px;
+      background-color: #00a7ed;
       position: absolute;
-      top: 274px;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
-      background-image: linear-gradient(#ebf7fd, #ebf7fd);
-      -webkit-transform: skewY(-6deg);
-              transform: skewY(-6deg);
-      -webkit-transform-origin: top left;
-              transform-origin: top left;
-      width: 100%;
-      height: 890px;
-      z-index: -100; }
-    .paul-sitting p {
-      display: block;
-      text-align: center;
-      position: relative;
-      top: 170px;
-      left: 630px;
-      color: #fff;
-      background-color: #002150;
-      width: 46%;
-      height: 100%;
-      padding: 169px 70px;
-      font-size: 2.75rem;
-      margin: 0; } }
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      bottom: 0; }
+  .about-my-story .wp-block-quote {
+    display: block;
+    background-color: #002150;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    color: #fff; } }
+
+@media (min-width: 641px) {
+  .about-paul {
+    position: relative;
+    margin: 10%; }
+    .about-paul .bio {
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      top: 100px;
+      width: 45%;
+      height: 450px; }
+      .about-paul .bio p {
+        margin: 0; }
+      .about-paul .bio .young-picture {
+        background-image: url(../../images/web/about/paul_young@3x.jpg); }
+    .about-paul .paul-sitting {
+      background: url(../../images/web/about/paul_sitting@3x.jpg);
+      height: 940px;
+      background-position-x: right;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: auto;
+      margin-bottom: 180px; }
+      .about-paul .paul-sitting::before {
+        content: '';
+        position: absolute;
+        top: 274px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
+        background-image: linear-gradient(#ebf7fd, #ebf7fd);
+        -webkit-transform: skewY(-6deg);
+                transform: skewY(-6deg);
+        -webkit-transform-origin: top left;
+                transform-origin: top left;
+        width: 100%;
+        height: 890px;
+        z-index: -100; }
+  .personal-trainer-life-coach {
+    display: block;
+    background-color: #002150;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    color: #fff; } }
 
 /*--------------------------------------------------------------
 # Widgets

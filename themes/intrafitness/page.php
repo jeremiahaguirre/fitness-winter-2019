@@ -55,7 +55,6 @@ get_header(); ?>
         <?php endforeach;
     wp_reset_postdata(); ?>
         <?php endif; ?>
-
     </main><!-- #main -->
 </div><!-- #primary -->
 
