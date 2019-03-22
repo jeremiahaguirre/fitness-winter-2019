@@ -8,14 +8,17 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area blog-page">
     
-    <main id="main" class="site-main" role="main">
+   <main id="main" class="site-main" role="main">
+       <div class="blog-title">
     <h1> 
     <?php single_post_title(); ?>
 </h1>
+</div>
+<section class="carousel-area">
+<h2> Popular Posts </h2>
     <div class="blog-carousel"> 
-    <h2> Popular Posts </h2>
         <?php
             $post_carousel_args = array(
             'numberposts' => 9,
@@ -34,7 +37,7 @@ get_header(); ?>
         
     ?>
     <img src="<?php echo $image[0]; ?>">
-    <h3 class="recent-blog-title">
+    <h3 class="carousel-blog-title">
             <?php
             echo $carousel_item->post_title;
             // print_r ($carousel_item)
@@ -53,16 +56,20 @@ get_header(); ?>
 ?>
 
 </div>
-
+    </section>
+<div class="blog-content-area">
+<div class="recent-blog-post">
+    <h2> Recent Posts </h2>
         <?php while (have_posts()) : the_post(); ?>
 
         <?php get_template_part('template-parts/content', 'recent-post'); ?>
 
         <?php endwhile; ?>
-
+    </div>
     </main><!-- #main -->
-</div><!-- #primary -->
 
 
 <?php get_sidebar(); ?>
+    </div>
+    </div><!-- #primary -->
 <?php get_footer(); ?> 
