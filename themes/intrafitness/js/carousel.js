@@ -1,22 +1,15 @@
 (function($) {
   $(function() {
     $('.blog-carousel').flickity({
-<<<<<<< HEAD
         // options
         cellAlign: 'left',
         contain: true,
         percentPosition: false,
       });
       // setGallerySize: false,
-});
 
-})(jQuery);
-=======
-      // options
-      cellAlign: 'left',
-      contain: true
-    });
-    //testimonial carosel
+
+//testimonial carosel
     let flickityEnabled = false;
     function testimonyCarosel() {
       if ($(window).width() < 640) {
@@ -40,4 +33,3 @@
     });
   });
 })(jQuery);
->>>>>>> b0baa8c96e0e7702e21f2ddf346bc93cc5cd3332

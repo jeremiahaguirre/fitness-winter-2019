@@ -1,20 +1,98 @@
 // home.php and single.php
+.blog-page {
+    max-width: 1100px;
+    margin: auto;
+} 
 
+
+
+.blog-title{
+            position: relative;
+            text-align: center;
+            font-size: 2rem;
+            margin: 0.2em 0;
+            &::after {
+              content: '';
+              width: 40%;
+              height: 4px;
+              bottom: 0px;
+              background-color: $color__lb;
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+    }
+
+.carousel-area {
+    margin: auto;
+    h2 {
+        position: relative;
+        font-size: 1.75rem;
+        font-weight: bold;
+        &::after {
+              content: '';
+              width: 40%;
+              height: 4px;
+              top: 50px;
+              right: 50%;
+              background-color: $color__lb;
+              position: absolute;
+              transform: translateX(-50%);  
+    }
+    }}
 
 .blog-carousel {
-    width:1050px;
+    width:1100px;    
 }
+
+// $color__bg: #c2d7e9; // Blue-ish Grey
+// $color__llb: #ebf7fd; // Light Light Blue
 
 .blog-carousel-cell {
     width:350px;
-    padding: 12.5px;
-    border: 1px solid blue;
-    max-height: 400px;
+    margin-right: 20px;
+    // padding: 12.5px;
+    border: 3.5px solid #c2d7e9;
+    border-radius: 10px;
+    height: 400px;
     img {
         height: 200px;
         // max-width: 350px;
         width: 350px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
+}
+.recent-blog-post {
+    h2 {
+        position: relative;
+        font-size: 1.75rem;
+        font-weight: bold;
+        &::after {
+              content: '';
+              width: 40%;
+              height: 4px;
+              top: 50px;
+              right: 50%;
+              background-color: $color__lb;
+              position: absolute;
+              transform: translateX(-50%);
+    }
+}
+
+.widget_search {
+ max-width: 250px;;
+}
+
+.widget-title {
+    display:none;
+}
+
+.blog-content-area {
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    margin: auto;
+    max-width: 1440px;
 }
 
 // .blog-carousel {

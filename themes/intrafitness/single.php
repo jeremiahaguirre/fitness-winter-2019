@@ -46,7 +46,7 @@ foreach($post_carousel as $carousel_item):
     
 ?>
 <img src="<?php echo $image[0]; ?>">
-<div class="recent-blog-title">
+<div class="carousel-blog-title">
 <h2>
         <?php
         echo $carousel_item->post_title;

@@ -1310,34 +1310,12 @@ figure {
     .page-id-22 .top-quote p {
       display: none;
       margin: 0; }
-  .page-id-22 .purpose {
-    width: 85%;
-    margin: 0 auto; }
-    .page-id-22 .purpose h2 {
-      text-align: center;
-      font-size: 2.25rem; }
-      .page-id-22 .purpose h2::after {
-        content: '';
-        width: 50%;
-        height: 5px;
-        background-color: #00a7ed;
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%); }
-    .page-id-22 .purpose .has-3-columns {
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; }
-      .page-id-22 .purpose .has-3-columns figure {
-        width: 150px;
-        height: 150px; }
-  .page-id-22 .maybe-you .maybe-img {
-    background: url(../../images/web/life-coaching/maybe_you_image.jpg);
-    height: 370px;
-    background-position-x: right;
+  .page-id-22 .featured-image {
+    height: 400px;
+    background-position-x: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: auto; } }
+    background-size: cover; } }
 
 .page-id-22 h1 {
   display: none; }
@@ -1368,7 +1346,13 @@ figure {
 
 @media (min-width: 641px) {
   .page-id-22 .wpcf7 {
-    margin: 0 5%; } }
+    margin: 0 5%; }
+  .page-id-22 .featured-image {
+    height: 400px;
+    background-position-x: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 
 .page-id-22 .address {
   text-align: center;
@@ -1617,14 +1601,67 @@ h3 {
     border-bottom-right-radius: 10px;
     border: none; }
 
+.blog-page {
+  max-width: 1100px;
+  margin: auto; }
+
+.blog-title {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.2em 0; }
+  .blog-title::after {
+    content: '';
+    width: 40%;
+    height: 4px;
+    bottom: 0px;
+    background-color: #00a7ed;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.carousel-area {
+  margin: auto;
+  left: 10%; }
+  .carousel-area h2 {
+    position: relative;
+    font-size: 1.75rem;
+    font-weight: bold; }
+    .carousel-area h2::after {
+      content: '';
+      width: 40%;
+      height: 4px;
+      top: 50px;
+      right: 50%;
+      background-color: #00a7ed;
+      position: absolute;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+
 .blog-carousel {
-  width: 1050px; }
+  width: 1100px; }
 
 .blog-carousel-cell {
   width: 350px;
-  padding: 12.5px;
-  border: 1px solid blue;
-  max-height: 400px; }
+  margin-right: 20px;
+  border: 3.5px solid #c2d7e9;
+  border-radius: 10px;
+  height: 400px; }
   .blog-carousel-cell img {
     height: 200px;
-    width: 350px; }
+    width: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; }
+
+.widget_search {
+  max-width: 250px; }
+
+.widget-title {
+  display: none; }
+
+.blog-content-area {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: auto;
+  max-width: 1440px; }
