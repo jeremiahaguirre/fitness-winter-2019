@@ -3,13 +3,14 @@
     $('.blog-carousel').flickity({
       // options
       cellAlign: 'left',
-      contain: true
+      contain: true,
+      percentPosition: false
     });
-    //testimonial carosel
+    //testimonial carousel
     let flickityEnabled = false;
-    function testimonyCarosel() {
+    function testimonialsCarousel() {
       if ($(window).width() < 640) {
-        $('#testimonial-carosel').flickity({
+        $('#testimonial-carousel').flickity({
           freeScroll: true,
           cellAlign: 'left',
           prevNextButtons: false,
@@ -18,14 +19,14 @@
         flickityEnabled = true;
       } else {
         if (flickityEnabled) {
-          $('#testimonial-carosel').flickity('destroy');
+          $('#testimonial-carousel').flickity('destroy');
           flickityEnabled = false;
         }
       }
     }
-    testimonyCarosel();
+    testimonialsCarousel();
     $(window).on('resize', () => {
-      testimonyCarosel();
+      testimonialsCarousel();
     });
   });
 })(jQuery);
