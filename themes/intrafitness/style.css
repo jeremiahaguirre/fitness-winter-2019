@@ -423,11 +423,11 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-  max-width: 1440px;
   font-family: "Open Sans Normal", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
 
 .container {
   width: 80%; }
