@@ -134,7 +134,7 @@
         height: 890px;
         z-index: -100;
       }
-      p {
+      blockquote {
         display: block;
         text-align: center;
         position: relative;
@@ -143,8 +143,8 @@
         color: $color__w;
         background-color: $color__db;
         width: 46%;
-        height: 100%;
-        padding: 169px 70px;
+        height: 60%;
+        padding: 50px 70px;
         font-size: 2.75rem;
         margin: 0;
       }
@@ -255,9 +255,10 @@
 }
 @include mobile {
   .testimonials {
-    height: 300px;
+    display: block;
+    height: 100%;
     width: 90%;
-    margin: 10px auto;
+    margin: 50px auto;
     position: relative;
     h1 {
       text-align: center;
@@ -272,28 +273,36 @@
         transform: translateX(-50%);
       }
     }
+
     article {
       position: relative;
-      width: 70%;
+      width: 45%;
       margin: 0 auto;
+      padding-bottom: 30px;
 
       h2 {
+        text-align: left;
+        font-size: 1.25rem;
         &::after {
           content: '';
           width: 60%;
           height: 5px;
-          top: 84px;
+          top: 42px;
           background-color: #00a7ed;
           position: absolute;
-          left: 53%;
+          left: 30%;
           transform: translateX(-50%);
         }
+      }
+      p {
+        font-size: 0.95rem;
       }
     }
   }
 }
 @include desktop {
   .testimonials {
+    margin: 50px 0;
     h1 {
       position: relative;
       text-align: center;
@@ -309,10 +318,10 @@
         transform: translateX(-50%);
       }
     }
-    #testimonial-carosel {
+    #testimonial-carousel {
       display: flex;
       width: 90%;
-      margin: 0 auto;
+      margin: 10px auto;
       article {
         margin: 0 65px;
         line-height: 1.85rem;

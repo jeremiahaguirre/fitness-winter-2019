@@ -12,12 +12,13 @@
   .site-branding {
     flex: 0 1 75%;
     height: 100px;
+    align-self: center;
     .logo {
       display: inline-block;
-      background-image: url(../../images/web/header-symbols/logo_header_small_white.svg);
+      background-image: url(../../images/web/header-symbols/logo_full_horizontal_web.svg);
       background-repeat: no-repeat;
-      background-position: 3% 40%;
-      width: 100%;
+      background-position: 3% 50%;
+      width: 50%;
       height: 100px;
     }
   }
