@@ -1438,69 +1438,96 @@ figure {
       width: 100%;
       height: 150px;
       z-index: -100; }
-  .bio h3 {
-    color: #00a7ed;
-    text-align: center; }
-  h2 {
+    .paul-sitting .bio h3 {
+      color: #00a7ed;
+      text-align: center; }
+  .young-picture {
+    background-image: url(../../images/web/about/paul_young@3x.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .story-img {
+    background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
+    height: 300px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .wp-block-quote {
+    display: block;
+    background-color: #002150;
     text-align: center;
-    font-size: 2.25rem; } }
-
-.young-picture {
-  background-image: url(../../images/web/about/paul_young@3x.jpg);
-  height: 500px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.story-img {
-  background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
-  height: 300px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.wp-block-quote {
-  display: block;
-  background-color: #002150;
-  text-align: center;
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  color: #fff; }
-
-.about-my-story h2 {
-  position: relative;
-  text-align: center;
-  font-size: 2.75rem; }
-  .about-my-story h2::after {
-    content: '';
-    width: 50%;
-    height: 5px;
-    background-color: #00a7ed;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    bottom: 0; }
-
-.about-my-story .wp-block-quote {
-  display: block;
-  background-color: #002150;
-  text-align: center;
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  color: #fff; }
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    color: #fff; }
+  .about-my-story h2 {
+    position: relative;
+    text-align: center;
+    font-size: 2.75rem; }
+    .about-my-story h2::after {
+      content: '';
+      width: 50%;
+      height: 5px;
+      background-color: #00a7ed;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      bottom: 0; }
+  .about-my-story .wp-block-quote {
+    display: block;
+    background-color: #002150;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    color: #fff; } }
 
 @media (min-width: 641px) {
-  .paul-sitting {
-    background-image: url(../../images/web/about/paul_sitting@3x.jpg);
+  .about-paul {
+    position: relative;
+    margin: 10%; }
+    .about-paul .bio {
+      background-color: #fff;
+      position: absolute;
+      left: 0;
+      top: 100px;
+      width: 45%;
+      height: 450px; }
+      .about-paul .bio p {
+        margin: 0; }
+    .about-paul .paul-sitting {
+      background: url("../../images/web/about/paul_sitting@3x.jpg");
+      height: 940px;
+      background-position-x: right;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: auto;
+      margin-bottom: 180px; }
+      .about-paul .paul-sitting::before {
+        content: '';
+        position: absolute;
+        top: 274px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
+        background-image: linear-gradient(#ebf7fd, #ebf7fd);
+        -webkit-transform: skewY(-6deg);
+                transform: skewY(-6deg);
+        -webkit-transform-origin: top left;
+                transform-origin: top left;
+        width: 100%;
+        height: 890px;
+        z-index: -100; }
+  .young-picture {
+    background-image: url("../../images/web/about/paul_young@3x.jpg");
     height: 940px;
+    background-position-x: left;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: auto;
-    margin-bottom: 180px; }
-    .paul-sitting::before {
+    margin-bottom: 180px;
+    width: 700px; }
+    .young-picture::before {
       content: '';
       position: absolute;
       top: 274px;
@@ -1508,24 +1535,61 @@ figure {
       background-image: linear-gradient(#ebf7fd, #ebf7fd);
       -webkit-transform: skewY(-6deg);
               transform: skewY(-6deg);
-      -webkit-transform-origin: top left;
-              transform-origin: top left;
+      -webkit-transform-origin: top right;
+              transform-origin: top right;
       width: 100%;
       height: 890px;
       z-index: -100; }
-    .paul-sitting p {
-      display: block;
-      text-align: center;
-      position: relative;
-      top: 170px;
-      left: 630px;
-      color: #fff;
-      background-color: #002150;
-      width: 46%;
-      height: 100%;
-      padding: 169px 70px;
-      font-size: 2.75rem;
-      margin: 0; } }
+    .young-picture .remember-the-days {
+      background-color: #fff;
+      right: 0;
+      top: 100px;
+      width: 45%;
+      height: 450px; }
+  .wp-block-quote {
+    display: block;
+    background-color: #002150;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    color: #fff; }
+  .personal-trainer-life-coach {
+    display: block;
+    background-color: #002150;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    color: #fff; }
+  .story-img {
+    background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
+    height: 940px;
+    background-position-x: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: 50px;
+    width: 700px; }
+    .story-img::before {
+      content: '';
+      position: absolute;
+      top: 274px;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
+      background-image: linear-gradient(#ebf7fd, #ebf7fd);
+      -webkit-transform: skewY(-6deg);
+              transform: skewY(-6deg);
+      -webkit-transform-origin: left;
+              transform-origin: left;
+      width: 100%;
+      height: 890px;
+      z-index: -100; }
+  .rest-of-my-life {
+    background-color: #fff;
+    right: 0;
+    top: 100px;
+    width: 45%;
+    height: 450px; } }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -1654,7 +1718,7 @@ figure {
     border: none; }
 
 .blog-page {
-  max-width: 1100px;
+  max-width: 70%;
   margin: auto; }
 
 .blog-title {
@@ -1664,7 +1728,7 @@ figure {
   margin: 0.2em 0; }
   .blog-title::after {
     content: '';
-    width: 40%;
+    width: 25%;
     height: 4px;
     bottom: 0px;
     background-color: #00a7ed;
@@ -1673,6 +1737,22 @@ figure {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
 
+<<<<<<< HEAD
+.carousel-area h2 {
+  position: relative;
+  font-size: 1.75rem;
+  font-weight: bold; }
+  .carousel-area h2::after {
+    content: '';
+    width: 25%;
+    height: 4px;
+    top: 50px;
+    right: 62.5%;
+    background-color: #00a7ed;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+=======
 .carousel-area {
   margin: auto; }
   .carousel-area h2 {
@@ -1689,21 +1769,53 @@ figure {
       position: absolute;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
+>>>>>>> bb425c09445bd6db8d0dd7b5a0bb27c9d2aff355
 
 .blog-carousel {
-  width: 1100px; }
+  width: 1075px;
+  margin-top: 2.5%; }
 
 .blog-carousel-cell {
-  width: 350px;
-  margin-right: 20px;
+  position: relative;
+  width: 335px;
+  margin-left: 25px;
   border: 3.5px solid #c2d7e9;
-  border-radius: 10px;
+  border-radius: 15px;
   height: 400px; }
   .blog-carousel-cell img {
     height: 200px;
-    width: 350px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px; }
+    width: 335px;
+    border-top-left-radius: 9.8px;
+    border-top-right-radius: 9.8px; }
+  .blog-carousel-cell h3 {
+    font-size: 1.3rem;
+    padding: 0% 5% 0% 5%; }
+  .blog-carousel-cell .blog-carousel-term {
+    position: absolute;
+    bottom: 0;
+    background-color: #002150;
+    border-bottom-left-radius: 9.8px;
+    padding: 1% 5% 1% 5%;
+    color: #fff; }
+
+.recent-blog-post h2 {
+  position: relative;
+  font-size: 1.75rem;
+  font-weight: bold; }
+  .recent-blog-post h2::after {
+    content: '';
+    width: 40%;
+    height: 4px;
+    top: 50px;
+    right: 40%;
+    background-color: #00a7ed;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.recent-entry-content {
+  border: 3.5px solid #c2d7e9;
+  border-radius: 10px; }
 
 .recent-blog-post h2 {
   position: relative;
@@ -1728,6 +1840,4 @@ figure {
 
 .blog-content-area {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  margin: auto;
-  max-width: 1440px; }
+  grid-template-columns: 3fr 1fr; }
