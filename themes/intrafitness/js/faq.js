@@ -1,7 +1,9 @@
-$(document).ready(function() {
-  $('.flip').click(function() {
-    $(this)
-      .next()
-      .slideToggle();
+(function($) {
+  $(function() {
+    $('.flip').click(function() {
+      $(this)
+        .next()
+        .slideToggle();
+    });
   });
-});
+})(jQuery);

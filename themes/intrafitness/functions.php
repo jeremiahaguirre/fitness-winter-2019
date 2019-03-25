@@ -95,11 +95,8 @@ function red_starter_scripts()
 
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('menu', get_template_directory_uri() . '/build/js/menu.min.js', array('jquery'));
-<<<<<<< HEAD
 	wp_enqueue_script('goals-mobil-nav', get_template_directory_uri() . '/build/js/goals.min.js', array('jquery'));
-=======
 	wp_enqueue_script('faq', get_template_directory_uri() . '/build/js/faq.min.js', array('jquery'));
->>>>>>> 9d87dfa35be812acd676c70aa21306cfcbc22988
 	wp_enqueue_script('red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true);
 	wp_enqueue_script('red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true);
 

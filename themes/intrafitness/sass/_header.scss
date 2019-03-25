@@ -9,6 +9,7 @@
   height: 70px;
   align-items: center;
   justify-content: space-between;
+  z-index: 10000;
   .site-branding {
     flex: 0 1 75%;
     height: 100px;
@@ -20,6 +21,7 @@
       background-position: 3% 50%;
       width: 50%;
       height: 100px;
+      z-index: 10000;
     }
   }
   nav {
@@ -51,6 +53,7 @@
             &:first-child {
               margin-right: 2%;
             }
+            text-transform: uppercase;
           }
         }
         .trial {
@@ -90,6 +93,7 @@
 }
 @include desktop {
   .site-header {
+    z-index: 10000;
     .site-branding {
       flex: 0 1 40%;
     }
@@ -98,9 +102,10 @@
       // justify-content: flex-end;
       ul {
         display: flex;
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         align-items: stretch;
         width: 100%;
+        text-transform: uppercase;
         .menu-item-has-children {
           display: flex;
           align-items: center;
