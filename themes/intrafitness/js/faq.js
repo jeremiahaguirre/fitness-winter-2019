@@ -6,6 +6,7 @@
         .children()
         .toggle();
       $(this)
+        .parent()
         .next('.faq-answer')
         .slideToggle();
     });

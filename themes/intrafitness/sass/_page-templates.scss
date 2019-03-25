@@ -608,21 +608,24 @@
       margin: ($base__space-unit * 1.5) 0;
     }
     .faq-question {
-      margin: $base__space-unit;
       a {
         color: $color__db;
         text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: bold;
       }
       i {
         background-color: $color__db;
         font-size: 1.6rem;
-        padding: 0.8rem;
+        padding: 0.8rem 0.9rem;
         border-radius: 50%;
         color: $color__w;
         margin-right: $base__space-unit;
         box-shadow: 3px 3px 5px 2px $color__bg;
         &.x {
           display: none;
+          padding: 0.8rem 1rem;
+          background-color: $color__lb;
         }
       }
     }
