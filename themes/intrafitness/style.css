@@ -990,12 +990,103 @@ figure {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+@media (max-width: 641px) {
+  .front-page .home-banner {
+    position: relative;
+    background-color: #002150;
+    background-image: url(../../images/web/home-page/hero_banner.jpg);
+    height: 400px;
+    background-position-y: 110px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .front-page .home-banner::before {
+      content: '';
+      position: absolute;
+      top: 54px;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
+      background-image: linear-gradient(#ebf7fd, #ebf7fd);
+      -webkit-transform: skewY(-4deg);
+              transform: skewY(-4deg);
+      -webkit-transform-origin: top left;
+              transform-origin: top left;
+      width: 100%;
+      height: 390px;
+      z-index: -100; }
+    .front-page .home-banner .banner-text {
+      position: absolute;
+      top: 8%;
+      height: 100%;
+      width: 70%;
+      padding-left: 10%; }
+      .front-page .home-banner .banner-text h2 {
+        font-family: 'Trade Gothic LT Std Normal';
+        text-align: left;
+        color: #fff;
+        font-size: 2.3rem;
+        font-weight: 100;
+        margin: 0;
+        text-transform: uppercase; }
+      .front-page .home-banner .banner-text h3 {
+        display: none; }
+  .front-page .intra-way {
+    width: 100%;
+    height: 100%;
+    margin: 80px auto; }
+    .front-page .intra-way .wp-block-media-text {
+      display: block; }
+    .front-page .intra-way img {
+      display: none; }
+  .front-page .goals {
+    display: block;
+    width: 100%; }
+    .front-page .goals .goals-header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      width: 70%;
+      margin: 0 auto; }
+      .front-page .goals .goals-header img {
+        height: 100%;
+        width: 100px; }
+    .front-page .goals .goals-content {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      text-align: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 70%;
+      margin: 0 auto; }
+      .front-page .goals .goals-content .wp-block-columns {
+        display: block; }
+      .front-page .goals .goals-content .wp-block-column {
+        margin: 0; }
+      .front-page .goals .goals-content h2 {
+        border-bottom: 2px solid #00a7ed; }
+      .front-page .goals .goals-content p {
+        text-align: left; }
+      .front-page .goals .goals-content img {
+        height: 100%;
+        width: 100px; }
+      .front-page .goals .goals-content .health {
+        display: block; }
+      .front-page .goals .goals-content .happy,
+      .front-page .goals .goals-content .freedom {
+        display: none; } }
+
 .ready-to-start {
   background-image: url(../../images/web/home-page/ready_to_start.jpg);
   width: 100%;
   height: 50vh;
   background-repeat: no-repeat; }
 
+/*Mindset page*/
 @media (max-width: 641px) {
   .mindset-coaching .top-quote {
     background: url(../../images/web/life-coaching/paul_thinking.jpg) no-repeat;
