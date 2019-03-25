@@ -9,44 +9,34 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+        <?php while (have_posts()) : the_post(); ?>
 
-<section class="Intra-main-hero-img">
-<?php 
-	if ( has_post_thumbnail() ) {
-	the_post_thumbnail();
-	} 
-?>
-</section>
+        <?php get_template_part('template-parts/content', 'page'); ?>
 
+        <?php endwhile; ?>
 
-<?php while (have_posts()) : the_post(); ?>
+        <section class="ready-to-start">
+            <h2>Ready To Start?</h2>
+        </section>
 
-<?php get_template_part('template-parts/content', 'page'); ?>
+        <section class="front-page-recent-blogs">
+            <h2>Recent Blog Posts</h2>
+        </section>
 
-<?php endwhile; ?>
+        <section class="sign-up-newsletter">
+            <h2>Want to know more about my mission? Sign up for more newsletters!</h2>
+        </section>
 
-<section class="ready-to-start">
-	<h2>Ready To Start?</h2>
-</section>
-
-<section class="front-page-recent-blogs">
-	<h2>Recent Blog Posts</h2>
-</section>
-
-<section class="sign-up-newsletter">
-	<h2>Want to know more about my mission? Sign up for more newsletters!</h2>
-</section>
-
-<section class="newsletter" id="newsletter">
-      <div class="sign-up-wrapper container">
-            <form class="sign-up-form">
-            <input type="email" name="your_email" id="your-email" value placeholder="Your Email">
-            <input type="submit" name="sign up" value="Sign Up" id="sign up">
-            </form>
+        <section class="newsletter" id="newsletter">
+            <div class="sign-up-wrapper container">
+                <form class="sign-up-form">
+                    <input type="email" name="your_email" id="your-email" value placeholder="Your Email">
+                    <input type="submit" name="sign up" value="Sign Up" id="sign up">
+                </form>
             </div>
-   </section>
+        </section>
 
-</main><!-- #main -->
+    </main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php get_footer(); ?> 
