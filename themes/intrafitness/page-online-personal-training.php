@@ -38,20 +38,30 @@ get_header(); ?>
             wp_reset_postdata(); ?>
             </div>
         </section>
+        <section class="faq">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <hr>
+            <?php
+            $args = array('post_type' => 'post_faq', 'posts_per_page' => 30, 'order' => 'ASC');
+            $faq = get_posts($args);
+            ?>
 
-        <?php
-        $args = array('post_type' => 'post_faq', 'posts_per_page' => 3, 'order' => 'DESC');
-        $faq = get_posts($args);
-        ?>
-
-        <?php foreach ($faq as $post) : setup_postdata($post); ?>
-        <article>
-            <?php the_title(); ?>
-            <?php the_content(); ?>
-        </article>
-        <?php endforeach;
-    wp_reset_postdata(); ?>
-
+            <?php foreach ($faq as $post) : setup_postdata($post); ?>
+            <hr class="faq-hr">
+            <article>
+                <div class="faq-question">
+                    <a href="#" class="flip"><i class="fas fa-plus"></i><i class="x fas fa-times"></i>
+                        <?php the_title(); ?>
+                    </a>
+                </div>
+                <div class="faq-answer">
+                    <?php the_content(); ?>
+                </div>
+            </article>
+            <?php endforeach;
+        wp_reset_postdata(); ?>
+            <hr class="faq-hr">
+        </section>
     </main><!-- #main -->
 </div><!-- #primary -->
 <?php get_footer(); ?> 

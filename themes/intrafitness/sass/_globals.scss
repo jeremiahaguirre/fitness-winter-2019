@@ -16,7 +16,6 @@ html {
 
 body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
-  // max-width: 1440px;
   font-family: $font__main;
   font-size: 16px;
   line-height: $font__line-height-body;
@@ -39,7 +38,7 @@ q {
 }
 
 hr {
-  background-color: $color__background-hr;
+  background-color: $color__w;
   border: 0;
   height: 1px;
   margin-bottom: $base__space-unit;
