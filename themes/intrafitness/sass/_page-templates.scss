@@ -10,7 +10,7 @@
       background-color: $color__db;
       background-image: url(../../images/web/home-page/hero_banner.jpg);
       height: 400px;
-      background-position-y: 110px;
+
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
@@ -101,6 +101,125 @@
         .happy,
         .freedom {
           display: none;
+        }
+      }
+    }
+  }
+}
+@include desktop {
+  .front-page {
+    .home-banner {
+      position: relative;
+      background-color: $color__db;
+      background-image: url(../../images/web/home-page/hero_banner.jpg);
+      height: 600px;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 350px;
+        background-image: linear-gradient($color__llb, $color__llb);
+        transform: skewY(-4deg);
+        transform-origin: top left;
+        width: 100%;
+        height: 390px;
+        z-index: -10000;
+      }
+      .banner-text {
+        position: absolute;
+        top: 30%;
+        height: 100%;
+        width: 50%;
+        padding-left: 10%;
+        h2 {
+          font-family: 'Trade Gothic LT Std Normal';
+          text-align: left;
+          color: $color__w;
+          font-size: 4.3rem;
+          font-weight: 100;
+          margin: 0;
+          text-transform: uppercase;
+        }
+        h3 {
+          color: $color__lb;
+        }
+        a {
+          font-size: 1.55rem;
+          border: none;
+          padding: 20px 40px;
+          &:hover {
+            background-color: $color__link-hover;
+          }
+        }
+      }
+    }
+    .intra-way {
+      width: 80%;
+      height: 100%;
+      margin-top: 200px;
+      margin: 20px auto;
+      display: flex;
+
+      .wp-block-media-text {
+        grid-template-columns: 500px auto !important;
+      }
+      img {
+        height: 100%;
+        width: 500px;
+      }
+    }
+    .goals {
+      h2 {
+        position: relative;
+        text-align: center;
+        font-size: 3rem;
+        &::after {
+          content: '';
+          width: 30%;
+          height: 5px;
+          top: 60px;
+          background-color: $color__lb;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .goals-header {
+        display: none;
+      }
+      .goals-content {
+        width: 90%;
+        margin: 0 auto;
+        .wp-block-column {
+          margin: 0 10px;
+          padding: 0 40px;
+          background-color: $color__db;
+        }
+
+        img {
+          display: none;
+        }
+        h2 {
+          position: relative;
+          font-size: 2.25rem;
+          color: $color__w;
+          text-align: center;
+          &::after {
+            content: '';
+            width: 60%;
+            height: 5px;
+            top: 50px;
+            background-color: $color__lb;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+        p {
+          color: $color__w;
         }
       }
     }
@@ -659,3 +778,60 @@
     margin: $base__space-unit 0;
   }
 }
+<<<<<<< HEAD
+
+.page-id-22 {
+  @include mobile {
+    h2 {
+      margin-bottom: 0;
+      text-align: center;
+      @include desktop {
+        font-size: 2.4rem;
+      }
+    }
+    hr {
+      margin: 0 25%;
+      background-color: $color__lb;
+      height: 3px;
+      @include desktop {
+        margin: 0 30%;
+      }
+    }
+    .entry-content {
+      margin: 5% 7%;
+      box-shadow: 0 0 50px 0px $color__bg;
+      padding: 1% 5%;
+      @include desktop {
+        margin: 5% 16%;
+      }
+    }
+    @include desktop {
+      .wpcf7 {
+        margin: 0 5%;
+      }
+      .featured-image {
+        height: 400px;
+        background-position-x: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    .address {
+      text-align: center;
+      margin: 5% 7%;
+      @include desktop {
+        margin: 5% 16%;
+      }
+      p {
+        margin: 0.3rem;
+      }
+    }
+    iframe {
+      display: flex;
+      margin: $base__space-unit 0;
+    }
+  }
+}
+=======
+>>>>>>> 0c7c5d4a4944e60db28b1001fd05c4bf19c86186
