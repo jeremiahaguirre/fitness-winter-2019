@@ -1,11 +1,10 @@
 // home.php and single.php
+
+// background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
 .blog-page {
-    max-width: 1100px;
+    max-width: 70%;
     margin: auto;
 } 
-
-
-
 .blog-title{
             position: relative;
             text-align: center;
@@ -13,7 +12,7 @@
             margin: 0.2em 0;
             &::after {
               content: '';
-              width: 40%;
+              width: 25%;
               height: 4px;
               bottom: 0px;
               background-color: $color__lb;
@@ -23,18 +22,17 @@
             }
     }
 
-.carousel-area {
-    margin: auto;
+.carousel-area { // Popular Posts
     h2 {
         position: relative;
         font-size: 1.75rem;
         font-weight: bold;
         &::after {
               content: '';
-              width: 40%;
+              width: 25%;
               height: 4px;
               top: 50px;
-              right: 50%;
+              right: 62.5%;
               background-color: $color__lb;
               position: absolute;
               transform: translateX(-50%);  
@@ -42,27 +40,47 @@
     }}
 
 .blog-carousel {
-    width:1100px;    
+    width:1075px;    
+    margin-top: 2.5%;
 }
 
 // $color__bg: #c2d7e9; // Blue-ish Grey
 // $color__llb: #ebf7fd; // Light Light Blue
 
 .blog-carousel-cell {
-    width:350px;
-    margin-right: 20px;
+    position: relative;
+    width:335px;
+    margin-left:25px;
+    
     // padding: 12.5px;
     border: 3.5px solid #c2d7e9;
-    border-radius: 10px;
+    border-radius: 15px;
     height: 400px;
     img {
         height: 200px;
         // max-width: 350px;
-        width: 350px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        width: 335px;
+        border-top-left-radius: 9.8px;
+        border-top-right-radius: 9.8px;
+    }
+    h3{
+        font-size: 1.3rem;
+        padding: 0% 5% 0% 5%;
+    }
+    .blog-carousel-term{
+        position: absolute;
+        bottom: 0;
+        background-color: #002150;
+        border-bottom-left-radius: 9.8px;
+        padding: 1% 5% 1% 5%;
+        color: #fff;
     }
 }
+
+// .blog-carousel-title{
+//     height: 150px;
+// }
+
 .recent-blog-post {
     h2 {
         position: relative;
@@ -73,12 +91,19 @@
               width: 40%;
               height: 4px;
               top: 50px;
-              right: 50%;
+              right: 40%;
               background-color: $color__lb;
               position: absolute;
               transform: translateX(-50%);
+        }
     }
-}}
+}
+
+.recent-entry-content {
+    border: 3.5px solid #c2d7e9;
+    border-radius: 10px;
+}
+
 
 .widget_search {
  max-width: 250px;;
@@ -91,10 +116,11 @@
 .blog-content-area {
     display:grid;
     grid-template-columns: 3fr 1fr;
-    margin: auto;
-    max-width: 1440px;
 }
 
 // .blog-carousel {
 //     height: 500px;
 // }
+
+
+@include mobile {}
