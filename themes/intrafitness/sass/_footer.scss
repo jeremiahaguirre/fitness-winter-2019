@@ -11,6 +11,15 @@
     display: none;
     font-size: 1.2rem;
   }
+  .fa-angle-up:before{
+    padding: 10px 15px;
+    background-color: $color__bg;
+    border-radius: 16px;
+  }
+  a{
+    float: right;
+    margin-right: 5%;
+  }
   @include desktop {
     .site-info {
       display: flex;
@@ -19,6 +28,12 @@
       padding: 4rem;
       padding-bottom: 1rem;
       opacity: 0.5;
+      .top-arrow{
+        padding: 10px 15px;
+        background-color: grey;
+        border-radius: 16px;
+        margin-right: 55%
+      }
     }
     ul{
       text-align: left;
@@ -68,7 +83,7 @@ p{
     border: none;
   }
 
-  p{
+  p{ 
     width: 100%;
   }
 }

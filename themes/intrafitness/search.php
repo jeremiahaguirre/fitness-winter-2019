@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<section id="primary" class="content-area blog-content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -32,7 +32,14 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
+		<?php get_sidebar(); ?>
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
+
+<section class="category-recent-blogs">
+	<h2> Recent Blog Posts That You Might Be Interested In </h2>
+           <?php get_template_part('template-parts/content', 'recent-carousel'); ?>
+        </section>
+
 <?php get_footer(); ?>

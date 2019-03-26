@@ -19,6 +19,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<a name="top"></a>
     <div id="page" class="hfeed site">
         <a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
 

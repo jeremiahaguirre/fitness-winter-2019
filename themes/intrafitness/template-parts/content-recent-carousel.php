@@ -6,7 +6,7 @@
  ?>
 
 <section class="carousel-area">
-<h2> Recent Blog Posts That You Might be Interested In </h2>
+    <!-- hard code title in --> 
     <div class="blog-carousel"> 
         <?php
             $post_carousel_args = array(

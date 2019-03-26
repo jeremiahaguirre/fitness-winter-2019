@@ -21,11 +21,13 @@ get_header(); ?>
         <?php get_sidebar(); ?>
 
     </main><!-- #main -->
+
+    <section class="single-recent-blogs">
+<?php get_template_part('template-parts/content', 'recent-carousel'); ?>
+</section>
 </div><!-- #primary -->
 
 
-
-<?php get_template_part('template-parts/content', 'recent-carousel'); ?>
 
 
 <?php get_footer(); ?> 

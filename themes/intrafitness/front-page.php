@@ -16,7 +16,7 @@ get_header(); ?>
         <?php endwhile; ?>
 
         <section class="front-page-recent-blogs">
-            <h2>Recent Blog Posts</h2>
+           <?php get_template_part('template-parts/content', 'recent-carousel'); ?>
         </section>
 
         <section class="sign-up-newsletter">
