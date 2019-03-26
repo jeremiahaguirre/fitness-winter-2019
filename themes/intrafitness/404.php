@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main-404" role="main">
 
 			<section class="error-404 not-found">
 				<h1 class="page-title"><?php echo esc_html( 'Hmm….' ); ?></h1>
@@ -18,6 +18,9 @@ get_header(); ?>
 				<div class="page-content">
 					<p><?php echo esc_html( 'Something’s not right. The page you’re looking for might be working out at the moment, please refresh the screen or go back and try again!' ); ?></p>
 				</div>
+				<div class="button">
+    <a button href="https://fitness.van.cp.academy.red/">Go Back</a>
+</div>
 			</section>
 
 		</main>

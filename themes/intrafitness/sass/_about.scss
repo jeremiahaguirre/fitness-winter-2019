@@ -42,6 +42,7 @@
       padding: 1rem;
       color: $color__w;
       font-family: $font__main;
+      font-size: 20px;
     }
   }
   .young-picture {
@@ -99,6 +100,7 @@
       margin: 0;
       padding: 1rem;
       color: $color__w;
+      font-size: 20px;
     }
   }
   .transformation-background-pic {
@@ -115,6 +117,9 @@
     border-radius: 5px;
     text-decoration: none;
   }
+  }
+  .rest-of-my-life{
+    padding: 5%;
   }
 }
 
@@ -233,7 +238,7 @@
     background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
     height: 940px;
     background-position-y: right;
-    //background-attachment: fixed;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: auto;
     margin-bottom: 50px;
@@ -244,7 +249,7 @@
     background-color: $color__w;
     padding-top: 5%;
     padding: 5%;
-    width: 46%;
+    width: 41%;
     line-height: 2;
     font-size: 1.25rem;
   }
@@ -254,7 +259,8 @@
     position: relative;
     display: block;
     width: 59%;
-    top: 16%;
+    top: 10%;
+    left:7%;
     padding: 10px;
     font-size: 30px;
     background-color: $color__db;
@@ -269,6 +275,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    background-attachment: fixed;
 
     h2 {
       color: $color__w;

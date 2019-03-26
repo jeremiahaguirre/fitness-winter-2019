@@ -55,9 +55,9 @@ get_header(); ?>
         <?php endforeach;
     wp_reset_postdata(); ?>
         <?php endif; ?>
- <?php if (has_post_thumbnail($post_ID)) {
-   echo get_the_post_thumbnail($post_ID,'medium');
-} ?>
+        <!-- <?php if (has_post_thumbnail($post_ID)) {
+                    echo get_the_post_thumbnail($post_ID, 'medium');
+                } ?> -->
     </main><!-- #main -->
 </div><!-- #primary -->
 <?php get_footer(); ?> 

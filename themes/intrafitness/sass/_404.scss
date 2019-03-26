@@ -1,39 +1,35 @@
 .error-404{
-    
     height: 400px;
     text-align: center;
     margin-bottom: 100px;
-    border-top: 10px solid $color__db;
-    border-top: 10px solid $color__db;
-    border-bottom: 10px solid ;
+    border-top: 4px solid #00a7ed;
+    border-bottom: 4px solid #00a7ed;
     text-align: center;
     padding: 5%;
+    width: 50%;
+    display: inline-block;
+
+    .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    width: 30%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: $color__w;
+    background-color: $color__lb;
+    border: none;
+    border-radius: 15px;
+      }
+    a{
+    text-decoration: none;
+    }
 }
-    // h1 {
-        
-    //     padding-top: 5%;
-    //     &::after {
-    //       content: '';
-    //       width: 70%;
-    //       height: 5px;
-    //       //top: 50px;
-    //       background-color: #00a7ed;
-    //       position: absolute;
-    //       left: 50%;
-    //       transform: translateX(-50%);
-    //       }
-    //     }
-        // p{
-        //     &::after {
-        //         content: '';
-        //         width: 70%;
-        //         height: 5px;
-        //         //top: 50px;
-        //         background-color: #00a7ed;
-        //         position: absolute;
-        //         left: 50%;
-        //         transform: translateX(-50%);
-        //         bottom: 0;
-        //         margin-bottom: 5%;
-        //         }
-        
+.site-main-404{
+    padding-top: 5%;
+    font-family: $font__main;
+    font-size: 16px;
+    text-align: center;
+}
