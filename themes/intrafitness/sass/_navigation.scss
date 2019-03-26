@@ -5,10 +5,10 @@
 /* Links */
 
 a {
-  color: $color__link;
-
+  color: $color__lb;
+  text-decoration: none;
   &:visited {
-    color: $color__link-visited;
+    color: $color__lb;
   }
   &:hover,
   &:focus,

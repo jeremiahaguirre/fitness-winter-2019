@@ -50,7 +50,8 @@ get_header(); ?>
             <hr class="faq-hr">
             <article>
                 <div class="faq-question">
-                    <a href="#" class="flip"><i class="fas fa-plus"></i><i class="x fas fa-times"></i>
+                    <a href="#" class="flip">
+                        <i class="fas fa-plus"></i><i class="x fas fa-times"></i>
                         <?php the_title(); ?>
                     </a>
                 </div>

@@ -14,7 +14,7 @@
     <div class="recent-entry-content">
         <div class="recent-blog-image-container">
         <div class="recent-blog-image">
-  
+        <a class="recent-blog-post" href="<?php echo get_permalink(); ?>">
             <?php if (has_post_thumbnail()) : ?>
             <?php the_post_thumbnail('large'); ?>
 </div> <!--recent-blog-image -->
@@ -29,7 +29,6 @@
         </div> <!-- recent-blog-term ---> 
         </div><!--recent-blog-image-container ---> 
         <div class="entry-header">
-        <a class="recent-blog-post" href="<?php echo get_permalink(); ?>">
             <?php the_title('<h1 class="entry-title">', '</h1>');
             ?></a>
     </div>
