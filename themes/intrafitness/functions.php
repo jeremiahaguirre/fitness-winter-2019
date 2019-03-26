@@ -124,13 +124,7 @@ require get_template_directory() . '/inc/extras.php';
 function new_excerpt_more($more)
 {
 	global $post;
-<<<<<<< HEAD
-	return '… <a href="'. get_permalink($post->ID) . '">' . '<br><br>' .  'Read More ...' . '</a>';
-	}
-	add_filter('excerpt_more', 'new_excerpt_more');
-=======
 	return '… <a href="' . get_permalink($post->ID) . '">' . 'Read More ...' . '</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
->>>>>>> 016409eb11d06374dac4765fa12a5efb83071045
