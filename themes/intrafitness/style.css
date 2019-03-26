@@ -1863,7 +1863,7 @@ figure {
 
 @media (max-width: 641px) {
   .paul-sitting {
-    background-image: url(../../images/web/about/paul_sitting.jpg);
+    background-image: url(../../images/web/about/paul_sitting@3x.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 400px; }
