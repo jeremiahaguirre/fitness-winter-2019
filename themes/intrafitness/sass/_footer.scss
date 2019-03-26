@@ -13,8 +13,9 @@
   }
   .fa-angle-up:before{
     padding: 10px 15px;
-    background-color: $color__bg;
-    border-radius: 16px;
+    box-shadow: 25px 25px 38px 0px rgba(139,139,143,1);
+    border-radius: 100%;
+    background-color: #778899;
   }
   a{
     float: right;
