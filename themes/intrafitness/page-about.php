@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+<a name="top"></a>
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
@@ -38,6 +38,15 @@ get_header(); ?>
             wp_reset_postdata(); ?>
             </div>
         </section>
+    <section class="transformation-background-pic">
+        
+    <h2>Ready For Your transformation?</h2>
+    <div class="button">
+    <a button href="https://fitness.van.cp.academy.red/online-personal-training/">Hell Yeah!</a>
+</div>
+
+    </section>
+    <a href="#top" class="top-arrow">^</a>
     </main><!-- #main -->
 </div><!-- #primary -->
 <?php get_footer(); ?> 
