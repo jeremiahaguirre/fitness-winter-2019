@@ -1,6 +1,6 @@
 @include mobile {
   .paul-sitting {
-    background-image: url(../../images/web/about/paul_sitting@3x.jpg);
+    background-image: url(../../images/web/about/paul_sitting.jpg);
     //background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: contain;
@@ -41,7 +41,7 @@
     }
   }
   .young-picture {
-    background-image: url(../../images/web/about/paul_young@3x.jpg);
+    background-image: url(../../images/web/about/paul_young.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 400px;
@@ -64,7 +64,7 @@
     }
   }
   .story-img {
-    background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
+    background-image: url(../../images/web/about/paul_punching_bag.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 400px;
@@ -94,7 +94,7 @@
     }
   }
   .transformation-background-pic {
-    background-image:url(../../images/web/about/paul_and_girl-3x.jpg);
+    background-image:url(../../images/web/about/paul_and_girl.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -150,7 +150,7 @@
   }
  }
     .paul-sitting {
-      background: url('../../images/web/about/paul_sitting@3x.jpg');
+      background: url('../../images/web/about/paul_sitting.jpg');
       height: 940px;
       background-position-x: right;
       background-attachment: fixed;
@@ -183,7 +183,7 @@
     }
   }
   .young-picture {
-    background-image: url('../../images/web/about/paul_young@3x.jpg');
+    background-image: url('../../images/web/about/paul_young.jpg');
     height: 940px;
     background-position-x: left;
     background-repeat: no-repeat;
@@ -236,7 +236,7 @@
     }
   }
   .story-img {
-    background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
+    background-image: url(../../images/web/about/paul_punching_bag.jpg);
     height: 940px;
     background-position-y: right;
     background-attachment: fixed;
@@ -266,7 +266,7 @@
     color: $color__w;
   }
   .transformation-background-pic {
-    background-image: url(../../images/web/about/paul_and_girl-3x.jpg);
+    background-image: url(../../images/web/about/paul_and_girl.jpg);
     width: 100%;
     height: 700px;
     background-size: cover;

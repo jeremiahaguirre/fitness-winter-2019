@@ -34,6 +34,9 @@ a {
   font-family: $font__header;
   font-size: 0.75rem;
   padding: $base__space-unit * 0.6;
+  &:hover {
+    color: $color__link-hover;
+  }
 }
 
 /* Menus */
@@ -75,10 +78,12 @@ a {
 
       :hover > a,
       .focus > a {
+        color: $color__link-hover;
       }
 
       a:hover,
       a.focus {
+        color: $color__link-hover;
       }
     }
 
@@ -94,6 +99,7 @@ a {
 
     &:hover > a,
     &.focus > a {
+      color: $color__link-hover;
     }
   }
   a {
