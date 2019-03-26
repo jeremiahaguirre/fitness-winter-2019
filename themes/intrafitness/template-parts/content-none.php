@@ -19,13 +19,12 @@
 
         <?php elseif (is_search()) : ?>
 
-        <p><?php echo esc_html('Sorry, but nothing matched your search terms. Please try again with some different keywords.'); ?></p>
-        <?php get_search_form(); ?>
+        <p><?php echo esc_html('Sorry, but nothing matched your search terms. Please try again with some different keywords, or have a look at these posts.'); ?></p>
+      
 
         <?php else : ?>
 
         <p><?php echo esc_html('It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.'); ?></p>
-        <?php get_search_form(); ?>
 
         <?php endif; ?>
     </div><!-- .page-content -->
