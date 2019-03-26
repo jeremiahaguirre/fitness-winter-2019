@@ -10,6 +10,10 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
+
+
+<a href="#top" class="top-arrow"><i class="fas fa-angle-up"></i></a>
+
     <div class="site-info">
         <div class="footer-logo">
             <img src="<?php echo get_template_directory_uri(); ?>/images/web/footer-symbols/logo_footer_large_dark.svg" alt="Intrafitness logo">

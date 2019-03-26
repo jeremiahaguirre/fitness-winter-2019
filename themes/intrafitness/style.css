@@ -411,7 +411,8 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  scroll-behavior: smooth; }
 
 *,
 *:before,
@@ -1039,9 +1040,14 @@ figure {
   .front-page .intra-way {
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     margin: 80px auto; }
     .front-page .intra-way h2 {
       text-align: center; }
+=======
+    margin: 80px auto h2;
+      margin-text-align: center; }
+>>>>>>> f9ddb8410d3d092d63a70c9672d2eee598006384
     .front-page .intra-way .wp-block-media-text {
       display: block; }
     .front-page .intra-way img {
@@ -1588,14 +1594,17 @@ figure {
   .page-id-15 form {
     max-width: 800px; } }
 
-@media (max-width: 641px) {
-  .page-id-22 .featured-image,
-  .page-id-13 .featured-image {
-    height: 400px;
-    background-position-x: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover; } }
+.page-id-22 .featured-image,
+.page-id-13 .featured-image {
+  height: 600px; }
+  @media (max-width: 641px) {
+    .page-id-22 .featured-image,
+    .page-id-13 .featured-image {
+      height: 400px;
+      background-position-x: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover; } }
 
 @media (min-width: 641px) {
   .page-id-22 .wpcf7,
@@ -1615,6 +1624,7 @@ figure {
 
 .page-id-22 h2,
 .page-id-13 h2 {
+  font-size: 2rem;
   margin-bottom: 0;
   text-align: center; }
   @media (min-width: 641px) {
@@ -1638,8 +1648,15 @@ figure {
     .page-id-13 .entry-content {
       margin: 0 10%; } }
   .page-id-13 .entry-content p {
-    padding: 1% 10%;
-    font-size: 1.3rem; }
+    padding: 1% 3%; }
+    @media (min-width: 641px) {
+      .page-id-13 .entry-content p {
+        padding: 1% 10%;
+        font-size: 1.3rem; } }
+
+.page-id-13 .wp-block-columns {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
 
 .page-id-13 .wp-block-column {
   padding: 2%;
@@ -1648,8 +1665,16 @@ figure {
     .page-id-13 .wp-block-column {
       margin-right: 2%; } }
 
+.page-id-13 .plans .wp-block-columns {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (min-width: 641px) {
+    .page-id-13 .plans .wp-block-columns {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; } }
+
 .page-id-13 .plans .wp-block-column {
-  margin: 1%;
+  margin: 3% 10%;
   border-style: solid;
   border-color: #c2d7e9;
   display: -webkit-box;
@@ -1661,6 +1686,9 @@ figure {
           flex-direction: column;
   position: relative;
   padding: 0 2% 100px 2%; }
+  @media (min-width: 641px) {
+    .page-id-13 .plans .wp-block-column {
+      margin: 1%; } }
   .page-id-13 .plans .wp-block-column h3 {
     font-size: 2.4rem;
     text-align: center;
@@ -1673,7 +1701,16 @@ figure {
     margin: 0 15% 10% 15%; }
   .page-id-13 .plans .wp-block-column ul {
     margin: 0;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    list-style: none;
+    /* Remove default bullets */ }
+    .page-id-13 .plans .wp-block-column ul li::before {
+      content: '\2022';
+      color: #00a7ed;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em; }
   .page-id-13 .plans .wp-block-column li {
     padding-bottom: 0.5rem; }
   .page-id-13 .plans .wp-block-column .trial-top-line {
@@ -1683,8 +1720,11 @@ figure {
   .page-id-13 .plans .wp-block-column .wp-block-button {
     position: absolute;
     bottom: 0px;
-    width: 88%;
+    width: 96%;
     text-align: center; }
+    @media (min-width: 641px) {
+      .page-id-13 .plans .wp-block-column .wp-block-button {
+        width: 88%; } }
     .page-id-13 .plans .wp-block-column .wp-block-button a {
       font-size: 1.4rem; }
   .page-id-13 .plans .wp-block-column:nth-child(even) {
@@ -1697,8 +1737,15 @@ figure {
     .page-id-13 .plans .wp-block-column:nth-child(even) a {
       border-style: none; }
 
+.page-id-13 .flickity-slider article {
+  margin-right: 10%;
+  width: 60%; }
+
 .page-id-13 .faq {
-  padding: 0 15%; }
+  padding: 0 8%; }
+  @media (min-width: 641px) {
+    .page-id-13 .faq {
+      padding: 0 15%; } }
   .page-id-13 .faq .faq-hr {
     background-color: #c2d7e9;
     margin: 1.5rem 0; }
@@ -2056,7 +2103,7 @@ figure {
       padding-top: 10%;
       font-size: 60px;
       text-transform: uppercase;
-      width: 50%; }
+      width: 40%; }
     .transformation-background-pic a {
       text-decoration: none; }
     .transformation-background-pic .button {
@@ -2065,7 +2112,7 @@ figure {
       font-size: 24px;
       width: 15%;
       height: 10%;
-      margin-right: 35%;
+      margin-right: 25%;
       cursor: pointer;
       text-align: center;
       text-decoration: none;
@@ -2108,6 +2155,13 @@ figure {
   .site-footer .site-info {
     display: none;
     font-size: 1.2rem; }
+  .site-footer .fa-angle-up:before {
+    padding: 10px 15px;
+    background-color: #c2d7e9;
+    border-radius: 16px; }
+  .site-footer a {
+    float: right;
+    margin-right: 5%; }
   @media (min-width: 641px) {
     .site-footer .site-info {
       display: -webkit-box;
@@ -2120,6 +2174,11 @@ figure {
       padding: 4rem;
       padding-bottom: 1rem;
       opacity: 0.5; }
+      .site-footer .site-info .top-arrow {
+        padding: 10px 15px;
+        background-color: grey;
+        border-radius: 16px;
+        margin-right: 55%; }
     .site-footer ul {
       text-align: left; }
     .site-footer p {

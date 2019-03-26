@@ -5,6 +5,7 @@
 html {
   box-sizing: border-box;
   @include font-size(1);
+  scroll-behavior: smooth;
 }
 
 *,
