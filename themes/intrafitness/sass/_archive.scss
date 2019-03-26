@@ -1,7 +1,8 @@
 // CSS for Category Page
 
 
-@include desktop {   
+@include desktop { 
+
 .category-page {
     max-width: 80%;
     margin: auto;
@@ -21,27 +22,25 @@
             transform: translateX(-50%);
         }
     }
-}
+
     .category-recent-blogs {
             margin-bottom: 7%;
-            position: relative;}
         h2 {
             position: relative;
             &::after {
                 content: "";
-                width: 44.5%;
+                width: 360px;
                 height: 4px;
-                bottom: 87%;
+                bottom: -7px;
                 background-color: #00a7ed;
                 position: absolute;
-                left: 22.5%;
+                left: 272px;
                 transform: translateX(-50%);
             }
         }
     }
-
-
-
+}
+}
 
 @include mobile {
     
@@ -64,9 +63,7 @@
 
     .category-recent-blogs {
             margin-bottom: 50px;
-            position: relative;}
-        
-        
+                    
         h2 {
             position: relative;
             &::after {
@@ -81,4 +78,4 @@
             }
         }
     }
-}
+}}

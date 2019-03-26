@@ -160,19 +160,13 @@
             font-weight: bold;
             font-size: 0.80rem;
         }
-    }
-    
 
-
-// .widget_search {
-//  max-width: 250px;;
-// }
+    }}
+}
 
 .widget-title {
     display:none;
 }
-
-
 
 .blog-content-area {
     display:grid;
@@ -200,10 +194,6 @@
     }
 }
 }
-}
-// .blog-carousel {
-//     height: 500px;
-// }
 
 
 @include mobile {
@@ -249,7 +239,8 @@
                   position: absolute;
                   transform: translateX(-50%);  
         }
-        }}
+        }
+    }
     
 
 
@@ -384,6 +375,5 @@
                    padding: 2%;
                }
            }
-}
-}
+        }
 }
