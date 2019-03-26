@@ -446,7 +446,7 @@
     }
     .purpose {
       width: 70%;
-      margin: 0 auto;
+      margin: 10px auto;
       h2 {
         position: relative;
         text-align: center;
@@ -476,7 +476,7 @@
       &::before {
         content: '';
         position: absolute;
-        top: 121.4em;
+        top: 123.4em;
         background-image: linear-gradient($color__llb, $color__llb);
         transform: skewY(4deg);
         transform-origin: top right;

@@ -873,7 +873,7 @@ figure {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        font-size: 1.2rem;
+        font-size: 1rem;
         -webkit-box-align: stretch;
             -ms-flex-align: stretch;
                 align-items: stretch;
@@ -1375,7 +1375,7 @@ figure {
       margin: 0; }
   .mindset-coaching .purpose {
     width: 70%;
-    margin: 0 auto; }
+    margin: 10px auto; }
     .mindset-coaching .purpose h2 {
       position: relative;
       text-align: center;
@@ -1402,7 +1402,7 @@ figure {
     .mindset-coaching .maybe-you::before {
       content: '';
       position: absolute;
-      top: 121.4em;
+      top: 123.4em;
       background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
       background-image: linear-gradient(#ebf7fd, #ebf7fd);
       -webkit-transform: skewY(4deg);
