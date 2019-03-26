@@ -10,7 +10,7 @@
       background-color: $color__db;
       background-image: url(../../images/web/home-page/hero_banner.jpg);
       height: 400px;
-
+      width: 100%;
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
@@ -49,6 +49,9 @@
       width: 100%;
       height: 100%;
       margin: 80px auto;
+      h2 {
+        text-align: center;
+      }
       .wp-block-media-text {
         display: block;
       }
@@ -59,6 +62,11 @@
     .goals {
       display: block;
       width: 100%;
+      h2 {
+        font-size: 2.75rem;
+        text-align: center;
+      }
+
       .goals-header {
         display: flex;
         flex-wrap: nowrap;
@@ -85,6 +93,7 @@
         width: 70%;
         margin: 0 auto;
         h2 {
+          font-size: 2.25rem;
           border-bottom: 2px solid $color__lb;
         }
         p {
@@ -104,15 +113,40 @@
         }
       }
     }
+    .ready-to-start {
+      background-image: url(../../images/web/home-page/paul_and_guy_ropes@3x.jpg);
+      width: 100%;
+      height: 400px;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .btn-front-page {
+        position: relative;
+        top: 4s0%;
+        left: 20%;
+        h2 {
+          
+          color: $color__w;
+          font-size: 2.75rem;
+          text-transform: uppercase;
+        }
+        a {
+          border: none;
+        }
+      }
+    }
   }
 }
+
 @include desktop {
   .front-page {
     .home-banner {
       position: relative;
       background-color: $color__db;
       background-image: url(../../images/web/home-page/hero_banner.jpg);
-      height: 600px;
+      height: 700px;
+      width: 100%;
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
@@ -125,26 +159,28 @@
         transform: skewY(-4deg);
         transform-origin: top left;
         width: 100%;
-        height: 390px;
+        height: 470px;
         z-index: -10000;
       }
       .banner-text {
         position: absolute;
-        top: 30%;
+        top: 27%;
         height: 100%;
-        width: 50%;
         padding-left: 10%;
         h2 {
+          width: 70%;
+          margin: auto;
           font-family: 'Trade Gothic LT Std Normal';
           text-align: left;
           color: $color__w;
-          font-size: 4.3rem;
+          font-size: 4.35rem;
           font-weight: 100;
           margin: 0;
           text-transform: uppercase;
         }
         h3 {
           color: $color__lb;
+          width: 50%;
         }
         a {
           font-size: 1.55rem;
@@ -159,8 +195,8 @@
     .intra-way {
       width: 80%;
       height: 100%;
-      margin-top: 200px;
       margin: 20px auto;
+      margin-top: 200px;
       display: flex;
 
       .wp-block-media-text {
@@ -168,7 +204,7 @@
       }
       img {
         height: 100%;
-        width: 500px;
+        width: 400px;
       }
     }
     .goals {
@@ -194,7 +230,7 @@
         width: 90%;
         margin: 0 auto;
         .wp-block-column {
-          margin: 0 10px;
+          margin: 0 20px;
           padding: 0 40px;
           background-color: $color__db;
         }
@@ -223,15 +259,51 @@
         }
       }
     }
+    .ready-to-start {
+      background-image: url(../../images/web/home-page/ready_to_start.jpg);
+      width: 100%;
+      height: 600px;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .btn-front-page {
+        position: relative;
+        top: 20%;
+        left: 65%;
+        h2 {
+          width: 30%;
+          color: $color__w;
+          font-size: 4.45rem;
+          text-transform: uppercase;
+        }
+        a {
+          border: none;
+          font-size: 1.75rem;
+          padding: 24px 30px;
+        }
+      }
+    }
+  }
+}
+@include second-break {
+  .front-page {
+    .home-banner {
+      .banner-text {
+        top: 15%;
+        padding-left: 10%;
+        h2 {
+          width: 60%;
+          font-size: 5.3rem;
+        }
+        h3 {
+          width: 40%;
+        }
+      }
+    }
   }
 }
 
-.ready-to-start {
-  background-image: url(../../images/web/home-page/ready_to_start.jpg);
-  width: 100%;
-  height: 50vh;
-  background-repeat: no-repeat;
-}
 /*Mindset page*/
 .mindset-coaching {
   @include mobile {

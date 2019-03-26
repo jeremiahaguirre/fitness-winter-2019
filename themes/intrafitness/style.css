@@ -1834,15 +1834,25 @@ figure {
   .transformation-background-pic {
     background-image: url(../../images/web/about/paul_and_girl-3x.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 400px; }
-    .transformation-background-pic .button {
+    width: 100%;
+    height: 100vh;
+    background-size: cover; }
+    .transformation-background-pic h2 {
+      text-align: center;
+      padding-top: 46%;
+      color: white;
+      font-size: 38px; }
+    .transformation-background-pic .about-mobile-button {
       display: inline-block;
       padding: 5px 40px;
       font-size: 20px;
       background-color: #00a7ed;
       border-radius: 5px;
       text-decoration: none; }
+      .transformation-background-pic .about-mobile-button a {
+        color: white; }
+    .transformation-background-pic .button {
+      display: none; }
   .rest-of-my-life {
     padding: 5%; } }
 
@@ -1854,7 +1864,7 @@ figure {
     .about-paul .bio {
       background-color: #fff;
       position: relative;
-      width: 48%;
+      width: 40%;
       line-height: 2;
       font-size: 1.25rem;
       text-align: left;
@@ -1921,7 +1931,9 @@ figure {
       width: 113%;
       padding: 10px;
       font-size: 30px;
-      left: 58%; }
+      left: 58%;
+      margin-top: 12%;
+      position: relative; }
   .remember-the-days {
     background-color: #fff;
     position: relative;
@@ -1960,10 +1972,10 @@ figure {
     font-size: 1.25rem; }
   .wp-block-quote {
     text-align: center;
-    position: relative;
+    position: absolute;
     display: block;
     width: 59%;
-    top: 10%;
+    bottom: 0%;
     left: 7%;
     padding: 10px;
     font-size: 30px;
@@ -2009,6 +2021,10 @@ figure {
       background-color: #00a7ed;
       border: none;
       border-radius: 15px; }
+      .transformation-background-pic .button a {
+        color: white; }
+    .transformation-background-pic .about-mobile-button {
+      display: none; }
     .transformation-background-pic .button:hover {
       background-color: #00a7ed; }
     .transformation-background-pic .button:active {

@@ -104,20 +104,35 @@
     }
   }
   .transformation-background-pic {
-    background-image: url(../../images/web/about/paul_and_girl-3x.jpg);
+    background-image:url(../../images/web/about/paul_and_girl-3x.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 400px;
+    //background-size: contain;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    h2 {
+      text-align: center;
+      padding-top: 46%;
+      color: white;
+      font-size: 38px;
+  }
 
-  .button {
+  .about-mobile-button{
     display: inline-block;
     padding: 5px 40px;
     font-size: 20px;
     background-color: #00a7ed;
     border-radius: 5px;
     text-decoration: none;
+    a{
+      color: white;
+    }
   }
+  .button{
+    display: none;
   }
+}
+  
   .rest-of-my-life{
     padding: 5%;
   }
@@ -134,7 +149,7 @@
     .bio {
       background-color: $color__w;
       position: relative;
-      width: 48%;
+      width: 40%;
       //height: 450px;
       line-height: 2;
       font-size: 1.25rem;
@@ -207,6 +222,8 @@
       padding: 10px;
       font-size: 30px;
       left: 58%;
+      margin-top: 12%;
+      position: relative;
     }
   }
   .remember-the-days {
@@ -256,10 +273,10 @@
 
   .wp-block-quote {
     text-align: center;
-    position: relative;
+    position: absolute;
     display: block;
     width: 59%;
-    top: 10%;
+    bottom: 0%;
     left:7%;
     padding: 10px;
     font-size: 30px;
@@ -305,6 +322,13 @@
       background-color: $color__lb;
       border: none;
       border-radius: 15px;
+      a{
+        color: white;
+      }
+  
+    }
+    .about-mobile-button{
+      display: none;
     }
 
     .button:hover {
@@ -316,17 +340,4 @@
       transform: translateY(4px);
     }
   }
-
 }
-// .top-arrow {
-//   background-color: blue;
-//   color: grey;
-//   font-size: 60px;
-//   text-decoration: none;
-//   font-weight: bold;
-//   width: 0%; 
-//   height: 0%; 
-//   border-left: 20px solid transparent;
-//   border-right: 20px solid transparent;
-  
-// }

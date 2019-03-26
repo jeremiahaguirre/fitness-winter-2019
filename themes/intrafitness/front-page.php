@@ -15,10 +15,6 @@ get_header(); ?>
 
         <?php endwhile; ?>
 
-        <section class="ready-to-start">
-            <h2>Ready To Start?</h2>
-        </section>
-
         <section class="front-page-recent-blogs">
            <?php get_template_part('template-parts/content', 'recent-carousel'); ?>
         </section>

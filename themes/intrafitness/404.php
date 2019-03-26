@@ -23,7 +23,6 @@ get_header(); ?>
 </div>
 			</section>
 
-	
 	<button type="button"> GO back! </button>
 
 		</main>
