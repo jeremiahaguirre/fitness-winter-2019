@@ -19,7 +19,7 @@
     .bio {
       padding: 5%;
       h3 {
-        color: $color__lb;  
+        color: $color__lb;
         text-align: center;
         position: relative;
       }
@@ -45,7 +45,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 400px;
-    .remember-the-days{
+    .remember-the-days {
       padding: 5%;
       h2 {
         position: relative;
@@ -60,28 +60,28 @@
           left: 50%;
           transform: translateX(-50%);
           bottom: 0;
+        }
       }
     }
-  }
-  .story-img {
-    background-image: url(../../images/web/about/paul_punching_bag.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 400px;
-    .rest-of-my-life{
-      padding: 5%;
+    .story-img {
+      background-image: url(../../images/web/about/paul_punching_bag.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-top: 400px;
+      .rest-of-my-life {
+        padding: 5%;
+      }
     }
-  }
-  .wp-block-quote {
-    display: block;
-    background-color: $color__db;
-    text-align: center;
-    position: relative;
-    margin: 0;
-    padding: 1rem;
-    color: $color__w;
-    font-family: $font__main;
-  }
+    .wp-block-quote {
+      display: block;
+      background-color: $color__db;
+      text-align: center;
+      position: relative;
+      margin: 0;
+      padding: 1rem;
+      color: $color__w;
+      font-family: $font__main;
+    }
     .wp-block-quote {
       display: block;
       background-color: $color__db;
@@ -94,7 +94,7 @@
     }
   }
   .transformation-background-pic {
-    background-image:url(../../images/web/about/paul_and_girl.jpg);
+    background-image: url(../../images/web/about/paul_and_girl.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -104,26 +104,26 @@
       padding-top: 46%;
       color: white;
       font-size: 38px;
-  }
-  .about-mobile-button{
-    display: inline-block;
-    padding: 5px 40px;
-    font-size: 20px;
-    background-color: #00a7ed;
-    border-radius: 5px;
-    text-decoration: none;
-    a{
-      color: white;
-      &:hover {
-        color: $color__link-hover;
+    }
+    .about-mobile-button {
+      display: inline-block;
+      padding: 5px 40px;
+      font-size: 20px;
+      background-color: #00a7ed;
+      border-radius: 5px;
+      text-decoration: none;
+      a {
+        color: white;
+        &:hover {
+          color: $color__link-hover;
+        }
       }
     }
+    .button {
+      display: none;
+    }
   }
-  .button{
-    display: none;
-  }
-}
-  .rest-of-my-life{
+  .rest-of-my-life {
     padding: 5%;
   }
 }
@@ -147,10 +147,10 @@
       }
       h3 {
         color: $color__lb;
-  }
- }
+      }
+    }
     .paul-sitting {
-      background: url('../../images/web/about/paul_sitting.jpg');
+      background: url('../../images/web/about/paul_sitting@3x.jpg');
       height: 940px;
       background-position-x: right;
       background-attachment: fixed;
@@ -167,7 +167,7 @@
         width: 100%;
         height: 890px;
         z-index: -100;
-    }
+      }
       .personal-trainer-life-coach {
         text-align: center;
         position: relative;
@@ -183,7 +183,7 @@
     }
   }
   .young-picture {
-    background-image: url('../../images/web/about/paul_young.jpg');
+    background-image: url('../../images/web/about/paul_young@3x.jpg');
     height: 940px;
     background-position-x: left;
     background-repeat: no-repeat;
@@ -199,7 +199,7 @@
       width: 100%;
       height: 890px;
       z-index: -100;
-  }
+    }
     .wp-block-quote-decison-to-make {
       text-align: left;
       width: 113%;
@@ -236,7 +236,7 @@
     }
   }
   .story-img {
-    background-image: url(../../images/web/about/paul_punching_bag.jpg);
+    background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
     height: 940px;
     background-position-y: right;
     background-attachment: fixed;
@@ -259,7 +259,7 @@
     display: block;
     width: 59%;
     bottom: 0%;
-    left:7%;
+    left: 7%;
     padding: 10px;
     font-size: 30px;
     background-color: $color__db;
@@ -301,20 +301,20 @@
       background-color: $color__lb;
       border: none;
       border-radius: 15px;
-      a{
+      a {
         color: white;
         &:hover {
           color: $color__link-hover;
         }
+      }
     }
-  }
-    .about-mobile-button{
+    .about-mobile-button {
       display: none;
-  }
-   .button:hover {
+    }
+    .button:hover {
       background-color: $color__lb;
-  }
-  .button:active {
+    }
+    .button:active {
       background-color: $color__lb;
       transform: translateY(4px);
     }
