@@ -24,23 +24,6 @@
     display: none;
     font-size: 1.2rem;
   }
-<<<<<<< HEAD
-  .fa-angle-up:before{
-    padding: 10px 15px;
-    box-shadow: 2px 2px 20px 0 #464646;
-    border-radius: 100%;
-    background-color: #778899;
-  }
-  a{
-    float: right;
-    margin-right: 5%;
-    &:hover {
-      color: $color__link-hover;
-    }
-  }
-=======
-
->>>>>>> b43b3957933c1b7e8b79e104d77bcc2cf6125664
   @include desktop {
     .site-info {
       display: flex;

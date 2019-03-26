@@ -32,8 +32,6 @@
   }
 
   .carousel-area {
-    // Popular Posts
-    // padding-left: 60px;
     h2 {
       position: relative;
       font-size: 2.25rem;
@@ -90,9 +88,24 @@
     }
   }
 
-  // .blog-carousel-title{
-  //     height: 150px;
-  // }
+  .front-page-recent-blogs{
+    width: 80%;
+    margin: auto;
+    h2{
+        position: relative;
+        text-align: center;
+        font-size: 3rem;
+        &::after {
+        content: '';
+            width: 30%;
+            height: 5px;
+            top: 60px;
+            background-color: $color__lb;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+    }
+}
 
   .recent-blog-post {
     h1 {
@@ -247,6 +260,7 @@
         transform: translateX(-50%);
       }
     }
+
   }
 
   .blog-carousel {
@@ -384,5 +398,7 @@
         }
       }
     }
+
   }
+}
 }
