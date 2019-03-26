@@ -636,6 +636,12 @@ a {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
+      .main-navigation ul ul :hover > a,
+      .main-navigation ul ul .focus > a {
+        color: #0c71a3; }
+      .main-navigation ul ul a:hover,
+      .main-navigation ul ul a.focus {
+        color: #0c71a3; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       display: -webkit-box;
@@ -645,6 +651,9 @@ a {
   .main-navigation li {
     float: left;
     position: relative; }
+    .main-navigation li:hover > a,
+    .main-navigation li.focus > a {
+      color: #0c71a3; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -1560,7 +1569,7 @@ figure {
 .page-id-15 hr {
   margin: 0 25%;
   background-color: #00a7ed;
-  height: 3px; }
+  height: 5px; }
   @media (min-width: 641px) {
     .page-id-112 hr,
     .page-id-115 hr,
@@ -1630,7 +1639,7 @@ figure {
 .page-id-13 hr {
   margin: 0 25%;
   background-color: #00a7ed;
-  height: 3px; }
+  height: 5px; }
   @media (min-width: 641px) {
     .page-id-22 hr,
     .page-id-13 hr {
@@ -2153,8 +2162,8 @@ figure {
     font-size: 1.2rem; }
   .site-footer .fa-angle-up:before {
     padding: 10px 15px;
-    -webkit-box-shadow: 25px 25px 38px 0px #8b8b8f;
-            box-shadow: 25px 25px 38px 0px #8b8b8f;
+    -webkit-box-shadow: 2px 2px 20px 0 #464646;
+            box-shadow: 2px 2px 20px 0 #464646;
     border-radius: 100%;
     background-color: #778899; }
   .site-footer a {
