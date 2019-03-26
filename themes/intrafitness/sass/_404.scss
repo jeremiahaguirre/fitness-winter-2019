@@ -1,33 +1,39 @@
 .error-404{
-    color: $color__db;
+    
     height: 400px;
     text-align: center;
-    h1 {
-        
-        padding-top: 5%;
-        &::after {
-          content: '';
-          width: 70%;
-          height: 5px;
-          //top: 50px;
-          background-color: #00a7ed;
-          position: absolute;
-          left: 50%;
-          transform: translateX(-50%);
-          }
-        }
-        p{
-            &::after {
-                content: '';
-                width: 70%;
-                height: 5px;
-                //top: 50px;
-                background-color: #00a7ed;
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                bottom: 0;
-                margin-bottom: 5%;
-                }
-        }
+    margin-bottom: 100px;
+    border-top: 10px solid $color__db;
+    border-top: 10px solid $color__db;
+    border-bottom: 10px solid ;
+    text-align: center;
+    padding: 5%;
 }
+    // h1 {
+        
+    //     padding-top: 5%;
+    //     &::after {
+    //       content: '';
+    //       width: 70%;
+    //       height: 5px;
+    //       //top: 50px;
+    //       background-color: #00a7ed;
+    //       position: absolute;
+    //       left: 50%;
+    //       transform: translateX(-50%);
+    //       }
+    //     }
+        // p{
+        //     &::after {
+        //         content: '';
+        //         width: 70%;
+        //         height: 5px;
+        //         //top: 50px;
+        //         background-color: #00a7ed;
+        //         position: absolute;
+        //         left: 50%;
+        //         transform: translateX(-50%);
+        //         bottom: 0;
+        //         margin-bottom: 5%;
+        //         }
+        

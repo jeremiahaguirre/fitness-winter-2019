@@ -1,15 +1,16 @@
 @include mobile {
   .paul-sitting {
     background-image: url(../../images/web/about/paul_sitting@3x.jpg);
-    height: 300px;
-    background-attachment: fixed;
+    //height: 300px;
+    //background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    padding-top: 400px;
 
     &::before {
       content: '';
       position: absolute;
-      top: 320px;
+      //top: 320px;
       background-image: linear-gradient($color__llb, $color__llb);
       transform: skewY(-6deg);
       transform-origin: top left;
@@ -19,56 +20,18 @@
     }
 
     .bio {
+      padding: 5%;
       h3 {
-        color: $color__lb;
+        color: $color__lb;  
         text-align: center;
+        //color: $color__w;
+        position: relative;
+        //padding: 5%;
       }
     }
-    // h2 {
-    //   text-align: center;
-    //   font-size: 2.25rem;
-    // }
-  }
-  .young-picture {
-    background-image: url(../../images/web/about/paul_young@3x.jpg);
-    height: 500px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .story-img {
-    background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
-    height: 300px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .wp-block-quote {
-    display: block;
-    background-color: $color__db;
-    text-align: center;
-    position: relative;
-    margin: 0;
-    padding: 1rem;
-    color: $color__w;
-  }
-
-  .about-my-story {
     h2 {
-      position: relative;
       text-align: center;
-      font-size: 2.75rem;
-      &::after {
-        content: '';
-        width: 50%;
-        height: 5px;
-        background-color: $color__lb;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-      }
+      font-size: 2.25rem;
     }
     .wp-block-quote {
       display: block;
@@ -78,7 +41,80 @@
       margin: 0;
       padding: 1rem;
       color: $color__w;
+      font-family: $font__main;
     }
+  }
+  .young-picture {
+    background-image: url(../../images/web/about/paul_young@3x.jpg);
+    //height: 500px;
+    //background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 400px;
+    .remember-the-days{
+      padding: 5%;
+      h2 {
+        position: relative;
+        text-align: center;
+        font-size: 2.75rem;
+        &::after {
+          content: '';
+          width: 50%;
+          height: 5px;
+          background-color: $color__lb;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 0;
+        }
+    }
+  }
+  .story-img {
+    background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
+    //height: 300px;
+    //background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 400px;
+    .rest-of-my-life{
+      padding: 5%;
+    }
+  }
+  .wp-block-quote {
+    display: block;
+    background-color: $color__db;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    color: $color__w;
+    font-family: $font__main;
+  }
+
+    .wp-block-quote {
+      display: block;
+      background-color: $color__db;
+      text-align: center;
+      position: relative;
+      margin: 0;
+      padding: 1rem;
+      color: $color__w;
+    }
+  }
+  .transformation-background-pic {
+    background-image: url(../../images/web/about/paul_and_girl-3x.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 400px;
+
+  .button {
+    display: inline-block;
+    padding: 5px 40px;
+    font-size: 20px;
+    background-color: #00a7ed;
+    border-radius: 5px;
+    text-decoration: none;
+  }
   }
 }
 
@@ -253,7 +289,7 @@
       font-size: 24px;
       width: 15%;
       height: 10%;
-      margin-right: 34%;
+      margin-right: 35%;
       cursor: pointer;
       text-align: center;
       text-decoration: none;
@@ -275,15 +311,15 @@
   }
 
 }
-.top-arrow {
-  background-color: blue;
-  color: grey;
-  font-size: 60px;
-  text-decoration: none;
-  font-weight: bold;
-  width: 0%; 
-  height: 0%; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
+// .top-arrow {
+//   background-color: blue;
+//   color: grey;
+//   font-size: 60px;
+//   text-decoration: none;
+//   font-weight: bold;
+//   width: 0%; 
+//   height: 0%; 
+//   border-left: 20px solid transparent;
+//   border-right: 20px solid transparent;
   
-}
+// }
