@@ -1,33 +1,84 @@
+// CSS for Category Page
 
+
+@include desktop {   
 .category-page {
     max-width: 80%;
     margin: auto;
     .widget-area{
-        margin-top: -22px;
+        padding-top: 83px;
     }
     .page-title {
+        position: relative;
         &::after {
             content: "";
-            width: 25%;
+            width: 360px;
+            left: 181px;
+            top: 48px;
             height: 4px;
-            bottom: 78%;
             background-color: #00a7ed;
             position: absolute;
-            left: 22.5%;
             transform: translateX(-50%);
         }
     }
 }
+    .category-recent-blogs {
+            margin-bottom: 7%;
+            position: relative;}
+        h2 {
+            position: relative;
+            &::after {
+                content: "";
+                width: 44.5%;
+                height: 4px;
+                bottom: 87%;
+                background-color: #00a7ed;
+                position: absolute;
+                left: 22.5%;
+                transform: translateX(-50%);
+            }
+        }
+    }
 
-
-
-
-@include desktop {
-
-
-}    
 
 
 
 @include mobile {
+    
+.category-page {
+    max-width: 90%;
+    margin: auto;
+    .page-title {
+        position: relative;
+        &::after {
+            content: "";
+            width: 280px;
+            height: 4px;
+            background-color: #00a7ed;
+            position: absolute;
+            left: 141px;
+            transform: translateX(-50%);
+            top: 102%;
+        }
+    }
+
+    .category-recent-blogs {
+            margin-bottom: 50px;
+            position: relative;}
+        
+        
+        h2 {
+            position: relative;
+            &::after {
+                content: "";
+                width: 25%;
+                height: 4px;
+                bottom: 78%;
+                background-color: #00a7ed;
+                position: absolute;
+                left: 22.5%;
+                transform: translateX(-50%);
+            }
+        }
+    }
 }

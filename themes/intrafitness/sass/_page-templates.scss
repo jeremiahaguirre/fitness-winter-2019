@@ -10,7 +10,7 @@
       background-color: $color__db;
       background-image: url(../../images/web/home-page/hero_banner.jpg);
       height: 400px;
-
+      width: 100%;
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
@@ -48,7 +48,10 @@
     .intra-way {
       width: 100%;
       height: 100%;
-      margin: 80px auto;
+      margin: 80px auto
+      h2 {
+        text-align: center;
+      }
       .wp-block-media-text {
         display: block;
       }
@@ -59,6 +62,11 @@
     .goals {
       display: block;
       width: 100%;
+      h2 {
+        font-size: 2.75rem;
+        text-align: center;
+      }
+
       .goals-header {
         display: flex;
         flex-wrap: nowrap;
@@ -85,6 +93,7 @@
         width: 70%;
         margin: 0 auto;
         h2 {
+          font-size: 2.25rem;
           border-bottom: 2px solid $color__lb;
         }
         p {
@@ -104,15 +113,40 @@
         }
       }
     }
+    .ready-to-start {
+      background-image: url(../../images/web/home-page/paul_and_guy_ropes@3x.jpg);
+      width: 100%;
+      height: 400px;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .btn-front-page {
+        position: relative;
+        top: 40%;
+        left: 20%;
+        h2 {
+          
+          color: $color__w;
+          font-size: 2.75rem;
+          text-transform: uppercase;
+        }
+        a {
+          border: none;
+        }
+      }
+    }
   }
 }
+
 @include desktop {
   .front-page {
     .home-banner {
       position: relative;
       background-color: $color__db;
       background-image: url(../../images/web/home-page/hero_banner.jpg);
-      height: 600px;
+      height: 700px;
+      width: 100%;
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-size: cover;
@@ -125,26 +159,28 @@
         transform: skewY(-4deg);
         transform-origin: top left;
         width: 100%;
-        height: 390px;
+        height: 470px;
         z-index: -10000;
       }
       .banner-text {
         position: absolute;
-        top: 30%;
+        top: 27%;
         height: 100%;
-        width: 50%;
         padding-left: 10%;
         h2 {
+          width: 70%;
+          margin: auto;
           font-family: 'Trade Gothic LT Std Normal';
           text-align: left;
           color: $color__w;
-          font-size: 4.3rem;
+          font-size: 4.35rem;
           font-weight: 100;
           margin: 0;
           text-transform: uppercase;
         }
         h3 {
           color: $color__lb;
+          width: 50%;
         }
         a {
           font-size: 1.55rem;
@@ -159,8 +195,8 @@
     .intra-way {
       width: 80%;
       height: 100%;
-      margin-top: 200px;
       margin: 20px auto;
+      margin-top: 200px;
       display: flex;
 
       .wp-block-media-text {
@@ -168,7 +204,7 @@
       }
       img {
         height: 100%;
-        width: 500px;
+        width: 400px;
       }
     }
     .goals {
@@ -194,7 +230,7 @@
         width: 90%;
         margin: 0 auto;
         .wp-block-column {
-          margin: 0 10px;
+          margin: 0 20px;
           padding: 0 40px;
           background-color: $color__db;
         }
@@ -223,15 +259,51 @@
         }
       }
     }
+    .ready-to-start {
+      background-image: url(../../images/web/home-page/ready_to_start.jpg);
+      width: 100%;
+      height: 600px;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .btn-front-page {
+        position: relative;
+        top: 20%;
+        left: 65%;
+        h2 {
+          width: 30%;
+          color: $color__w;
+          font-size: 4.45rem;
+          text-transform: uppercase;
+        }
+        a {
+          border: none;
+          font-size: 1.75rem;
+          padding: 24px 30px;
+        }
+      }
+    }
+  }
+}
+@include second-break {
+  .front-page {
+    .home-banner {
+      .banner-text {
+        top: 15%;
+        padding-left: 10%;
+        h2 {
+          width: 60%;
+          font-size: 5.3rem;
+        }
+        h3 {
+          width: 40%;
+        }
+      }
+    }
   }
 }
 
-.ready-to-start {
-  background-image: url(../../images/web/home-page/ready_to_start.jpg);
-  width: 100%;
-  height: 50vh;
-  background-repeat: no-repeat;
-}
 /*Mindset page*/
 .mindset-coaching {
   @include mobile {
@@ -606,8 +678,9 @@
 
 .page-id-22,
 .page-id-13 {
-  @include mobile {
-    .featured-image {
+  .featured-image {
+    height: 600px;
+    @include mobile {
       height: 400px;
       background-position-x: center;
       background-attachment: fixed;
@@ -631,6 +704,7 @@
     display: none;
   }
   h2 {
+    font-size: 2rem;
     margin-bottom: 0;
     text-align: center;
     @include desktop {
@@ -653,9 +727,15 @@
       margin: 0 10%;
     }
     p {
-      padding: 1% 10%;
-      font-size: 1.3rem;
+      padding: 1% 3%;
+      @include desktop {
+        padding: 1% 10%;
+        font-size: 1.3rem;
+      }
     }
+  }
+  .wp-block-columns {
+    flex-wrap: nowrap;
   }
   .wp-block-column {
     padding: 2%;
@@ -664,14 +744,23 @@
       margin-right: 2%;
     }
   }
+  .plans .wp-block-columns {
+    flex-wrap: wrap;
+    @include desktop {
+      flex-wrap: nowrap;
+    }
+  }
   .plans .wp-block-column {
-    margin: 1%;
+    margin: 3% 10%;
     border-style: solid;
     border-color: $color__bg;
     display: flex;
     flex-direction: column;
     position: relative;
     padding: 0 2% 100px 2%;
+    @include desktop {
+      margin: 1%;
+    }
     h3 {
       font-size: 2.4rem;
       text-align: center;
@@ -688,6 +777,16 @@
     ul {
       margin: 0;
       font-size: 1.2rem;
+      list-style: none; /* Remove default bullets */
+
+      & li::before {
+        content: '\2022';
+        color: $color__lb;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
     }
     li {
       padding-bottom: $base__space-unit / 2;
@@ -701,8 +800,11 @@
     .wp-block-button {
       position: absolute;
       bottom: 0px;
-      width: 88%;
+      width: 96%;
       text-align: center;
+      @include desktop {
+        width: 88%;
+      }
       a {
         font-size: 1.4rem;
       }
@@ -720,8 +822,17 @@
       }
     }
   }
+  .flickity-slider {
+    article {
+      margin-right: 10%;
+      width: 60%;
+    }
+  }
   .faq {
-    padding: 0 15%;
+    padding: 0 8%;
+    @include desktop {
+      padding: 0 15%;
+    }
     .faq-hr {
       background-color: $color__bg;
       margin: ($base__space-unit * 1.5) 0;

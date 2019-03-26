@@ -115,7 +115,6 @@
 
 .recent-entry-content {
     border: 3.5px solid #c2d7e9;
-        position: relative;
         border-radius: 9.95px;
         img {
             height: 320px;
@@ -124,6 +123,8 @@
             border-top-right-radius: 6px;
             width:100%;
         }
+        .recent-blog-image-container {
+            position: relative;
         .recent-blog-term{
             font-size: 0.75rem;
             position: absolute;
@@ -132,7 +133,7 @@
             color: #fff;
             // bottom: 1px;
             right: 0px;
-            bottom: 35%;
+            bottom: 7px;
         }
         h1 {
             position: relative;
@@ -143,7 +144,7 @@
                 content: "";
                 width: 40%;
                 height: 2px;
-                top: 37px;
+                top: 102%;
                 right: 38.25%;
                 background-color: #c2d7e9;
                 position: absolute;
@@ -171,8 +172,14 @@
     display:none;
 }
 
+
+
+.blog-content-area {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    
 .widget-area {
-    padding-top: 26.25%;
+    padding-top: 108px;
     border:none;
     #cat{
         margin-left: 17px;
@@ -192,11 +199,6 @@
         // width: 369px;
     }
 }
-
-
-.blog-content-area {
-    display:grid;
-    grid-template-columns: 2fr 1fr;
 }
 }
 // .blog-carousel {
@@ -315,6 +317,8 @@
                 border-top-left-radius: 9.95px;
                 border-top-right-radius: 9.95px;
             }
+            .recent-blog-image-container {
+                position: relative;
             .recent-blog-term{
                 font-size: 0.75rem;
                 position: absolute;
@@ -334,7 +338,7 @@
                     content: "";
                     width: 146px;
                     height: 2px;
-                    top: 63px;
+                    top: 98%;
                     right: 100px;
                     background-color: #c2d7e9;
                     position: absolute;
@@ -351,8 +355,7 @@
                 font-size: 0.80rem;
             }
         }
-        
-        
+    
 
 
         .widget_search {
@@ -381,4 +384,6 @@
                    padding: 2%;
                }
            }
+}
+}
 }

@@ -39,6 +39,17 @@ get_header(); ?>
 		</main><!-- #main -->
 		
 <?php get_sidebar(); ?>
-	</div><!-- #primary -->
+
+
+</div><!-- #primary -->
+
+<section class="category-recent-blogs">
+	<h2> Recent Blog Posts That You Might Be Interested In </h2>
+           <?php get_template_part('template-parts/content', 'recent-carousel'); ?>
+        </section>
+
 </div>
+
+
+
 <?php get_footer(); ?>
