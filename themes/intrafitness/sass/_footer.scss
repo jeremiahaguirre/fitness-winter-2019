@@ -1,4 +1,17 @@
 //Footer
+.up-btn {
+  .fa-angle-up:before {
+    padding: 10px 15px;
+    box-shadow: 2px 2px 20px 0 #464646;
+    border-radius: 100%;
+    background-color: #778899;
+  }
+  a {
+    float: right;
+    margin-right: 5%;
+  }
+}
+
 .copyright-footer {
   color: $color__bg;
 }
@@ -11,16 +24,6 @@
     display: none;
     font-size: 1.2rem;
   }
-  .fa-angle-up:before{
-    padding: 10px 15px;
-    box-shadow: 2px 2px 20px 0 #464646;
-    border-radius: 100%;
-    background-color: #778899;
-  }
-  a{
-    float: right;
-    margin-right: 5%;
-  }
   @include desktop {
     .site-info {
       display: flex;
@@ -29,35 +32,34 @@
       padding: 4rem;
       padding-bottom: 1rem;
       opacity: 0.5;
-      .top-arrow{
+      .top-arrow {
         padding: 10px 15px;
         background-color: grey;
         border-radius: 16px;
-        margin-right: 55%
+        margin-right: 55%;
       }
     }
-    ul{
+    ul {
       text-align: left;
     }
-p{
-  color: $color__bg;
-}
-.social-media {
-  margin-right: 66%;
-  display: flex;
-  justify-content: space-between;
-  margin-inline-end: 45%
-}
-.sign-up-wrapper {
     p {
-    text-align: left;
+      color: $color__bg;
+    }
+    .social-media {
+      margin-right: 66%;
+      display: flex;
+      justify-content: space-between;
+      margin-inline-end: 45%;
+    }
+    .sign-up-wrapper {
+      p {
+        text-align: left;
       }
-}
+    }
     nav {
       a {
         text-decoration: none;
         color: $color__bg;
-        
       }
     }
   }
@@ -74,45 +76,48 @@ p{
   opacity: 0.5;
   align-items: center;
   a {
-    width:33%;
+    width: 33%;
     border-right: 1px solid #fff;
     line-height: 1;
     padding-right: 1rem;
     text-decoration: none;
+    &:hover {
+      color: $color__link-hover;
+    }
   }
   a:nth-of-type(3) {
     border: none;
   }
 
-  p{ 
+  p {
     width: 100%;
   }
 }
-@include desktop{
-  .disclaimers{
+@include desktop {
+  .disclaimers {
     width: 50%;
   }
 }
-#footer-menu{
+#footer-menu {
   display: flex;
   flex-flow: row wrap;
-  li{
+  li {
     width: 50%;
   }
 }
-.search-set{
+.search-set {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  #your-email-footer{
-    border: 1px solid $color__bg; 
+  #your-email-footer {
+    border: 1px solid $color__bg;
     background: $color__db;
     padding: 7px;
     border-top-left-radius: 10px;
-    border-bottom-left-radius:10px;
-    color:red;
+    border-bottom-left-radius: 10px;
+    color: red;
   }
-  #sign-up-footer{
+  #sign-up-footer {
     background-color: $color__bg;
     color: $color__db;
     margin: 0px;
@@ -122,5 +127,8 @@ p{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border: none;
+    &:hover {
+      color: $color__link-hover;
+    }
   }
 }

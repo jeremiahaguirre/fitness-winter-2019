@@ -26,7 +26,7 @@ get_header(); ?>
                     $post_carousel = get_posts( $post_carousel_args );
                     foreach($post_carousel as $carousel_item): 
                 ?>
-                <div class="blog-carousel-cell">    
+                <div class="blog-carousel-cell">
                 <a class="recent-blog-post" href="<?php echo get_permalink(); ?>">  
                     <?php
                     $image = wp_get_attachment_image_src(get_post_thumbnail_id($carousel_item->ID),'large');
