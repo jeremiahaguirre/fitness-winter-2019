@@ -2020,14 +2020,16 @@ figure {
       width: 100%;
       height: 890px;
       z-index: -100; }
-    .young-picture .wp-block-quote {
+    .young-picture .wp-block-quote-decison-to-make {
       text-align: left;
       width: 113%;
       padding: 10px;
       font-size: 30px;
       left: 58%;
       margin-top: 12%;
-      position: relative; }
+      position: relative;
+      background-color: #002150;
+      color: white; }
   .remember-the-days {
     background-color: #fff;
     position: relative;
@@ -2064,7 +2066,7 @@ figure {
     width: 41%;
     line-height: 2;
     font-size: 1.25rem; }
-  .wp-block-quote {
+  .wp-block-quote-my-mission {
     text-align: center;
     position: absolute;
     display: block;
