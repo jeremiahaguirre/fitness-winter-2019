@@ -869,7 +869,7 @@ figure {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        font-size: 1.2rem;
+        font-size: 1rem;
         -webkit-box-align: stretch;
             -ms-flex-align: stretch;
                 align-items: stretch;
@@ -1040,14 +1040,8 @@ figure {
   .front-page .intra-way {
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
-    margin: 80px auto; }
-    .front-page .intra-way h2 {
-      text-align: center; }
-=======
     margin: 80px auto h2;
       margin-text-align: center; }
->>>>>>> f9ddb8410d3d092d63a70c9672d2eee598006384
     .front-page .intra-way .wp-block-media-text {
       display: block; }
     .front-page .intra-way img {
@@ -1373,7 +1367,7 @@ figure {
       margin: 0; }
   .mindset-coaching .purpose {
     width: 70%;
-    margin: 0 auto; }
+    margin: 10px auto; }
     .mindset-coaching .purpose h2 {
       position: relative;
       text-align: center;
@@ -1400,7 +1394,7 @@ figure {
     .mindset-coaching .maybe-you::before {
       content: '';
       position: absolute;
-      top: 121.4em;
+      top: 123.4em;
       background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf7fd), to(#ebf7fd));
       background-image: linear-gradient(#ebf7fd, #ebf7fd);
       -webkit-transform: skewY(4deg);
