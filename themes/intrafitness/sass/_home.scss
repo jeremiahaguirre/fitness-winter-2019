@@ -267,6 +267,7 @@
             // padding: 12.5px;
             height: 250px;
             img {
+                width:100%;
                 height: 150px;
                 // max-width: 350px;
                 width: 180px;
@@ -310,7 +311,7 @@
             border-radius: 10px;
             img {
                 height: 130px;
-                width: 335px;
+                width: 100%;
                 border-top-left-radius: 9.95px;
                 border-top-right-radius: 9.95px;
             }
