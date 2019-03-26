@@ -6,8 +6,8 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
+<div class="category-page">
+	<div id="primary" class="content-area blog-content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -23,7 +23,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content' , 'recent-post');
 				?>
 
 			<?php endwhile; ?>
@@ -37,7 +37,8 @@ get_header(); ?>
 		<?php endif; ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
-
+		
 <?php get_sidebar(); ?>
+	</div><!-- #primary -->
+</div>
 <?php get_footer(); ?>
