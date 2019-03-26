@@ -25,6 +25,9 @@
       }
     a{
     text-decoration: none;
+    &:hover {
+        color: $color__link-hover;
+      }
     }
 }
 .site-main-404{
