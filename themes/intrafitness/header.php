@@ -19,7 +19,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<a name="top"></a>
+    <a name="top"></a>
     <div id="page" class="hfeed site">
         <a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
 
@@ -28,11 +28,11 @@
             <div class="site-branding">
                 <a class="logo" href="<?php bloginfo('url'); ?>">
                 </a>
-                <h1 class="site-title screen-reader-text"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+                <a class="site-title screen-reader-text" href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a>
             </div><!-- .site-branding -->
 
             <nav id="site-navigation" class="main-navigation" role="navigation">
-                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="<?php echo get_template_directory_uri(); ?>/images/mobile/header/ham_menu_icon.svg" alt="ham menu icon"></button>
+                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="<?php echo get_template_directory_uri(); ?>/images/mobile/header/ham_menu_icon.svg" alt="ham menu icon" /></button>
                 <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
             </nav><!-- #site-navigation -->
         </header><!-- #masthead -->

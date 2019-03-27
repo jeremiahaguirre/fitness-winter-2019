@@ -34,7 +34,7 @@
                 bottom: -7px;
                 background-color: #00a7ed;
                 position: absolute;
-                left: 272px;
+                left: 184px;
                 transform: translateX(-50%);
             }
         }
@@ -68,14 +68,16 @@
             position: relative;
             &::after {
                 content: "";
-                width: 25%;
+                width: 68%;
                 height: 4px;
-                bottom: 78%;
+                bottom: -8%;
                 background-color: #00a7ed;
                 position: absolute;
-                left: 22.5%;
+                left: 33.5%;
                 transform: translateX(-50%);
             }
         }
     }
 }}
+
+

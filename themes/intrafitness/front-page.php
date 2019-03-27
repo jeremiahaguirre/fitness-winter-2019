@@ -28,7 +28,7 @@ get_header(); ?>
             <div class="sign-up-wrapper container">
                 <form class="sign-up-form">
                     <input type="email" name="your_email" id="your-email" value placeholder="Your Email">
-                    <input type="submit" name="sign up" value="Sign Up" id="sign up">
+                    <input type="submit" name="sign-up" value="Sign-Up" id="sign-up">
                 </form>
             </div>
         </section>

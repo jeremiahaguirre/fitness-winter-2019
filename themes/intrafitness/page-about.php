@@ -38,6 +38,7 @@ get_header(); ?>
             wp_reset_postdata(); ?>
             </div>
         </section>
+<<<<<<< HEAD
     <section class="transformation-background-pic">
         
     <h2>Ready For Your transformation?</h2>
@@ -48,6 +49,18 @@ get_header(); ?>
     <a href="https://fitness.van.cp.academy.red/online-personal-training/">Try 7-Day Free Trial</a>
     </div>
     </section>
+=======
+        <section class="transformation-background-pic">
+
+            <h2>Ready For Your transformation?</h2>
+            <div class="button">
+                <a href="https://fitness.van.cp.academy.red/online-personal-training/">Hell Yeah!</a>
+            </div>
+            <div class="about-mobile-button">
+                <a href="https://fitness.van.cp.academy.red/online-personal-training/">Try 7-Day Free Trial</a>
+            </div>
+        </section>
+>>>>>>> 6e4b4c63131e5e054d4ac6d0e5603b49302341ac
 
     </main><!-- #main -->
 </div><!-- #primary -->

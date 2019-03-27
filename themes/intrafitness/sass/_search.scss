@@ -1,0 +1,126 @@
+// CSS for Category Page
+
+
+@include desktop { 
+
+    .search-page {
+        max-width: 80%;
+        margin: auto;
+        .widget-area{
+            padding-top: 83px;
+        }
+        .page-title {
+            position: relative;
+            &::after {
+                content: "";
+                width: 360px;
+                left: 181px;
+                top: 48px;
+                height: 4px;
+                background-color: #00a7ed;
+                position: absolute;
+                transform: translateX(-50%);
+            }
+        }
+    
+        .category-recent-blogs {
+                margin-bottom: 7%;
+            h2 {
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 360px;
+                    height: 4px;
+                    bottom: -7px;
+                    background-color: #00a7ed;
+                    position: absolute;
+                    left: 184px;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+.none-container{    
+.none-text{
+    margin-top:85px;
+    p{
+        font-size: 1.5rem;
+        width:80%;
+    }
+    span{
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+    
+}
+
+}
+}
+    
+    @include mobile {
+        
+    .search-page {
+        max-width: 90%;
+        margin: auto;
+        .page-title {
+            position: relative;
+            &::after {
+                content: "";
+                width: 280px;
+                height: 4px;
+                background-color: #00a7ed;
+                position: absolute;
+                left: 141px;
+                transform: translateX(-50%);
+                top: 102%;
+            }
+        }
+    
+        .category-recent-blogs {
+                margin-bottom: 50px;
+                        
+            h2 {
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 68%;
+                    height: 4px;
+                    bottom: -8%;
+                    background-color: #00a7ed;
+                    position: absolute;
+                    left: 33.5%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+    .none-container{  
+        margin:auto;  
+        .none-text{
+            
+            margin-top:25px;
+
+            p{
+                font-size: 1.5rem;
+                width:90%;
+                margin: auto;
+                padding-bottom: 35px;
+            }
+            span{
+                display:block;
+                width:90%;
+                font-size: 1.75rem;
+                font-weight: bold;
+                margin: auto;
+            }
+            
+        }
+        
+        }
+        
+}
+    
+    
+    
