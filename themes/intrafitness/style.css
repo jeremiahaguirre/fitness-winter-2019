@@ -1658,7 +1658,8 @@ figure {
 
 .page-id-22 .featured-image,
 .page-id-13 .featured-image {
-  height: 600px; }
+  height: 600px;
+  background-size: contain; }
   @media (max-width: 641px) {
     .page-id-22 .featured-image,
     .page-id-13 .featured-image {
@@ -1678,7 +1679,7 @@ figure {
     background-position-x: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover; } }
+    background-size: contain; } }
 
 .page-id-22 h1,
 .page-id-13 h1 {
@@ -1891,7 +1892,7 @@ figure {
     background-position-x: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover; } }
+    background-size: contain; } }
 
 @media (max-width: 641px) {
   .page-id-22 .address {
@@ -1988,7 +1989,6 @@ figure {
     background-image: url(../../images/web/about/paul_girl_working_out@3x.jpg);
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
     background-size: cover; }
     .transformation-background-pic h2 {
       text-align: center;
@@ -2002,7 +2002,7 @@ figure {
       background-color: #00a7ed;
       border-radius: 5px;
       text-decoration: none;
-      margin-left: 28%;
+      margin-left: 34%;
       position: relative;
       bottom: 30px;
       right: 10px; }
@@ -2285,7 +2285,8 @@ figure {
   opacity: 0.5;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-left: 11%; }
   .disclaimers a {
     width: 33%;
     border-right: 1px solid #fff;
