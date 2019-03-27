@@ -29,8 +29,11 @@ get_header(); ?>
     <?php get_sidebar(); ?>
 
 </div><!-- #primary -->
-
-
+<?php
+if ( comments_open() || get_comments_number() ) :
+                    comments_template();
+                endif;
+?>
 <section class="single-recent-blogs">
 <?php get_template_part('template-parts/content', 'recent-carousel'); ?>
 </section>

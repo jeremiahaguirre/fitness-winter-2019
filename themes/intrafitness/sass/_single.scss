@@ -1,6 +1,27 @@
+.image-cover {
+
+    display: flex;
+    width:100%;
+    margin:auto;
+    background-color: $color__db;
+    img{
+        margin: auto;
+        width:70%;
+        height: 100%;
+    }
+}
+
+
 .single-page {
     width: 65%; 
     margin: auto;
-    .category-mindset-and-emotions {
+    .widget-area {
+        padding-top: 24px;
     }
+}
+
+.single-recent-blogs {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 45px;
 }
