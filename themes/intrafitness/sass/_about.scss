@@ -1,7 +1,6 @@
 @include mobile {
   .paul-sitting {
     background-image: url(../../images/web/about/paul_sitting@3x.jpg);
-    //height: 300px;
     //background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: contain;
@@ -10,7 +9,6 @@
     &::before {
       content: '';
       position: absolute;
-      //top: 320px;
       background-image: linear-gradient($color__llb, $color__llb);
       transform: skewY(-6deg);
       transform-origin: top left;
@@ -18,15 +16,12 @@
       height: 150px;
       z-index: -100;
     }
-
     .bio {
       padding: 5%;
       h3 {
-        color: $color__lb;  
+        color: $color__lb;
         text-align: center;
-        //color: $color__w;
         position: relative;
-        //padding: 5%;
       }
     }
     h2 {
@@ -46,13 +41,11 @@
     }
   }
   .young-picture {
-    background-image: url(../../images/web/about/paul_young@3x.jpg);
-    //height: 500px;
-    //background-attachment: fixed;
+    background-image: url(../../images/web/about/paul_young.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 400px;
-    .remember-the-days{
+    .remember-the-days {
       padding: 5%;
       h2 {
         position: relative;
@@ -68,30 +61,27 @@
           transform: translateX(-50%);
           bottom: 0;
         }
+      }
     }
-  }
-  .story-img {
-    background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
-    //height: 300px;
-    //background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 400px;
-    .rest-of-my-life{
-      padding: 5%;
+    .story-img {
+      background-image: url(../../images/web/about/paul_punching_bag.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-top: 400px;
+      .rest-of-my-life {
+        padding: 5%;
+      }
     }
-  }
-  .wp-block-quote {
-    display: block;
-    background-color: $color__db;
-    text-align: center;
-    position: relative;
-    margin: 0;
-    padding: 1rem;
-    color: $color__w;
-    font-family: $font__main;
-  }
-
+    .wp-block-quote {
+      display: block;
+      background-color: $color__db;
+      text-align: center;
+      position: relative;
+      margin: 0;
+      padding: 1rem;
+      color: $color__w;
+      font-family: $font__main;
+    }
     .wp-block-quote {
       display: block;
       background-color: $color__db;
@@ -104,9 +94,8 @@
     }
   }
   .transformation-background-pic {
-    background-image:url(../../images/web/about/paul_and_girl-3x.jpg);
+    background-image: url(../../images/web/about/paul_and_girl.jpg);
     background-repeat: no-repeat;
-    //background-size: contain;
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -115,42 +104,39 @@
       padding-top: 46%;
       color: white;
       font-size: 38px;
-  }
-
-  .about-mobile-button{
-    display: inline-block;
-    padding: 5px 40px;
-    font-size: 20px;
-    background-color: #00a7ed;
-    border-radius: 5px;
-    text-decoration: none;
-    a{
-      color: white;
+    }
+    .about-mobile-button {
+      display: inline-block;
+      padding: 5px 40px;
+      font-size: 20px;
+      background-color: #00a7ed;
+      border-radius: 5px;
+      text-decoration: none;
+      a {
+        color: white;
+        &:hover {
+          color: $color__link-hover;
+        }
+      }
+    }
+    .button {
+      display: none;
     }
   }
-  .button{
-    display: none;
-  }
-}
-  
-  .rest-of-my-life{
+  .rest-of-my-life {
     padding: 5%;
   }
 }
-
 @include desktop {
   .about-paul {
     position: relative;
-    //margin: 10%;
     h2 {
       padding-left: 5%;
     }
-
     .bio {
       background-color: $color__w;
       position: relative;
       width: 40%;
-      //height: 450px;
       line-height: 2;
       font-size: 1.25rem;
       text-align: left;
@@ -200,10 +186,8 @@
     background-image: url('../../images/web/about/paul_young@3x.jpg');
     height: 940px;
     background-position-x: left;
-    //background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: auto;
-    //margin-bottom: 180px;
     width: 700px;
     &::before {
       content: '';
@@ -247,12 +231,10 @@
         background-color: $color__lb;
         position: absolute;
         left: 0%;
-        //transform: translateX(-50%);
         bottom: 0;
       }
     }
   }
-
   .story-img {
     background-image: url(../../images/web/about/paul_punching_bag@3x.jpg);
     height: 940px;
@@ -261,7 +243,6 @@
     background-repeat: no-repeat;
     background-size: auto;
     margin-bottom: 50px;
-    //width: 700px;
     background-position-x: right;
   }
   .rest-of-my-life {
@@ -272,21 +253,20 @@
     line-height: 2;
     font-size: 1.25rem;
   }
-
   .wp-block-quote-my-mission {
     text-align: center;
     position: absolute;
     display: block;
     width: 59%;
     bottom: 0%;
-    left:7%;
+    left: 7%;
     padding: 10px;
     font-size: 30px;
     background-color: $color__db;
     color: $color__w;
   }
   .transformation-background-pic {
-    background-image: url(../../images/web/about/paul_and_girl-3x.jpg);
+    background-image: url(../../images/web/about/paul_and_girl.jpg);
     width: 100%;
     height: 700px;
     background-size: cover;
@@ -298,13 +278,10 @@
 
     h2 {
       color: $color__w;
-      //display: flex;
-      //justify-content: flex-end;
       padding-top: 10%;
       font-size: 60px;
       text-transform: uppercase;
       width: 40%;
-      //float: right;
     }
     a {
       text-decoration: none;
@@ -324,19 +301,19 @@
       background-color: $color__lb;
       border: none;
       border-radius: 15px;
-      a{
+      a {
         color: white;
+        &:hover {
+          color: $color__link-hover;
+        }
       }
-  
     }
-    .about-mobile-button{
+    .about-mobile-button {
       display: none;
     }
-
     .button:hover {
       background-color: $color__lb;
     }
-
     .button:active {
       background-color: $color__lb;
       transform: translateY(4px);

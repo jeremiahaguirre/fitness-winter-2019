@@ -31,7 +31,7 @@ get_header(); ?>
                     <?php
                     $image = wp_get_attachment_image_src(get_post_thumbnail_id($carousel_item->ID),'large');
                     ?>
-                    <img src="<?php echo $image[0]; ?>">
+                    <img src="<?php echo $image[0]; ?>" alt="how to change your mindset image">
                     <h3 class="carousel-blog-title">
                         <?php
                     echo $carousel_item->post_title;

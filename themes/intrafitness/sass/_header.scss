@@ -2,6 +2,7 @@
 .menu-show {
   position: fixed;
 }
+
 .site-header {
   display: flex;
   background-color: $color__db;
@@ -71,6 +72,10 @@
           a {
             font-size: 2.75rem;
             color: $color__db;
+            &:hover {
+              color: $color__link-hover;
+            }
+        
           }
         }
 
@@ -85,6 +90,9 @@
             color: $color__db;
             font-size: 1.4rem;
             font-weight: bold;
+            &:hover {
+              color: $color__link-hover;
+            }
           }
         }
       }
@@ -102,7 +110,7 @@
       // justify-content: flex-end;
       ul {
         display: flex;
-        font-size: 1.2rem;
+        font-size: 1rem;
         align-items: stretch;
         width: 100%;
         text-transform: uppercase;
@@ -163,6 +171,9 @@
           a {
             padding: 0 10px;
             display: inline-block;
+            &:hover {
+              color: $color__link-hover;
+            }
           }
         }
         li {
@@ -172,6 +183,9 @@
           a {
             margin: 0px;
             color: $color__w;
+            &:hover {
+              color: $color__link-hover;
+            }
           }
         }
       }
