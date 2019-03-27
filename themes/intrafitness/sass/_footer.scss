@@ -9,6 +9,9 @@
   a {
     float: right;
     margin-right: 5%;
+    &:hover {
+      color: $color__link-hover;
+    }
   }
 }
 
@@ -60,12 +63,15 @@
       a {
         text-decoration: none;
         color: $color__bg;
+        &:hover {
+          color: $color__link-hover;
+        }
       }
     }
   }
 }
 .disclaimers {
-  margin: $base__space-unit auto;
+  margin: auto;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
@@ -81,9 +87,6 @@
     line-height: 1;
     padding-right: 1rem;
     text-decoration: none;
-    &:hover {
-      color: $color__link-hover;
-    }
   }
   a:nth-of-type(3) {
     border: none;
