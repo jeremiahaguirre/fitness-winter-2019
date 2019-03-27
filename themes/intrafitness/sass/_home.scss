@@ -70,7 +70,7 @@
     position: relative;
     width: 390px;
     margin-left: 1.2%;
-    border: 3.5px solid #c2d7e9;
+    border: 3.5px solid $color__bg;
     border-radius: 15px;
     height: 400px;
     img {
@@ -91,7 +91,7 @@
       font-weight: bold;
       bottom: -2px;
       left: -2.5px;
-      background-color: #002150;
+      background-color: $color__db;
       border-bottom-left-radius: 9.8px;
       padding: 1% 5% 1% 5%;
       color: #fff;
@@ -171,7 +171,7 @@
         height: 4px;
         top: 94%;
         right: 40%;
-        background-color: #c2d7e9;
+        background-color: $color__bg;
         position: absolute;
         transform: translateX(-50%);
             }
@@ -180,7 +180,7 @@
   
 
   .recent-entry-content {
-    border: 3.5px solid #c2d7e9;
+    border: 3.5px solid $color__bg;
         border-radius: 9.95px;
         img {
             height: 320px;
@@ -194,7 +194,7 @@
         .recent-blog-term{
             font-size: 0.9rem;
             position: absolute;
-            background-color: #002150;
+            background-color: $color__db;
             padding: 1% 5% 1% 5%;
             color: #fff;
             // bottom: 1px;
@@ -404,7 +404,7 @@
                     height: 2px;
                     top: 98%;
                     right: 32%;
-                    background-color: #c2d7e9;
+                    background-color: $color__bg;
                     position: absolute;
                     transform: translateX(-50%);
                     }
