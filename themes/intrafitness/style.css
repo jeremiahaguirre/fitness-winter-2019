@@ -1221,6 +1221,7 @@ figure {
       .front-page .home-banner .banner-text a {
         font-size: 1.55rem;
         border: none;
+        text-decoration: none;
         padding: 20px 40px; }
         .front-page .home-banner .banner-text a:hover {
           background-color: #0c71a3; }
@@ -1298,6 +1299,7 @@ figure {
         text-transform: uppercase; }
       .front-page .ready-to-start .btn-front-page a {
         border: none;
+        text-decoration: none;
         font-size: 1.75rem;
         padding: 24px 30px; } }
 
@@ -1656,7 +1658,8 @@ figure {
 
 .page-id-22 .featured-image,
 .page-id-13 .featured-image {
-  height: 600px; }
+  height: 600px;
+  background-size: contain; }
   @media (max-width: 641px) {
     .page-id-22 .featured-image,
     .page-id-13 .featured-image {
@@ -1676,7 +1679,7 @@ figure {
     background-position-x: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover; } }
+    background-size: contain; } }
 
 .page-id-22 h1,
 .page-id-13 h1 {
@@ -1889,7 +1892,7 @@ figure {
     background-position-x: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover; } }
+    background-size: contain; } }
 
 @media (max-width: 641px) {
   .page-id-22 .address {
@@ -2556,6 +2559,48 @@ figure {
         .blog-content-area .widget-area .search-field:focus {
           outline: none; } }
 
+.sign-up-newsletter-blog {
+  display: block;
+  margin: 2rem 0rem 7rem 0rem; }
+  .sign-up-newsletter-blog h2 {
+    text-align: center;
+    font-size: 1.6rem; }
+  .sign-up-newsletter-blog .newsletter-blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .sign-up-newsletter-blog .newsletter-blog .sign-up-wrapper-blog {
+      width: 40%; }
+      .sign-up-newsletter-blog .newsletter-blog .sign-up-wrapper-blog form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .sign-up-newsletter-blog .newsletter-blog .sign-up-wrapper-blog form input {
+          border-color: #00a7ed;
+          font-size: 1.6rem; }
+        .sign-up-newsletter-blog .newsletter-blog .sign-up-wrapper-blog form #your-email-blog {
+          padding: 1px 10px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px; }
+        .sign-up-newsletter-blog .newsletter-blog .sign-up-wrapper-blog form #sign-up-blog {
+          border: none;
+          border-top-left-radius: 0%;
+          border-bottom-left-radius: 0%;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px; }
+
 @media (max-width: 641px) {
   .blog-page {
     max-width: 90%;
@@ -2786,12 +2831,12 @@ figure {
       margin: auto;
       width: 70%;
       height: 100%; }
-  .entry-content a {
+  .single-page a {
     color: #002150;
     text-decoration: underline; }
-    .entry-content a a:visited {
+    .single-page a a:visited {
       color: #002150; }
-      .entry-content a a:visited a:hover {
+      .single-page a a:visited a:hover {
         color: #002150; }
   .single-page {
     width: 65%;
