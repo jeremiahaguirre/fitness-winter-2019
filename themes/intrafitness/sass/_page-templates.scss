@@ -4,6 +4,9 @@
 
 /* Front page */
 @include mobile {
+  .front-page-recent-blogs {
+    display: none;
+  }
   .front-page {
     .home-banner {
       position: relative;
