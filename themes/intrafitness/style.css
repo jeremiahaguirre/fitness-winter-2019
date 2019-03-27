@@ -2828,12 +2828,12 @@ figure {
       margin: auto;
       width: 70%;
       height: 100%; }
-  .entry-content a {
+  .single-page a {
     color: #002150;
     text-decoration: underline; }
-    .entry-content a a:visited {
+    .single-page a a:visited {
       color: #002150; }
-      .entry-content a a:visited a:hover {
+      .single-page a a:visited a:hover {
         color: #002150; }
   .single-page {
     width: 65%;
