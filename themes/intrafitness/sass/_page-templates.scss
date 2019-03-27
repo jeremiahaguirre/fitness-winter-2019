@@ -725,6 +725,7 @@
 .page-id-13 {
   .featured-image {
     height: 600px;
+    background-size: contain;
     @include mobile {
       height: 400px;
       background-position-x: center;
@@ -742,7 +743,7 @@
       background-position-x: center;
       background-attachment: fixed;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
     }
   }
   h1 {
@@ -969,7 +970,7 @@
         background-position-x: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
       }
     }
     .address {
