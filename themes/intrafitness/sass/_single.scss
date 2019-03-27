@@ -1,3 +1,5 @@
+@include desktop {
+
 .image-cover {
 
     display: flex;
@@ -11,12 +13,24 @@
     }
 }
 
+.entry-content {
+    a {
+        color: $color__db;
+        text-decoration: underline;
+        a:visited {
+            color:$color__db;
+        
+        a:hover {
+            color: $color__db;
+        
+        }}}
+}
 
 .single-page {
     width: 65%; 
     margin: auto;
     .widget-area {
-        padding-top: 24px;
+        padding-top: 110px;
     }
 }
 
@@ -25,3 +39,114 @@
     margin: auto;
     padding-bottom: 45px;
 }
+
+.entry-footer {
+    a {
+        color: $color__lb;
+      
+        a:visited {
+            color:$color__lb;
+        
+        a:hover {
+            color: $color__lb;
+        
+        }}}
+}
+.post-navigation {
+    a {
+        color: $color__lb;
+      
+        a:visited {
+            color:$color__lb;
+        
+        a:hover {
+            color: $color__lb;
+        
+        }}}
+}
+
+#disqus_thread {
+    width: 70%;
+    margin: auto;
+}
+}
+@include mobile {
+
+
+    .image-cover {
+
+        display: flex;
+        width:100%;
+        margin:auto;
+        background-color: $color__db;
+        img{
+            margin: auto;
+            width:70%;
+            height: 100%;
+        }
+    }
+    
+    .entry-content {
+        ul li {
+            font-size: 0.8rem;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+        a {
+            color: $color__db;
+            text-decoration: underline;
+            a:visited {
+                color:$color__db;
+            
+            a:hover {
+                color: $color__db;
+            
+            }}}
+    }
+    
+    .single-page {
+        width: 90%; 
+        margin: auto;
+        .widget-area {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+    
+    .single-recent-blogs {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 45px;
+    }
+    
+    .entry-footer {
+        a {
+            color: $color__lb;
+          
+            a:visited {
+                color:$color__lb;
+            
+            a:hover {
+                color: $color__lb;
+            
+            }}}
+    }
+    .post-navigation {
+        a {
+            color: $color__lb;
+          
+            a:visited {
+                color:$color__lb;
+            
+            a:hover {
+                color: $color__lb;
+            
+            }}}
+    }
+    
+    #disqus_thread {
+        width: 80%;
+        margin: auto;
+    }
+    }

@@ -35,6 +35,7 @@ if ( comments_open() || get_comments_number() ) :
                 endif;
 ?>
 <section class="single-recent-blogs">
+	<h2> Recent Blog Posts That You Might Be Interested In </h2>
 <?php get_template_part('template-parts/content', 'recent-carousel'); ?>
 </section>
 

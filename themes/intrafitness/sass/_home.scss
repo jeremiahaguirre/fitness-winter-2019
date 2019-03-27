@@ -120,14 +120,14 @@
         position: relative;
         font-size: 2.25rem;
         font-weight: bold;
-        padding: 1% 1% 1% 3%;
+        // padding: 1% 1% 1% 3%;
         &::after {
               content: '';
               width: 40%;
               height: 3px;
               top: 98%;
               right: 37%;
-              background-color:  #c2d7e9;
+              background-color:  $color__lb;
               position: absolute;
               transform: translateX(-50%);
         }
