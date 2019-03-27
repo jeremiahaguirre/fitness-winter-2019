@@ -1018,6 +1018,8 @@ figure {
 --------------------------------------------------------------*/
 /* Front page */
 @media (max-width: 641px) {
+  .front-page-recent-blogs {
+    display: none; }
   .front-page .home-banner {
     position: relative;
     background-color: #002150;
@@ -1129,6 +1131,51 @@ figure {
         text-transform: uppercase; }
       .front-page .ready-to-start .btn-front-page a {
         border: none; } }
+
+.page-id-10 .sign-up-newsletter {
+  display: none; }
+  @media (min-width: 641px) {
+    .page-id-10 .sign-up-newsletter {
+      display: block;
+      margin: 4rem 0; }
+      .page-id-10 .sign-up-newsletter h2 {
+        text-align: center;
+        font-size: 1.6rem; }
+      .page-id-10 .sign-up-newsletter .newsletter {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .page-id-10 .sign-up-newsletter .newsletter .sign-up-wrapper {
+          width: 40%; }
+          .page-id-10 .sign-up-newsletter .newsletter .sign-up-wrapper form {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: row nowrap;
+                    flex-flow: row nowrap;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            .page-id-10 .sign-up-newsletter .newsletter .sign-up-wrapper form input {
+              border-color: #00a7ed;
+              font-size: 1.6rem; }
+            .page-id-10 .sign-up-newsletter .newsletter .sign-up-wrapper form #your-email {
+              padding: 1px 10px;
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+              border-top-right-radius: 0px;
+              border-bottom-right-radius: 0px; }
+            .page-id-10 .sign-up-newsletter .newsletter .sign-up-wrapper form #sign-up {
+              border: none;
+              border-top-left-radius: 0%;
+              border-bottom-left-radius: 0%;
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px; } }
 
 @media (min-width: 641px) {
   .front-page .home-banner {
@@ -1888,7 +1935,7 @@ figure {
     .paul-sitting h2 {
       text-align: center;
       font-size: 2.25rem; }
-    .paul-sitting .wp-block-quote {
+    .paul-sitting .wp-block-quote-my-mission {
       display: block;
       background-color: #002150;
       text-align: center;
@@ -1926,16 +1973,7 @@ figure {
       padding-top: 400px; }
       .young-picture .story-img .rest-of-my-life {
         padding: 5%; }
-    .young-picture .wp-block-quote {
-      display: block;
-      background-color: #002150;
-      text-align: center;
-      position: relative;
-      margin: 0;
-      padding: 1rem;
-      color: #fff;
-      font-family: "Open Sans Normal", sans-serif; }
-    .young-picture .wp-block-quote {
+    .young-picture .wp-block-quote-decison-to-make {
       display: block;
       background-color: #002150;
       text-align: center;
@@ -1945,23 +1983,27 @@ figure {
       color: #fff;
       font-size: 20px; }
   .transformation-background-pic {
-    background-image: url(../../images/web/about/paul_and_girl.jpg);
+    background-image: url(../../images/web/about/paul_girl_working_out@3x.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     background-size: cover; }
     .transformation-background-pic h2 {
       text-align: center;
-      padding-top: 46%;
+      padding-top: 65%;
       color: white;
       font-size: 38px; }
     .transformation-background-pic .about-mobile-button {
       display: inline-block;
-      padding: 5px 40px;
+      padding: 5px 10px;
       font-size: 20px;
       background-color: #00a7ed;
       border-radius: 5px;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-left: 28%;
+      position: relative;
+      bottom: 30px;
+      right: 10px; }
       .transformation-background-pic .about-mobile-button a {
         color: white; }
         .transformation-background-pic .about-mobile-button a:hover {
@@ -2174,6 +2216,8 @@ figure {
 .up-btn a {
   float: right;
   margin-right: 5%; }
+  .up-btn a:hover {
+    color: #0c71a3; }
 
 .copyright-footer {
   color: #c2d7e9; }
@@ -2220,10 +2264,12 @@ figure {
       text-align: left; }
     .site-footer nav a {
       text-decoration: none;
-      color: #c2d7e9; } }
+      color: #c2d7e9; }
+      .site-footer nav a:hover {
+        color: #0c71a3; } }
 
 .disclaimers {
-  margin: 1rem auto;
+  margin: auto;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2244,8 +2290,6 @@ figure {
     line-height: 1;
     padding-right: 1rem;
     text-decoration: none; }
-    .disclaimers a:hover {
-      color: #0c71a3; }
   .disclaimers a:nth-of-type(3) {
     border: none; }
   .disclaimers p {
@@ -2511,6 +2555,48 @@ figure {
         font-size: 1.325rem; }
         .blog-content-area .widget-area .search-field:focus {
           outline: none; } }
+
+.sign-up-newsletter-blog {
+  display: block;
+  margin: 2rem 0rem 7rem 0rem; }
+  .sign-up-newsletter-blog h2 {
+    text-align: center;
+    font-size: 1.6rem; }
+  .sign-up-newsletter-blog .newsletter-blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .sign-up-newsletter-blog .newsletter-blog .sign-up-wrapper-blog {
+      width: 40%; }
+      .sign-up-newsletter-blog .newsletter-blog .sign-up-wrapper-blog form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .sign-up-newsletter-blog .newsletter-blog .sign-up-wrapper-blog form input {
+          border-color: #00a7ed;
+          font-size: 1.6rem; }
+        .sign-up-newsletter-blog .newsletter-blog .sign-up-wrapper-blog form #your-email-blog {
+          padding: 1px 10px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px; }
+        .sign-up-newsletter-blog .newsletter-blog .sign-up-wrapper-blog form #sign-up-blog {
+          border: none;
+          border-top-left-radius: 0%;
+          border-bottom-left-radius: 0%;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px; }
 
 @media (max-width: 641px) {
   .blog-page {

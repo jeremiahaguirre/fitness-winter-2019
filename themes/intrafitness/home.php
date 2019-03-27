@@ -60,7 +60,23 @@ get_header(); ?>
             </div>
 
             <?php get_sidebar(); ?>
-    </main><!-- #main -->
+            
+    
+        </main><!-- #main -->
 </div>
+
 </div><!-- #primary -->
+<section class="sign-up-newsletter-blog">
+            <h2>Want to know more about my mission? Sign up for more newsletters!</h2>
+      
+
+<section class="newsletter-blog" id="newsletter-blog">
+            <div class="sign-up-wrapper-blog container">
+                <form class="sign-up-form-blog">
+                    <input type="email" name="your_email" id="your-email-blog" value placeholder="Your Email">
+                    <input type="submit" name="sign-up" value="Sign-Up" id="sign-up-blog">
+                </form>
+            </div>
+        </section>
+                    </section>
 <?php get_footer(); ?> 
