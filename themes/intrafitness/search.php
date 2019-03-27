@@ -24,9 +24,9 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 		<?php else : ?>
-
+		<div class="none-container">
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
+		</div>
 		<?php endif; ?>
 
 		</main><!-- #main -->

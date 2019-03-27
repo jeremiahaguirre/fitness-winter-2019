@@ -40,7 +40,23 @@
             }
         }
     }
+
+.none-container{    
+.none-text{
+    margin-top:85px;
+    p{
+        font-size: 1.5rem;
+        width:80%;
     }
+    span{
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+    
+}
+
+}
+}
     
     @include mobile {
         
@@ -78,7 +94,33 @@
                 }
             }
         }
-    }}
+    }
+
+    .none-container{  
+        margin:auto;  
+        .none-text{
+            
+            margin-top:25px;
+
+            p{
+                font-size: 1.5rem;
+                width:90%;
+                margin: auto;
+                padding-bottom: 35px;
+            }
+            span{
+                display:block;
+                width:90%;
+                font-size: 1.75rem;
+                font-weight: bold;
+                margin: auto;
+            }
+            
+        }
+        
+        }
+        
+}
     
     
     

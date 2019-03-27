@@ -2155,7 +2155,7 @@ figure {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1rem;
+  margin: 0 0 0.6rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -2814,7 +2814,15 @@ figure {
           position: absolute;
           left: 184px;
           -webkit-transform: translateX(-50%);
-                  transform: translateX(-50%); } }
+                  transform: translateX(-50%); }
+  .none-container .none-text {
+    margin-top: 85px; }
+    .none-container .none-text p {
+      font-size: 1.5rem;
+      width: 80%; }
+    .none-container .none-text span {
+      font-size: 1.75rem;
+      font-weight: bold; } }
 
 @media (max-width: 641px) {
   .search-page {
@@ -2845,4 +2853,19 @@ figure {
           position: absolute;
           left: 33.5%;
           -webkit-transform: translateX(-50%);
-                  transform: translateX(-50%); } }
+                  transform: translateX(-50%); }
+  .none-container {
+    margin: auto; }
+    .none-container .none-text {
+      margin-top: 25px; }
+      .none-container .none-text p {
+        font-size: 1.5rem;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 35px; }
+      .none-container .none-text span {
+        display: block;
+        width: 90%;
+        font-size: 1.75rem;
+        font-weight: bold;
+        margin: auto; } }
