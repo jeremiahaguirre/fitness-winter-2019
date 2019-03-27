@@ -1888,16 +1888,6 @@ figure {
     .paul-sitting h2 {
       text-align: center;
       font-size: 2.25rem; }
-    .paul-sitting .wp-block-quote {
-      display: block;
-      background-color: #002150;
-      text-align: center;
-      position: relative;
-      margin: 0;
-      padding: 1rem;
-      color: #fff;
-      font-family: "Open Sans Normal", sans-serif;
-      font-size: 20px; }
   .young-picture {
     background-image: url(../../images/web/about/paul_young.jpg);
     background-repeat: no-repeat;
@@ -1926,16 +1916,7 @@ figure {
       padding-top: 400px; }
       .young-picture .story-img .rest-of-my-life {
         padding: 5%; }
-    .young-picture .wp-block-quote {
-      display: block;
-      background-color: #002150;
-      text-align: center;
-      position: relative;
-      margin: 0;
-      padding: 1rem;
-      color: #fff;
-      font-family: "Open Sans Normal", sans-serif; }
-    .young-picture .wp-block-quote {
+    .young-picture .wp-block-quote-decison-to-make {
       display: block;
       background-color: #002150;
       text-align: center;
@@ -1945,23 +1926,24 @@ figure {
       color: #fff;
       font-size: 20px; }
   .transformation-background-pic {
-    background-image: url(../../images/web/about/paul_and_girl.jpg);
+    background-image: url(../../images/web/about/paul_girl_working_out@3x.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     background-size: cover; }
     .transformation-background-pic h2 {
       text-align: center;
-      padding-top: 46%;
+      padding-top: 65%;
       color: white;
       font-size: 38px; }
     .transformation-background-pic .about-mobile-button {
       display: inline-block;
-      padding: 5px 40px;
+      padding: 5px 10px;
       font-size: 20px;
       background-color: #00a7ed;
       border-radius: 5px;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-left: 28%; }
       .transformation-background-pic .about-mobile-button a {
         color: white; }
         .transformation-background-pic .about-mobile-button a:hover {
