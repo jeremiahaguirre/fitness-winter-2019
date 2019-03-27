@@ -29,6 +29,18 @@ get_header(); ?>
     <?php get_sidebar(); ?>
 
 </div><!-- #primary -->
+<section class="bio-single-container">
+    <div class="bio-image">
+        <img src= '<?php echo get_template_directory_uri();?>/images/web/blog/paul-bubble.png' alt="icon">
+</div>
+<div class="bio-text">
+    <span>Paul</span>
+    <p> Personal Trainer / Life Coach / Owner of IntraFitness.com
+</p>
+</div>
+</section>
+
+
 <?php
 if ( comments_open() || get_comments_number() ) :
                     comments_template();

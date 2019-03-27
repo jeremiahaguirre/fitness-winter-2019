@@ -1221,6 +1221,7 @@ figure {
       .front-page .home-banner .banner-text a {
         font-size: 1.55rem;
         border: none;
+        text-decoration: none;
         padding: 20px 40px; }
         .front-page .home-banner .banner-text a:hover {
           background-color: #0c71a3; }
@@ -1298,6 +1299,7 @@ figure {
         text-transform: uppercase; }
       .front-page .ready-to-start .btn-front-page a {
         border: none;
+        text-decoration: none;
         font-size: 1.75rem;
         padding: 24px 30px; } }
 
@@ -2872,7 +2874,23 @@ figure {
         color: #00a7ed; }
   #disqus_thread {
     width: 70%;
-    margin: auto; } }
+    margin: auto; }
+  .bio-single-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 65%;
+    margin: auto; }
+    .bio-single-container .bio-text span {
+      font-weight: bold;
+      font-size: 1.5rem; }
+    .bio-single-container .bio-text p {
+      display: block;
+      font-size: 1.2rem;
+      width: 265px; }
+    .bio-single-container .bio-image {
+      padding-right: 25px;
+      padding-bottom: 2%; } }
 
 @media (max-width: 641px) {
   .image-cover {

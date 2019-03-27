@@ -85,7 +85,32 @@ h2 {
     width: 70%;
     margin: auto;
 }
+
+.bio-single-container {
+    display: flex;
+    width: 65%;
+    margin: auto;
+    .bio-text {
+        span{
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        p{
+            display:block;
+            font-size: 1.2rem;
+            width: 265px;
+        }
+    }
+    .bio-image {
+        padding-right: 25px;
+        padding-bottom: 2%;
+        
+    }
 }
+
+}
+
+
 @include mobile {
 
 
