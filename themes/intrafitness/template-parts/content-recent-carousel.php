@@ -20,6 +20,7 @@
 
             ?>
         <div class="blog-carousel-cell">
+        <a class="recent-blog-post" href="<?php echo get_permalink($carousel_item->ID); ?>">  
             <?php
         // var_dump($carousel_item);
             $image = wp_get_attachment_image_src(get_post_thumbnail_id($carousel_item->ID), 'large');
@@ -33,7 +34,7 @@
                 ?>
 
             </h3>
-
+            </a>
             <div class="blog-carousel-term">
                 <?php $item_categories = get_the_category($carousel_item->ID);
                 echo esc_html($item_categories[0]->name); ?>
