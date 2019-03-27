@@ -28,17 +28,17 @@
       text-align: center;
       font-size: 2.25rem;
     }
-    // .wp-block-quote-my-mission {
-    //   display: block;
-    //   background-color: $color__db;
-    //   text-align: center;
-    //   position: relative;
-    //   margin: 0;
-    //   padding: 1rem;
-    //   color: $color__w;
-    //   font-family: $font__main;
-    //   font-size: 20px;
-    // }
+    .wp-block-quote-my-mission {
+      display: block;
+      background-color: $color__db;
+      text-align: center;
+      position: relative;
+      margin: 0;
+      padding: 1rem;
+      color: $color__w;
+      font-family: $font__main;
+      font-size: 20px;
+    }
   }
   .young-picture {
     background-image: url(../../images/web/about/paul_young.jpg);
@@ -105,6 +105,9 @@
       border-radius: 5px;
       text-decoration: none;
       margin-left: 28%;
+      position: relative;
+      bottom: 30px;
+      right: 10px;
       a {
         color: white;
         &:hover {

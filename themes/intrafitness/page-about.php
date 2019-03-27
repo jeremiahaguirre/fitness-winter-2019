@@ -42,10 +42,10 @@ get_header(); ?>
         
     <h2>Ready For Your transformation?</h2>
     <div class="button">
-    <a button href="https://fitness.van.cp.academy.red/online-personal-training/">Hell Yeah!</a>
+    <a  href="https://fitness.van.cp.academy.red/online-personal-training/">Hell Yeah!</a>
     </div>
     <div class="about-mobile-button">
-    <a button href="https://fitness.van.cp.academy.red/online-personal-training/">Try 7-Day Free Trial</a>
+    <a href="https://fitness.van.cp.academy.red/online-personal-training/">Try 7-Day Free Trial</a>
     </div>
     </section>
 

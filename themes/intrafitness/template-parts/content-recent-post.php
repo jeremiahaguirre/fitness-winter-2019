@@ -31,7 +31,7 @@
         <div class="entry-header">
             <?php the_title('<h1 class="entry-title">', '</h1>');
             ?></a>
-    </div>
+    </div> <!-- entry-header --> 
 
         <div class="recent-blog-content">
             <?php the_excerpt(); ?>
