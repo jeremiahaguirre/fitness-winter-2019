@@ -2645,7 +2645,8 @@ figure {
       border-radius: 6px;
       font-size: 1.3rem;
       line-height: 2;
-      padding: 2% 1% 2% 0%; }
+      padding: 2% 1% 2% 0%;
+      width: 94%; }
       .blog-content-area .widget-area #cat:focus {
         outline: none; }
     .blog-content-area .widget-area .search-field {
@@ -2781,3 +2782,67 @@ figure {
   font-family: "Open Sans Normal", sans-serif;
   font-size: 16px;
   text-align: center; }
+
+@media (min-width: 641px) {
+  .search-page {
+    max-width: 80%;
+    margin: auto; }
+    .search-page .widget-area {
+      padding-top: 83px; }
+    .search-page .page-title {
+      position: relative; }
+      .search-page .page-title::after {
+        content: "";
+        width: 360px;
+        left: 181px;
+        top: 48px;
+        height: 4px;
+        background-color: #00a7ed;
+        position: absolute;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+    .search-page .category-recent-blogs {
+      margin-bottom: 7%; }
+      .search-page .category-recent-blogs h2 {
+        position: relative; }
+        .search-page .category-recent-blogs h2::after {
+          content: "";
+          width: 360px;
+          height: 4px;
+          bottom: -7px;
+          background-color: #00a7ed;
+          position: absolute;
+          left: 184px;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); } }
+
+@media (max-width: 641px) {
+  .search-page {
+    max-width: 90%;
+    margin: auto; }
+    .search-page .page-title {
+      position: relative; }
+      .search-page .page-title::after {
+        content: "";
+        width: 280px;
+        height: 4px;
+        background-color: #00a7ed;
+        position: absolute;
+        left: 141px;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        top: 102%; }
+    .search-page .category-recent-blogs {
+      margin-bottom: 50px; }
+      .search-page .category-recent-blogs h2 {
+        position: relative; }
+        .search-page .category-recent-blogs h2::after {
+          content: "";
+          width: 68%;
+          height: 4px;
+          bottom: -8%;
+          background-color: #00a7ed;
+          position: absolute;
+          left: 33.5%;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); } }
