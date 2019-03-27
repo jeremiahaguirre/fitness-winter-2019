@@ -16,12 +16,13 @@ get_header(); ?>
         <?php endwhile; ?>
 
         <section class="front-page-recent-blogs">
+            <h2>Recent Blog Posts</h2>
            <?php get_template_part('template-parts/content', 'recent-carousel'); ?>
         </section>
 
         <section class="sign-up-newsletter">
             <h2>Want to know more about my mission? Sign up for more newsletters!</h2>
-        </section>
+      
 
         <section class="newsletter" id="newsletter">
             <div class="sign-up-wrapper container">
@@ -31,7 +32,7 @@ get_header(); ?>
                 </form>
             </div>
         </section>
-
+        </section>
     </main><!-- #main -->
 </div><!-- #primary -->
 
