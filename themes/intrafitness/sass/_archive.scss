@@ -23,11 +23,11 @@
         }
     }
 
-    .category-recent-blogs {
-            margin-bottom: 7%;
-        h2 {
-            position: relative;
-            &::after {
+    .category-recent-blogs { 
+             margin-bottom: 7%;
+              h2 {
+              position: relative;
+              &::after {
                 content: "";
                 width: 360px;
                 height: 4px;
@@ -36,10 +36,10 @@
                 position: absolute;
                 left: 184px;
                 transform: translateX(-50%);
+                    }
+                }
             }
-        }
     }
-}
 }
 
 @include mobile {
@@ -75,9 +75,10 @@
                 position: absolute;
                 left: 33.5%;
                 transform: translateX(-50%);
+                }
             }
         }
     }
-}}
+}
 
 

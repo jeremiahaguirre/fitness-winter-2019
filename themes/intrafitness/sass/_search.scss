@@ -41,21 +41,20 @@
         }
     }
 
-.none-container{    
-.none-text{
-    margin-top:85px;
-    p{
-        font-size: 1.5rem;
-        width:80%;
-    }
-    span{
-        font-size: 1.75rem;
-        font-weight: bold;
-    }
-    
-}
+    .none-container{  
 
-}
+        .none-text{
+        margin-top:85px;
+        p{
+            font-size: 1.5rem;
+            width:80%;
+        }
+        span{
+            font-size: 1.75rem;
+            font-weight: bold;
+            }    
+        }
+    }
 }
     
     @include mobile {
@@ -114,12 +113,9 @@
                 font-size: 1.75rem;
                 font-weight: bold;
                 margin: auto;
-            }
-            
+            }   
         }
-        
-        }
-        
+    }   
 }
     
     
