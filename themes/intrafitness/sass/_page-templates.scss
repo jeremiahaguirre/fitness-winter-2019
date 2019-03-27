@@ -144,7 +144,7 @@
   display: none;
   @include desktop {
     display: block;
-    margin-top: $base__space-unit * 4;
+    margin: ($base__space-unit * 4) 0;
     h2 {
       text-align: center;
       font-size: 1.6rem;
@@ -162,13 +162,15 @@
             border-color: $color__lb;
             font-size: 1.6rem;
           }
-          #your_email {
+          #your-email {
+            padding: 1px 10px;
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
             border-top-right-radius: 0px;
             border-bottom-right-radius: 0px;
           }
-          &:last-child {
+          #sign-up {
+            border: none;
             border-top-left-radius: 0%;
             border-bottom-left-radius: 0%;
             border-top-right-radius: 10px;
