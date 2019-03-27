@@ -4,6 +4,9 @@
 
 /* Front page */
 @include mobile {
+  .front-page-recent-blogs {
+    display: none;
+  }
   .front-page {
     .home-banner {
       position: relative;
@@ -48,8 +51,7 @@
     .intra-way {
       width: 100%;
       height: 100%;
-      margin: 80px auto
-      h2 {
+      margin: 80px auto h2 {
         text-align: center;
       }
       .wp-block-media-text {
@@ -126,14 +128,12 @@
         top: 40%;
         left: 20%;
         h2 {
-          
           color: $color__w;
           font-size: 2.75rem;
           text-transform: uppercase;
         }
         a {
           border: none;
-           
         }
       }
     }
