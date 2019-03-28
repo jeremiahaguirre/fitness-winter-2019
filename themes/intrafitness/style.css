@@ -1657,12 +1657,14 @@ figure {
     max-width: 800px; } }
 
 .page-id-22 .featured-image,
-.page-id-13 .featured-image {
+.page-id-13 .featured-image,
+.page-id-15 .featured-image {
   height: 600px;
   background-size: contain; }
   @media (max-width: 641px) {
     .page-id-22 .featured-image,
-    .page-id-13 .featured-image {
+    .page-id-13 .featured-image,
+    .page-id-15 .featured-image {
       height: 400px;
       background-position-x: center;
       background-attachment: fixed;
@@ -1671,10 +1673,12 @@ figure {
 
 @media (min-width: 641px) {
   .page-id-22 .wpcf7,
-  .page-id-13 .wpcf7 {
+  .page-id-13 .wpcf7,
+  .page-id-15 .wpcf7 {
     margin: 0 5%; }
   .page-id-22 .featured-image,
-  .page-id-13 .featured-image {
+  .page-id-13 .featured-image,
+  .page-id-15 .featured-image {
     height: 400px;
     background-position-x: center;
     background-attachment: fixed;
@@ -1682,27 +1686,32 @@ figure {
     background-size: contain; } }
 
 .page-id-22 h1,
-.page-id-13 h1 {
+.page-id-13 h1,
+.page-id-15 h1 {
   display: none; }
 
 .page-id-22 h2,
-.page-id-13 h2 {
+.page-id-13 h2,
+.page-id-15 h2 {
   font-size: 2rem;
   margin-bottom: 0;
   text-align: center; }
   @media (min-width: 641px) {
     .page-id-22 h2,
-    .page-id-13 h2 {
+    .page-id-13 h2,
+    .page-id-15 h2 {
       font-size: 2.4rem; } }
 
 .page-id-22 hr,
-.page-id-13 hr {
+.page-id-13 hr,
+.page-id-15 hr {
   margin: 0 25%;
   background-color: #00a7ed;
   height: 5px; }
   @media (min-width: 641px) {
     .page-id-22 hr,
-    .page-id-13 hr {
+    .page-id-13 hr,
+    .page-id-15 hr {
       margin: 0 30%; } }
 
 .page-id-13 .entry-content {
@@ -2621,22 +2630,23 @@ figure {
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
   .carousel-area h2 {
+    display: block;
     position: relative;
     font-size: 1.25rem;
     font-weight: bold;
     padding-bottom: 15px; }
     .carousel-area h2::after {
-      content: '';
-      width: 220px;
+      content: "";
+      width: 50%;
       height: 3px;
       top: 37.5px;
-      right: 2.25%;
+      right: 25.25%;
       background-color: #00a7ed;
       position: absolute;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
   .blog-carousel {
-    width: 350px;
+    width: 100%;
     margin-top: 2.5%; }
   .blog-carousel-cell {
     position: relative;

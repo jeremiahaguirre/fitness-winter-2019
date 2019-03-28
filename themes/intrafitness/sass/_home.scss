@@ -343,17 +343,18 @@
   .carousel-area {
     // Popular Posts
     h2 {
+        display:block;
       position: relative;
       font-size: 1.25rem;
       font-weight: bold;
       padding-bottom: 15px;
       &::after {
-        content: '';
-        width: 220px;
+        content: "";
+        width: 50%;
         height: 3px;
         top: 37.5px;
-        right: 2.25%;
-        background-color: $color__lb;
+        right: 25.25%;
+        background-color: #00a7ed;
         position: absolute;
         transform: translateX(-50%);
       }
@@ -362,7 +363,7 @@
   }
 
   .blog-carousel {
-    width: 350px;
+    width: 100%;
     margin-top: 2.5%;
     }
 
