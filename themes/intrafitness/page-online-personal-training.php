@@ -17,7 +17,7 @@ get_header(); ?>
         <?php endwhile; ?>
 
         <?php
-        $args = array('post_type' => 'post_testimonial', 'posts_per_page' => 3, 'order' => 'ASC');
+        $args = array('post_type' => 'post_testimonial', 'posts_per_page' => 30, 'order' => 'ASC');
         $testimonial = get_posts($args);
         ?>
         <section class="testimonials">
