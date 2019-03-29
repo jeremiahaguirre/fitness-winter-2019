@@ -416,7 +416,7 @@
             border: 1.5px solid #c2d7e9;
             border-radius: 10px;
             img {
-                height: 130px;
+                height: 220px;
                 width: 100%;
                 border-top-left-radius: 9.95px;
                 border-top-right-radius: 9.95px;
@@ -430,7 +430,7 @@
                 padding: 1% 4% 1% 4%;
                 color: #fff;
                 right: 0px;
-                top:106px;
+                top:191px;
                 }
             }
             h1 {
@@ -492,6 +492,7 @@
                border:none;
                width: 80%;
                margin: auto;
+               padding-bottom: 25px;
                #cat{
 
                    border: 4px solid $color__db;
@@ -523,4 +524,7 @@
             }
          }
     }
+
+    .sign-up-newsletter-blog {
+        display:none;}
 }

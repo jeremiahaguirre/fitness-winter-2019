@@ -2687,7 +2687,7 @@ figure {
     border: 1.5px solid #c2d7e9;
     border-radius: 10px; }
     .recent-entry-content img {
-      height: 130px;
+      height: 220px;
       width: 100%;
       border-top-left-radius: 9.95px;
       border-top-right-radius: 9.95px; }
@@ -2700,7 +2700,7 @@ figure {
         padding: 1% 4% 1% 4%;
         color: #fff;
         right: 0px;
-        top: 106px; }
+        top: 191px; }
     .recent-entry-content h1 {
       position: relative;
       padding-left: 2%;
@@ -2741,7 +2741,8 @@ figure {
   .blog-content-area .widget-area {
     border: none;
     width: 80%;
-    margin: auto; }
+    margin: auto;
+    padding-bottom: 25px; }
     .blog-content-area .widget-area #cat {
       border: 4px solid #002150;
       color: #666;
@@ -2763,7 +2764,9 @@ figure {
       margin: 0; }
     .blog-content-area .widget-area input[type=search] {
       padding: 0px 0px 0px 2px;
-      width: 90%; } }
+      width: 90%; }
+  .sign-up-newsletter-blog {
+    display: none; } }
 
 @media (min-width: 641px) {
   .category-page {
@@ -2915,16 +2918,20 @@ figure {
       margin: auto;
       width: 70%;
       height: 100%; }
-  .entry-content ul li {
+  .single-page .entry-content ol {
     font-size: 0.8rem; }
-  .entry-content p {
+  .single-page .entry-content li {
     font-size: 0.8rem; }
-  .entry-content a {
+  .single-page .entry-content ul {
+    font-size: 0.8rem; }
+  .single-page .entry-content p {
+    font-size: 0.8rem; }
+  .single-page .entry-content a {
     color: #002150;
     text-decoration: underline; }
-    .entry-content a a:visited {
+    .single-page .entry-content a a:visited {
       color: #002150; }
-      .entry-content a a:visited a:hover {
+      .single-page .entry-content a a:visited a:hover {
         color: #002150; }
   .single-page {
     width: 90%;
@@ -2950,6 +2957,8 @@ figure {
         left: 33.5%;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%); }
+  .bio-single-container {
+    padding-left: 14%; }
   .entry-footer a {
     color: #00a7ed; }
     .entry-footer a a:visited {

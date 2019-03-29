@@ -126,10 +126,16 @@ h2 {
             height: 100%;
         }
     }
-    
+   .single-page{ 
     .entry-content {
-        ul li {
+        ol{
             font-size: 0.8rem;
+        }
+        li{
+            font-size:0.8rem;
+        }
+        ul{
+            font-size:0.8rem;
         }
         p {
             font-size: 0.8rem;
@@ -143,7 +149,10 @@ h2 {
             a:hover {
                 color: $color__db;
             
-            }}}
+                }
+              }   
+            }
+        }   
     }
     
     .single-page {
@@ -178,6 +187,11 @@ h2 {
         }
     }
 }
+.bio-single-container {
+    padding-left: 14%;
+}
+
+
 
     .entry-footer {
         a {
